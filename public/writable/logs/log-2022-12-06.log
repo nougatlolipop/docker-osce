@@ -1,0 +1,182 @@
+CRITICAL - 2022-12-06 14:31:52 --> Call to undefined method Modules\Setting\Controllers\Setting::genQr()
+in ROOTPATH/modules/Setting/Controllers/Setting.php on line 107.
+ 1 SYSTEMPATH/CodeIgniter.php(907): Modules\Setting\Controllers\Setting->genStation('3')
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Setting\Controllers\Setting))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-06 14:33:13 --> Invalid data at path "/Users/ivan/Codeigniter/osce_v2/public//logo.png"
+in VENDORPATH/endroid/qr-code/src/ImageData/LogoImageData.php on line 43.
+ 1 VENDORPATH/endroid/qr-code/src/Writer/PngWriter.php(129): Endroid\QrCode\ImageData\LogoImageData::createForLogo(Object(Endroid\QrCode\Logo\Logo))
+ 2 VENDORPATH/endroid/qr-code/src/Writer/PngWriter.php(117): Endroid\QrCode\Writer\PngWriter->addLogo(Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Writer\Result\PngResult))
+ 3 ROOTPATH/modules/Setting/Controllers/Setting.php(229): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label))
+ 4 ROOTPATH/modules/Setting/Controllers/Setting.php(115): Modules\Setting\Controllers\Setting->genQr('56C16FEC')
+ 5 SYSTEMPATH/CodeIgniter.php(907): Modules\Setting\Controllers\Setting->genStation('3')
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Setting\Controllers\Setting))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-06 14:34:08 --> Invalid data at path "/Users/ivan/Codeigniter/osce_v2/public//logo.png"
+in VENDORPATH/endroid/qr-code/src/ImageData/LogoImageData.php on line 43.
+ 1 VENDORPATH/endroid/qr-code/src/Writer/PngWriter.php(129): Endroid\QrCode\ImageData\LogoImageData::createForLogo(Object(Endroid\QrCode\Logo\Logo))
+ 2 VENDORPATH/endroid/qr-code/src/Writer/PngWriter.php(117): Endroid\QrCode\Writer\PngWriter->addLogo(Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Writer\Result\PngResult))
+ 3 ROOTPATH/modules/Setting/Controllers/Setting.php(229): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label))
+ 4 ROOTPATH/modules/Setting/Controllers/Setting.php(115): Modules\Setting\Controllers\Setting->genQr('65AE5DB2')
+ 5 SYSTEMPATH/CodeIgniter.php(907): Modules\Setting\Controllers\Setting->genStation('3')
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Setting\Controllers\Setting))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-06 14:34:39 --> Undefined variable: logo
+in ROOTPATH/modules/Setting/Controllers/Setting.php on line 229.
+ 1 ROOTPATH/modules/Setting/Controllers/Setting.php(229): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: logo', 'ROOTPATH/modules/Setting/Controllers/Setting.php', 229, [...])
+ 2 ROOTPATH/modules/Setting/Controllers/Setting.php(115): Modules\Setting\Controllers\Setting->genQr('4955B1CB')
+ 3 SYSTEMPATH/CodeIgniter.php(907): Modules\Setting\Controllers\Setting->genStation('3')
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Setting\Controllers\Setting))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-06 14:35:19 --> Uncaught ErrorException: realpath() expects parameter 1 to be a valid path, string given in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Common.php:90
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'realpath() expe...', '/Users/ivan/Cod...', 90, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Common.php(90): realpath('\x89PNG\r\n\x1A\n\x00\x00\x00\rIHD...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Debug/Exceptions.php(483): clean_path('\x89PNG\r\n\x1A\n\x00\x00\x00\rIHD...')
+#3 [internal function]: CodeIgniter\Debug\Exceptions::CodeIgniter\Debug\{closure}('\x89PNG\r\n\x1A\n\x00\x00\x00\rIHD...')
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Debug/Exceptions.php(488): array_map(Object(Closure), Array)
+#5 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Debug/Exceptions.php(114): CodeIgniter\Debug\Exceptions::renderBacktrace(Array)
+#6 [internal f
+in SYSTEMPATH/Common.php on line 90.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-12-06 14:36:08 --> Argument 1 passed to Endroid\QrCode\Writer\Result\AbstractResult::saveToFile() must be of the type string, null given, called in /Users/ivan/Codeigniter/osce_v2/modules/Setting/Controllers/Setting.php on line 231
+in VENDORPATH/endroid/qr-code/src/Writer/Result/AbstractResult.php on line 28.
+ 1 ROOTPATH/modules/Setting/Controllers/Setting.php(231): Endroid\QrCode\Writer\Result\AbstractResult->saveToFile(null)
+ 2 ROOTPATH/modules/Setting/Controllers/Setting.php(115): Modules\Setting\Controllers\Setting->genQr('2984E48C')
+ 3 SYSTEMPATH/CodeIgniter.php(907): Modules\Setting\Controllers\Setting->genStation('3')
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Setting\Controllers\Setting))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-06 14:40:18 --> Invalid data at path "/Users/ivan/Codeigniter/osce_v2/modules/Setting/Controllers/assets/logo-fk.png"
+in VENDORPATH/endroid/qr-code/src/ImageData/LogoImageData.php on line 43.
+ 1 VENDORPATH/endroid/qr-code/src/Writer/PngWriter.php(129): Endroid\QrCode\ImageData\LogoImageData::createForLogo(Object(Endroid\QrCode\Logo\Logo))
+ 2 VENDORPATH/endroid/qr-code/src/Writer/PngWriter.php(117): Endroid\QrCode\Writer\PngWriter->addLogo(Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Writer\Result\PngResult))
+ 3 ROOTPATH/modules/Setting/Controllers/Setting.php(230): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label))
+ 4 ROOTPATH/modules/Setting/Controllers/Setting.php(116): Modules\Setting\Controllers\Setting->genQr('4C87C659')
+ 5 SYSTEMPATH/CodeIgniter.php(907): Modules\Setting\Controllers\Setting->genStation('3')
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Setting\Controllers\Setting))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-06 14:42:30 --> Invalid data at path "http://localhost:8080/assets/logo-fk.png"
+in VENDORPATH/endroid/qr-code/src/ImageData/LogoImageData.php on line 43.
+ 1 VENDORPATH/endroid/qr-code/src/Writer/PngWriter.php(129): Endroid\QrCode\ImageData\LogoImageData::createForLogo(Object(Endroid\QrCode\Logo\Logo))
+ 2 VENDORPATH/endroid/qr-code/src/Writer/PngWriter.php(117): Endroid\QrCode\Writer\PngWriter->addLogo(Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Writer\Result\PngResult))
+ 3 ROOTPATH/modules/Setting/Controllers/Setting.php(230): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label))
+ 4 ROOTPATH/modules/Setting/Controllers/Setting.php(116): Modules\Setting\Controllers\Setting->genQr('54DC92F9')
+ 5 SYSTEMPATH/CodeIgniter.php(907): Modules\Setting\Controllers\Setting->genStation('3')
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Setting\Controllers\Setting))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-06 14:44:00 --> Invalid data at path "http://localhost:8080/assets/logo-fk.png"
+in VENDORPATH/endroid/qr-code/src/ImageData/LogoImageData.php on line 43.
+ 1 VENDORPATH/endroid/qr-code/src/Writer/PngWriter.php(129): Endroid\QrCode\ImageData\LogoImageData::createForLogo(Object(Endroid\QrCode\Logo\Logo))
+ 2 VENDORPATH/endroid/qr-code/src/Writer/PngWriter.php(117): Endroid\QrCode\Writer\PngWriter->addLogo(Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Writer\Result\PngResult))
+ 3 ROOTPATH/modules/Setting/Controllers/Setting.php(230): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label))
+ 4 ROOTPATH/modules/Setting/Controllers/Setting.php(116): Modules\Setting\Controllers\Setting->genQr('6A1A6B13')
+ 5 SYSTEMPATH/CodeIgniter.php(907): Modules\Setting\Controllers\Setting->genStation('2')
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Setting\Controllers\Setting))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-06 14:44:49 --> Uncaught ErrorException: realpath() expects parameter 1 to be a valid path, string given in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Common.php:90
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'realpath() expe...', '/Users/ivan/Cod...', 90, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Common.php(90): realpath('\x89PNG\r\n\x1A\n\x00\x00\x00\rIHD...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Debug/Exceptions.php(483): clean_path('\x89PNG\r\n\x1A\n\x00\x00\x00\rIHD...')
+#3 [internal function]: CodeIgniter\Debug\Exceptions::CodeIgniter\Debug\{closure}('\x89PNG\r\n\x1A\n\x00\x00\x00\rIHD...')
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Debug/Exceptions.php(488): array_map(Object(Closure), Array)
+#5 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Debug/Exceptions.php(114): CodeIgniter\Debug\Exceptions::renderBacktrace(Array)
+#6 [internal f
+in SYSTEMPATH/Common.php on line 90.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-12-06 14:48:24 --> Invalid data at path "http://localhost:8080/assets/logo-fk.png"
+in VENDORPATH/endroid/qr-code/src/ImageData/LogoImageData.php on line 43.
+ 1 VENDORPATH/endroid/qr-code/src/Writer/PngWriter.php(129): Endroid\QrCode\ImageData\LogoImageData::createForLogo(Object(Endroid\QrCode\Logo\Logo))
+ 2 VENDORPATH/endroid/qr-code/src/Writer/PngWriter.php(117): Endroid\QrCode\Writer\PngWriter->addLogo(Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Writer\Result\PngResult))
+ 3 ROOTPATH/modules/Setting/Controllers/Setting.php(230): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label))
+ 4 ROOTPATH/modules/Setting/Controllers/Setting.php(116): Modules\Setting\Controllers\Setting->genQr('1C9A22F6')
+ 5 SYSTEMPATH/CodeIgniter.php(907): Modules\Setting\Controllers\Setting->genStation('1')
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Setting\Controllers\Setting))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-06 14:50:33 --> Invalid data at path "http://localhost:8080/public/assets/logo-fk.png"
+in VENDORPATH/endroid/qr-code/src/ImageData/LogoImageData.php on line 43.
+ 1 VENDORPATH/endroid/qr-code/src/Writer/PngWriter.php(129): Endroid\QrCode\ImageData\LogoImageData::createForLogo(Object(Endroid\QrCode\Logo\Logo))
+ 2 VENDORPATH/endroid/qr-code/src/Writer/PngWriter.php(117): Endroid\QrCode\Writer\PngWriter->addLogo(Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Writer\Result\PngResult))
+ 3 ROOTPATH/modules/Setting/Controllers/Setting.php(230): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label))
+ 4 ROOTPATH/modules/Setting/Controllers/Setting.php(116): Modules\Setting\Controllers\Setting->genQr('4C1E729A')
+ 5 SYSTEMPATH/CodeIgniter.php(907): Modules\Setting\Controllers\Setting->genStation('1')
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Setting\Controllers\Setting))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-06 14:51:28 --> Use of undefined constant BASEPATH - assumed 'BASEPATH' (this will throw an Error in a future version of PHP)
+in ROOTPATH/modules/Setting/Controllers/Setting.php on line 223.
+ 1 ROOTPATH/modules/Setting/Controllers/Setting.php(223): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefined constant BASEPATH - assumed \'BASEPATH\' (this will throw an Error in a future version of PHP)', 'ROOTPATH/modules/Setting/Controllers/Setting.php', 223, [...])
+ 2 ROOTPATH/modules/Setting/Controllers/Setting.php(116): Modules\Setting\Controllers\Setting->genQr('1437126F')
+ 3 SYSTEMPATH/CodeIgniter.php(907): Modules\Setting\Controllers\Setting->genStation('1')
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Setting\Controllers\Setting))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-06 14:52:09 --> Invalid data at path "/Users/ivan/Codeigniter/osce_v2/app//assets/logo-fk.png"
+in VENDORPATH/endroid/qr-code/src/ImageData/LogoImageData.php on line 43.
+ 1 VENDORPATH/endroid/qr-code/src/Writer/PngWriter.php(129): Endroid\QrCode\ImageData\LogoImageData::createForLogo(Object(Endroid\QrCode\Logo\Logo))
+ 2 VENDORPATH/endroid/qr-code/src/Writer/PngWriter.php(117): Endroid\QrCode\Writer\PngWriter->addLogo(Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Writer\Result\PngResult))
+ 3 ROOTPATH/modules/Setting/Controllers/Setting.php(230): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label))
+ 4 ROOTPATH/modules/Setting/Controllers/Setting.php(116): Modules\Setting\Controllers\Setting->genQr('04116D8B')
+ 5 SYSTEMPATH/CodeIgniter.php(907): Modules\Setting\Controllers\Setting->genStation('1')
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Setting\Controllers\Setting))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-06 14:52:53 --> Use of undefined constant BASEPATH - assumed 'BASEPATH' (this will throw an Error in a future version of PHP)
+in ROOTPATH/modules/Setting/Controllers/Setting.php on line 223.
+ 1 ROOTPATH/modules/Setting/Controllers/Setting.php(223): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefined constant BASEPATH - assumed \'BASEPATH\' (this will throw an Error in a future version of PHP)', 'ROOTPATH/modules/Setting/Controllers/Setting.php', 223, [...])
+ 2 ROOTPATH/modules/Setting/Controllers/Setting.php(116): Modules\Setting\Controllers\Setting->genQr('B5820827')
+ 3 SYSTEMPATH/CodeIgniter.php(907): Modules\Setting\Controllers\Setting->genStation('1')
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Setting\Controllers\Setting))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-06 14:54:04 --> Invalid data at path "/Users/ivan/Codeigniter/osce_v2/public/public/assets/logo-fk.png"
+in VENDORPATH/endroid/qr-code/src/ImageData/LogoImageData.php on line 43.
+ 1 VENDORPATH/endroid/qr-code/src/Writer/PngWriter.php(129): Endroid\QrCode\ImageData\LogoImageData::createForLogo(Object(Endroid\QrCode\Logo\Logo))
+ 2 VENDORPATH/endroid/qr-code/src/Writer/PngWriter.php(117): Endroid\QrCode\Writer\PngWriter->addLogo(Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Writer\Result\PngResult))
+ 3 ROOTPATH/modules/Setting/Controllers/Setting.php(230): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label))
+ 4 ROOTPATH/modules/Setting/Controllers/Setting.php(116): Modules\Setting\Controllers\Setting->genQr('090CF1A4')
+ 5 SYSTEMPATH/CodeIgniter.php(907): Modules\Setting\Controllers\Setting->genStation('1')
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Setting\Controllers\Setting))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-06 14:56:52 --> Uncaught ErrorException: realpath() expects parameter 1 to be a valid path, string given in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Common.php:90
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'realpath() expe...', '/Users/ivan/Cod...', 90, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Common.php(90): realpath('\x89PNG\r\n\x1A\n\x00\x00\x00\rIHD...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Debug/Exceptions.php(483): clean_path('\x89PNG\r\n\x1A\n\x00\x00\x00\rIHD...')
+#3 [internal function]: CodeIgniter\Debug\Exceptions::CodeIgniter\Debug\{closure}('\x89PNG\r\n\x1A\n\x00\x00\x00\rIHD...')
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Debug/Exceptions.php(488): array_map(Object(Closure), Array)
+#5 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Debug/Exceptions.php(114): CodeIgniter\Debug\Exceptions::renderBacktrace(Array)
+#6 [internal f
+in SYSTEMPATH/Common.php on line 90.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-12-06 15:12:36 --> Call to undefined method Modules\Setting\Controllers\Setting::genQr()
+in ROOTPATH/modules/Setting/Controllers/Setting.php on line 107.
+ 1 SYSTEMPATH/CodeIgniter.php(907): Modules\Setting\Controllers\Setting->genStation('3')
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Setting\Controllers\Setting))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')

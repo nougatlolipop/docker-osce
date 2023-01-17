@@ -1,0 +1,977 @@
+CRITICAL - 2022-12-08 07:28:43 --> [] operator not supported for strings
+in ROOTPATH/modules/Penilaian/Controllers/Penilaian.php on line 94.
+ 1 SYSTEMPATH/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->add()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-08 09:37:48 --> mkdir(): Permission denied
+in APPPATH/Helpers/qrcode_helper.php on line 38.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mkdir(): Permission denied', 'APPPATH/Helpers/qrcode_helper.php', 38, [...])
+ 2 APPPATH/Helpers/qrcode_helper.php(38): mkdir('FCPATH/qr/Simulasi/activateKey/', '0777', true)
+ 3 ROOTPATH/modules/Setting/Controllers/Setting.php(112): genQr('Simulasi', 'ask', '791821A8')
+ 4 SYSTEMPATH/CodeIgniter.php(907): Modules\Setting\Controllers\Setting->genStation('4')
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Setting\Controllers\Setting))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-08 09:38:10 --> mkdir(): Permission denied
+in APPPATH/Helpers/qrcode_helper.php on line 38.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mkdir(): Permission denied', 'APPPATH/Helpers/qrcode_helper.php', 38, [...])
+ 2 APPPATH/Helpers/qrcode_helper.php(38): mkdir('FCPATH/qr/Simulasi/activateKey/', '0777', true)
+ 3 ROOTPATH/modules/Setting/Controllers/Setting.php(112): genQr('Simulasi', 'ask', 'BB10C2EB')
+ 4 SYSTEMPATH/CodeIgniter.php(907): Modules\Setting\Controllers\Setting->genStation('4')
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Setting\Controllers\Setting))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-08 09:38:19 --> mkdir(): Permission denied
+in APPPATH/Helpers/qrcode_helper.php on line 38.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mkdir(): Permission denied', 'APPPATH/Helpers/qrcode_helper.php', 38, [...])
+ 2 APPPATH/Helpers/qrcode_helper.php(38): mkdir('FCPATH/qr/Simulasi/activateKey/', '0777', true)
+ 3 ROOTPATH/modules/Setting/Controllers/Setting.php(112): genQr('Simulasi', 'ask', '5AF23CBF')
+ 4 SYSTEMPATH/CodeIgniter.php(907): Modules\Setting\Controllers\Setting->genStation('4')
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Setting\Controllers\Setting))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-08 09:39:31 --> mkdir(): Permission denied
+in APPPATH/Helpers/qrcode_helper.php on line 38.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mkdir(): Permission denied', 'APPPATH/Helpers/qrcode_helper.php', 38, [...])
+ 2 APPPATH/Helpers/qrcode_helper.php(38): mkdir('FCPATH/qr/Simulasi/activateKey', '0777', true)
+ 3 ROOTPATH/modules/Setting/Controllers/Setting.php(112): genQr('Simulasi', 'ask', 'D9F8631D')
+ 4 SYSTEMPATH/CodeIgniter.php(907): Modules\Setting\Controllers\Setting->genStation('4')
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Setting\Controllers\Setting))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-08 09:41:09 --> mkdir(): Permission denied
+in APPPATH/Helpers/qrcode_helper.php on line 38.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mkdir(): Permission denied', 'APPPATH/Helpers/qrcode_helper.php', 38, [...])
+ 2 APPPATH/Helpers/qrcode_helper.php(38): mkdir('FCPATH/qr/Simulasi/activateKey', '0777', true)
+ 3 ROOTPATH/modules/Setting/Controllers/Setting.php(112): genQr('Simulasi', 'ask', 'F3A4B714')
+ 4 SYSTEMPATH/CodeIgniter.php(907): Modules\Setting\Controllers\Setting->genStation('4')
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Setting\Controllers\Setting))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-08 17:10:29 --> Cannot use object of type stdClass as array
+in ROOTPATH/modules/Penilaian/Controllers/Penilaian.php on line 68.
+ 1 SYSTEMPATH/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->add()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-08 17:10:40 --> Undefined property: stdClass::$detail
+in ROOTPATH/modules/Penilaian/Controllers/Penilaian.php on line 68.
+ 1 ROOTPATH/modules/Penilaian/Controllers/Penilaian.php(68): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$detail', 'ROOTPATH/modules/Penilaian/Controllers/Penilaian.php', 68, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->add()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-08 17:10:49 --> Trying to get property 'detail' of non-object
+in ROOTPATH/modules/Penilaian/Controllers/Penilaian.php on line 68.
+ 1 ROOTPATH/modules/Penilaian/Controllers/Penilaian.php(68): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'detail\' of non-object', 'ROOTPATH/modules/Penilaian/Controllers/Penilaian.php', 68, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->add()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-08 17:14:42 --> Trying to get property 'detail' of non-object
+in ROOTPATH/modules/Penilaian/Controllers/Penilaian.php on line 69.
+ 1 ROOTPATH/modules/Penilaian/Controllers/Penilaian.php(69): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'detail\' of non-object', 'ROOTPATH/modules/Penilaian/Controllers/Penilaian.php', 69, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->add()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-08 17:21:50 --> Undefined property: stdClass::$mahasiswa
+in ROOTPATH/modules/Penilaian/Controllers/Penilaian.php on line 70.
+ 1 ROOTPATH/modules/Penilaian/Controllers/Penilaian.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$mahasiswa', 'ROOTPATH/modules/Penilaian/Controllers/Penilaian.php', 70, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->add()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-08 17:31:46 --> Undefined property: stdClass::$urut
+in ROOTPATH/modules/Penilaian/Controllers/Penilaian.php on line 82.
+ 1 ROOTPATH/modules/Penilaian/Controllers/Penilaian.php(82): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$urut', 'ROOTPATH/modules/Penilaian/Controllers/Penilaian.php', 82, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->add()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-08 17:43:25 --> Undefined property: Modules\Penilaian\Controllers\Penilaian::$pengujiModel
+in ROOTPATH/modules/Penilaian/Controllers/Penilaian.php on line 93.
+ 1 ROOTPATH/modules/Penilaian/Controllers/Penilaian.php(93): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: Modules\\Penilaian\\Controllers\\Penilaian::$pengujiModel', 'ROOTPATH/modules/Penilaian/Controllers/Penilaian.php', 93, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->add()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-08 17:43:56 --> There is no data to update.
+in SYSTEMPATH/BaseModel.php on line 846.
+ 1 SYSTEMPATH/BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH/Model.php(693): CodeIgniter\BaseModel->update(null, [])
+ 3 ROOTPATH/modules/Penguji/Models/PengujiModel.php(52): CodeIgniter\Model->update()
+ 4 ROOTPATH/modules/Penilaian/Controllers/Penilaian.php(95): Modules\Penguji\Models\PengujiModel->updateData([...], [...])
+ 5 SYSTEMPATH/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->add()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-12-08 17:46:03 --> ErrorException: pg_query(): Query failed: ERROR:  cannot call json_array_elements on a non-array
+CONTEXT:  SQL statement &quot;SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;'lokasi')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;'station')::INT as stationId,
+		(detail-&gt;&gt;'stationNama')::VARCHAR as stationNama,
+		(detail-&gt;&gt;'penguji')::int as penguji,
+		( mahasiswa -&gt;&gt;'urutan') :: INT AS urutan,
+	( mahasiswa -&gt;&gt; 'mahasiswa' ) :: VARCHAR AS peserta ,
+	( mahasiswa -&gt;&gt; 'kehadiran' ) :: VARCHAR AS kehadiran
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;'data') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;'lokasi')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;'detail') detail(detail),
+	 LATERAL json_array_elements(detail-&gt;'mahasiswa') mahasiswa(mahasiswa)&quot;
+PL/pgSQL function function_mahasiswa_station() line 3 at RETURN QUERY in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/ivan/Cod...', 140, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(140): pg_query(Resource id #15, 'SELECT *\nFROM f...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM f...')
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM f...')
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM f...', Array, false)
+#5 /Users/ivan/Codeigniter/osce_v2/modules/Penilaian/Models/PenilaianModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/ivan/Codeigniter/osce_v2/modules/Penilaian/Controllers/Penilaian.php(45): Modules\Penilaian\Models\PenilaianModel->getPeserta(Array, Array)
+#7 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->index()
+#8 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#12 {main}
+CRITICAL - 2022-12-08 17:46:03 --> pg_query(): Query failed: ERROR:  cannot call json_array_elements on a non-array
+CONTEXT:  SQL statement &quot;SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;'lokasi')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;'station')::INT as stationId,
+		(detail-&gt;&gt;'stationNama')::VARCHAR as stationNama,
+		(detail-&gt;&gt;'penguji')::int as penguji,
+		( mahasiswa -&gt;&gt;'urutan') :: INT AS urutan,
+	( mahasiswa -&gt;&gt; 'mahasiswa' ) :: VARCHAR AS peserta ,
+	( mahasiswa -&gt;&gt; 'kehadiran' ) :: VARCHAR AS kehadiran
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;'data') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;'lokasi')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;'detail') detail(detail),
+	 LATERAL json_array_elements(detail-&gt;'mahasiswa') mahasiswa(mahasiswa)&quot;
+PL/pgSQL function function_mahasiswa_station() line 3 at RETURN QUERY
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  cannot call json_array_elements on a non-array
+CONTEXT:  SQL statement &quot;SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;\'lokasi\')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;\'station\')::INT as stationId,
+		(detail-&gt;&gt;\'stationNama\')::VARCHAR as stationNama,
+		(detail-&gt;&gt;\'penguji\')::int as penguji,
+		( mahasiswa -&gt;&gt;\'urutan\') :: INT AS urutan,
+	( mahasiswa -&gt;&gt; \'mahasiswa\' ) :: VARCHAR AS peserta ,
+	( mahasiswa -&gt;&gt; \'kehadiran\' ) :: VARCHAR AS kehadiran
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;\'data\') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;\'lokasi\')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;\'detail\') detail(detail),
+	 LATERAL json_array_elements(detail-&gt;\'mahasiswa\') mahasiswa(mahasiswa)&quot;
+PL/pgSQL function function_mahasiswa_station() line 3 at RETURN QUERY', 'SYSTEMPATH/Database/Postgre/Connection.php', 140, [...])
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(resource (pgsql link), 'SELECT *
+FROM function_mahasiswa_station() as peserta
+LEFT JOIN "grade" ON grade."gradeSetId" = peserta."setId" and grade."gradeMahasiswa"= peserta."peserta"
+LEFT JOIN "mahasiswa" ON mahasiswa."mahasiswaNpm" = peserta."peserta" 
+WHERE "peserta"."setId" = \'1\'
+AND "peserta"."lokasiId" = \'1\'
+AND "peserta"."stationId" = \'1\'
+AND "peserta"."peserta" NOT IN (SELECT "nilai"."peserta" FROM function_mahasiswa_nilai() as nilai WHERE "nilai"."setId" = \'1\' AND "nilai"."stationId" = \'1\')
+ORDER BY "peserta"."lokasiId" ASC
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *
+FROM function_mahasiswa_station() as peserta
+LEFT JOIN "grade" ON grade."gradeSetId" = peserta."setId" and grade."gradeMahasiswa"= peserta."peserta"
+LEFT JOIN "mahasiswa" ON mahasiswa."mahasiswaNpm" = peserta."peserta" 
+WHERE "peserta"."setId" = \'1\'
+AND "peserta"."lokasiId" = \'1\'
+AND "peserta"."stationId" = \'1\'
+AND "peserta"."peserta" NOT IN (SELECT "nilai"."peserta" FROM function_mahasiswa_nilai() as nilai WHERE "nilai"."setId" = \'1\' AND "nilai"."stationId" = \'1\')
+ORDER BY "peserta"."lokasiId" ASC
+ LIMIT 1')
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM function_mahasiswa_station() as peserta
+LEFT JOIN "grade" ON grade."gradeSetId" = peserta."setId" and grade."gradeMahasiswa"= peserta."peserta"
+LEFT JOIN "mahasiswa" ON mahasiswa."mahasiswaNpm" = peserta."peserta" 
+WHERE "peserta"."setId" = \'1\'
+AND "peserta"."lokasiId" = \'1\'
+AND "peserta"."stationId" = \'1\'
+AND "peserta"."peserta" NOT IN (SELECT "nilai"."peserta" FROM function_mahasiswa_nilai() as nilai WHERE "nilai"."setId" = \'1\' AND "nilai"."stationId" = \'1\')
+ORDER BY "peserta"."lokasiId" ASC
+ LIMIT 1')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM function_mahasiswa_station() as peserta
+LEFT JOIN "grade" ON grade."gradeSetId" = peserta."setId" and grade."gradeMahasiswa"= peserta."peserta"
+LEFT JOIN "mahasiswa" ON mahasiswa."mahasiswaNpm" = peserta."peserta" 
+WHERE "peserta"."setId" = :peserta."setId":
+AND "peserta"."lokasiId" = :peserta."lokasiId":
+AND "peserta"."stationId" = :peserta."stationId":
+AND "peserta"."peserta" NOT IN :peserta."peserta":
+ORDER BY "peserta"."lokasiId" ASC
+ LIMIT 1', [...], false)
+ 6 ROOTPATH/modules/Penilaian/Models/PenilaianModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 7 ROOTPATH/modules/Penilaian/Controllers/Penilaian.php(45): Modules\Penilaian\Models\PenilaianModel->getPeserta([...], [...])
+ 8 SYSTEMPATH/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->index()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-12-08 17:46:39 --> ErrorException: pg_query(): Query failed: ERROR:  cannot call json_array_elements on a non-array
+CONTEXT:  SQL statement &quot;SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;'lokasi')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;'station')::INT as stationId,
+		(detail-&gt;&gt;'stationNama')::VARCHAR as stationNama,
+		(detail-&gt;&gt;'penguji')::int as penguji,
+		( mahasiswa -&gt;&gt;'urutan') :: INT AS urutan,
+	( mahasiswa -&gt;&gt; 'mahasiswa' ) :: VARCHAR AS peserta ,
+	( mahasiswa -&gt;&gt; 'kehadiran' ) :: VARCHAR AS kehadiran
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;'data') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;'lokasi')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;'detail') detail(detail),
+	 LATERAL json_array_elements(detail-&gt;'mahasiswa') mahasiswa(mahasiswa)&quot;
+PL/pgSQL function function_mahasiswa_station() line 3 at RETURN QUERY in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/ivan/Cod...', 140, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(140): pg_query(Resource id #15, 'SELECT *\nFROM f...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM f...')
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM f...')
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM f...', Array, false)
+#5 /Users/ivan/Codeigniter/osce_v2/modules/Penilaian/Models/PenilaianModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/ivan/Codeigniter/osce_v2/modules/Penilaian/Controllers/Penilaian.php(45): Modules\Penilaian\Models\PenilaianModel->getPeserta(Array, Array)
+#7 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->index()
+#8 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#12 {main}
+CRITICAL - 2022-12-08 17:46:39 --> pg_query(): Query failed: ERROR:  cannot call json_array_elements on a non-array
+CONTEXT:  SQL statement &quot;SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;'lokasi')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;'station')::INT as stationId,
+		(detail-&gt;&gt;'stationNama')::VARCHAR as stationNama,
+		(detail-&gt;&gt;'penguji')::int as penguji,
+		( mahasiswa -&gt;&gt;'urutan') :: INT AS urutan,
+	( mahasiswa -&gt;&gt; 'mahasiswa' ) :: VARCHAR AS peserta ,
+	( mahasiswa -&gt;&gt; 'kehadiran' ) :: VARCHAR AS kehadiran
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;'data') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;'lokasi')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;'detail') detail(detail),
+	 LATERAL json_array_elements(detail-&gt;'mahasiswa') mahasiswa(mahasiswa)&quot;
+PL/pgSQL function function_mahasiswa_station() line 3 at RETURN QUERY
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  cannot call json_array_elements on a non-array
+CONTEXT:  SQL statement &quot;SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;\'lokasi\')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;\'station\')::INT as stationId,
+		(detail-&gt;&gt;\'stationNama\')::VARCHAR as stationNama,
+		(detail-&gt;&gt;\'penguji\')::int as penguji,
+		( mahasiswa -&gt;&gt;\'urutan\') :: INT AS urutan,
+	( mahasiswa -&gt;&gt; \'mahasiswa\' ) :: VARCHAR AS peserta ,
+	( mahasiswa -&gt;&gt; \'kehadiran\' ) :: VARCHAR AS kehadiran
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;\'data\') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;\'lokasi\')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;\'detail\') detail(detail),
+	 LATERAL json_array_elements(detail-&gt;\'mahasiswa\') mahasiswa(mahasiswa)&quot;
+PL/pgSQL function function_mahasiswa_station() line 3 at RETURN QUERY', 'SYSTEMPATH/Database/Postgre/Connection.php', 140, [...])
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(resource (pgsql link), 'SELECT *
+FROM function_mahasiswa_station() as peserta
+LEFT JOIN "grade" ON grade."gradeSetId" = peserta."setId" and grade."gradeMahasiswa"= peserta."peserta"
+LEFT JOIN "mahasiswa" ON mahasiswa."mahasiswaNpm" = peserta."peserta" 
+WHERE "peserta"."setId" = \'1\'
+AND "peserta"."lokasiId" = \'1\'
+AND "peserta"."stationId" = \'1\'
+AND "peserta"."peserta" NOT IN (SELECT "nilai"."peserta" FROM function_mahasiswa_nilai() as nilai WHERE "nilai"."setId" = \'1\' AND "nilai"."stationId" = \'1\')
+ORDER BY "peserta"."lokasiId" ASC
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *
+FROM function_mahasiswa_station() as peserta
+LEFT JOIN "grade" ON grade."gradeSetId" = peserta."setId" and grade."gradeMahasiswa"= peserta."peserta"
+LEFT JOIN "mahasiswa" ON mahasiswa."mahasiswaNpm" = peserta."peserta" 
+WHERE "peserta"."setId" = \'1\'
+AND "peserta"."lokasiId" = \'1\'
+AND "peserta"."stationId" = \'1\'
+AND "peserta"."peserta" NOT IN (SELECT "nilai"."peserta" FROM function_mahasiswa_nilai() as nilai WHERE "nilai"."setId" = \'1\' AND "nilai"."stationId" = \'1\')
+ORDER BY "peserta"."lokasiId" ASC
+ LIMIT 1')
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM function_mahasiswa_station() as peserta
+LEFT JOIN "grade" ON grade."gradeSetId" = peserta."setId" and grade."gradeMahasiswa"= peserta."peserta"
+LEFT JOIN "mahasiswa" ON mahasiswa."mahasiswaNpm" = peserta."peserta" 
+WHERE "peserta"."setId" = \'1\'
+AND "peserta"."lokasiId" = \'1\'
+AND "peserta"."stationId" = \'1\'
+AND "peserta"."peserta" NOT IN (SELECT "nilai"."peserta" FROM function_mahasiswa_nilai() as nilai WHERE "nilai"."setId" = \'1\' AND "nilai"."stationId" = \'1\')
+ORDER BY "peserta"."lokasiId" ASC
+ LIMIT 1')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM function_mahasiswa_station() as peserta
+LEFT JOIN "grade" ON grade."gradeSetId" = peserta."setId" and grade."gradeMahasiswa"= peserta."peserta"
+LEFT JOIN "mahasiswa" ON mahasiswa."mahasiswaNpm" = peserta."peserta" 
+WHERE "peserta"."setId" = :peserta."setId":
+AND "peserta"."lokasiId" = :peserta."lokasiId":
+AND "peserta"."stationId" = :peserta."stationId":
+AND "peserta"."peserta" NOT IN :peserta."peserta":
+ORDER BY "peserta"."lokasiId" ASC
+ LIMIT 1', [...], false)
+ 6 ROOTPATH/modules/Penilaian/Models/PenilaianModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 7 ROOTPATH/modules/Penilaian/Controllers/Penilaian.php(45): Modules\Penilaian\Models\PenilaianModel->getPeserta([...], [...])
+ 8 SYSTEMPATH/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->index()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-12-08 17:46:40 --> ErrorException: pg_query(): Query failed: ERROR:  cannot call json_array_elements on a non-array
+CONTEXT:  SQL statement &quot;SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;'lokasi')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;'station')::INT as stationId,
+		(detail-&gt;&gt;'stationNama')::VARCHAR as stationNama,
+		(detail-&gt;&gt;'penguji')::int as penguji,
+		( mahasiswa -&gt;&gt;'urutan') :: INT AS urutan,
+	( mahasiswa -&gt;&gt; 'mahasiswa' ) :: VARCHAR AS peserta ,
+	( mahasiswa -&gt;&gt; 'kehadiran' ) :: VARCHAR AS kehadiran
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;'data') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;'lokasi')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;'detail') detail(detail),
+	 LATERAL json_array_elements(detail-&gt;'mahasiswa') mahasiswa(mahasiswa)&quot;
+PL/pgSQL function function_mahasiswa_station() line 3 at RETURN QUERY in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/ivan/Cod...', 140, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(140): pg_query(Resource id #15, 'SELECT *\nFROM f...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM f...')
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM f...')
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM f...', Array, false)
+#5 /Users/ivan/Codeigniter/osce_v2/modules/Penilaian/Models/PenilaianModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/ivan/Codeigniter/osce_v2/modules/Penilaian/Controllers/Penilaian.php(45): Modules\Penilaian\Models\PenilaianModel->getPeserta(Array, Array)
+#7 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->index()
+#8 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#12 {main}
+CRITICAL - 2022-12-08 17:46:40 --> pg_query(): Query failed: ERROR:  cannot call json_array_elements on a non-array
+CONTEXT:  SQL statement &quot;SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;'lokasi')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;'station')::INT as stationId,
+		(detail-&gt;&gt;'stationNama')::VARCHAR as stationNama,
+		(detail-&gt;&gt;'penguji')::int as penguji,
+		( mahasiswa -&gt;&gt;'urutan') :: INT AS urutan,
+	( mahasiswa -&gt;&gt; 'mahasiswa' ) :: VARCHAR AS peserta ,
+	( mahasiswa -&gt;&gt; 'kehadiran' ) :: VARCHAR AS kehadiran
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;'data') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;'lokasi')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;'detail') detail(detail),
+	 LATERAL json_array_elements(detail-&gt;'mahasiswa') mahasiswa(mahasiswa)&quot;
+PL/pgSQL function function_mahasiswa_station() line 3 at RETURN QUERY
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  cannot call json_array_elements on a non-array
+CONTEXT:  SQL statement &quot;SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;\'lokasi\')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;\'station\')::INT as stationId,
+		(detail-&gt;&gt;\'stationNama\')::VARCHAR as stationNama,
+		(detail-&gt;&gt;\'penguji\')::int as penguji,
+		( mahasiswa -&gt;&gt;\'urutan\') :: INT AS urutan,
+	( mahasiswa -&gt;&gt; \'mahasiswa\' ) :: VARCHAR AS peserta ,
+	( mahasiswa -&gt;&gt; \'kehadiran\' ) :: VARCHAR AS kehadiran
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;\'data\') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;\'lokasi\')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;\'detail\') detail(detail),
+	 LATERAL json_array_elements(detail-&gt;\'mahasiswa\') mahasiswa(mahasiswa)&quot;
+PL/pgSQL function function_mahasiswa_station() line 3 at RETURN QUERY', 'SYSTEMPATH/Database/Postgre/Connection.php', 140, [...])
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(resource (pgsql link), 'SELECT *
+FROM function_mahasiswa_station() as peserta
+LEFT JOIN "grade" ON grade."gradeSetId" = peserta."setId" and grade."gradeMahasiswa"= peserta."peserta"
+LEFT JOIN "mahasiswa" ON mahasiswa."mahasiswaNpm" = peserta."peserta" 
+WHERE "peserta"."setId" = \'1\'
+AND "peserta"."lokasiId" = \'1\'
+AND "peserta"."stationId" = \'1\'
+AND "peserta"."peserta" NOT IN (SELECT "nilai"."peserta" FROM function_mahasiswa_nilai() as nilai WHERE "nilai"."setId" = \'1\' AND "nilai"."stationId" = \'1\')
+ORDER BY "peserta"."lokasiId" ASC
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *
+FROM function_mahasiswa_station() as peserta
+LEFT JOIN "grade" ON grade."gradeSetId" = peserta."setId" and grade."gradeMahasiswa"= peserta."peserta"
+LEFT JOIN "mahasiswa" ON mahasiswa."mahasiswaNpm" = peserta."peserta" 
+WHERE "peserta"."setId" = \'1\'
+AND "peserta"."lokasiId" = \'1\'
+AND "peserta"."stationId" = \'1\'
+AND "peserta"."peserta" NOT IN (SELECT "nilai"."peserta" FROM function_mahasiswa_nilai() as nilai WHERE "nilai"."setId" = \'1\' AND "nilai"."stationId" = \'1\')
+ORDER BY "peserta"."lokasiId" ASC
+ LIMIT 1')
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM function_mahasiswa_station() as peserta
+LEFT JOIN "grade" ON grade."gradeSetId" = peserta."setId" and grade."gradeMahasiswa"= peserta."peserta"
+LEFT JOIN "mahasiswa" ON mahasiswa."mahasiswaNpm" = peserta."peserta" 
+WHERE "peserta"."setId" = \'1\'
+AND "peserta"."lokasiId" = \'1\'
+AND "peserta"."stationId" = \'1\'
+AND "peserta"."peserta" NOT IN (SELECT "nilai"."peserta" FROM function_mahasiswa_nilai() as nilai WHERE "nilai"."setId" = \'1\' AND "nilai"."stationId" = \'1\')
+ORDER BY "peserta"."lokasiId" ASC
+ LIMIT 1')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM function_mahasiswa_station() as peserta
+LEFT JOIN "grade" ON grade."gradeSetId" = peserta."setId" and grade."gradeMahasiswa"= peserta."peserta"
+LEFT JOIN "mahasiswa" ON mahasiswa."mahasiswaNpm" = peserta."peserta" 
+WHERE "peserta"."setId" = :peserta."setId":
+AND "peserta"."lokasiId" = :peserta."lokasiId":
+AND "peserta"."stationId" = :peserta."stationId":
+AND "peserta"."peserta" NOT IN :peserta."peserta":
+ORDER BY "peserta"."lokasiId" ASC
+ LIMIT 1', [...], false)
+ 6 ROOTPATH/modules/Penilaian/Models/PenilaianModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 7 ROOTPATH/modules/Penilaian/Controllers/Penilaian.php(45): Modules\Penilaian\Models\PenilaianModel->getPeserta([...], [...])
+ 8 SYSTEMPATH/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->index()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-12-08 17:46:41 --> ErrorException: pg_query(): Query failed: ERROR:  cannot call json_array_elements on a non-array
+CONTEXT:  SQL statement &quot;SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;'lokasi')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;'station')::INT as stationId,
+		(detail-&gt;&gt;'stationNama')::VARCHAR as stationNama,
+		(detail-&gt;&gt;'penguji')::int as penguji,
+		( mahasiswa -&gt;&gt;'urutan') :: INT AS urutan,
+	( mahasiswa -&gt;&gt; 'mahasiswa' ) :: VARCHAR AS peserta ,
+	( mahasiswa -&gt;&gt; 'kehadiran' ) :: VARCHAR AS kehadiran
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;'data') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;'lokasi')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;'detail') detail(detail),
+	 LATERAL json_array_elements(detail-&gt;'mahasiswa') mahasiswa(mahasiswa)&quot;
+PL/pgSQL function function_mahasiswa_station() line 3 at RETURN QUERY in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/ivan/Cod...', 140, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(140): pg_query(Resource id #15, 'SELECT *\nFROM f...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM f...')
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM f...')
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM f...', Array, false)
+#5 /Users/ivan/Codeigniter/osce_v2/modules/Penilaian/Models/PenilaianModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/ivan/Codeigniter/osce_v2/modules/Penilaian/Controllers/Penilaian.php(45): Modules\Penilaian\Models\PenilaianModel->getPeserta(Array, Array)
+#7 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->index()
+#8 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#12 {main}
+CRITICAL - 2022-12-08 17:46:41 --> pg_query(): Query failed: ERROR:  cannot call json_array_elements on a non-array
+CONTEXT:  SQL statement &quot;SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;'lokasi')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;'station')::INT as stationId,
+		(detail-&gt;&gt;'stationNama')::VARCHAR as stationNama,
+		(detail-&gt;&gt;'penguji')::int as penguji,
+		( mahasiswa -&gt;&gt;'urutan') :: INT AS urutan,
+	( mahasiswa -&gt;&gt; 'mahasiswa' ) :: VARCHAR AS peserta ,
+	( mahasiswa -&gt;&gt; 'kehadiran' ) :: VARCHAR AS kehadiran
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;'data') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;'lokasi')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;'detail') detail(detail),
+	 LATERAL json_array_elements(detail-&gt;'mahasiswa') mahasiswa(mahasiswa)&quot;
+PL/pgSQL function function_mahasiswa_station() line 3 at RETURN QUERY
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  cannot call json_array_elements on a non-array
+CONTEXT:  SQL statement &quot;SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;\'lokasi\')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;\'station\')::INT as stationId,
+		(detail-&gt;&gt;\'stationNama\')::VARCHAR as stationNama,
+		(detail-&gt;&gt;\'penguji\')::int as penguji,
+		( mahasiswa -&gt;&gt;\'urutan\') :: INT AS urutan,
+	( mahasiswa -&gt;&gt; \'mahasiswa\' ) :: VARCHAR AS peserta ,
+	( mahasiswa -&gt;&gt; \'kehadiran\' ) :: VARCHAR AS kehadiran
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;\'data\') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;\'lokasi\')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;\'detail\') detail(detail),
+	 LATERAL json_array_elements(detail-&gt;\'mahasiswa\') mahasiswa(mahasiswa)&quot;
+PL/pgSQL function function_mahasiswa_station() line 3 at RETURN QUERY', 'SYSTEMPATH/Database/Postgre/Connection.php', 140, [...])
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(resource (pgsql link), 'SELECT *
+FROM function_mahasiswa_station() as peserta
+LEFT JOIN "grade" ON grade."gradeSetId" = peserta."setId" and grade."gradeMahasiswa"= peserta."peserta"
+LEFT JOIN "mahasiswa" ON mahasiswa."mahasiswaNpm" = peserta."peserta" 
+WHERE "peserta"."setId" = \'1\'
+AND "peserta"."lokasiId" = \'1\'
+AND "peserta"."stationId" = \'1\'
+AND "peserta"."peserta" NOT IN (SELECT "nilai"."peserta" FROM function_mahasiswa_nilai() as nilai WHERE "nilai"."setId" = \'1\' AND "nilai"."stationId" = \'1\')
+ORDER BY "peserta"."lokasiId" ASC
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *
+FROM function_mahasiswa_station() as peserta
+LEFT JOIN "grade" ON grade."gradeSetId" = peserta."setId" and grade."gradeMahasiswa"= peserta."peserta"
+LEFT JOIN "mahasiswa" ON mahasiswa."mahasiswaNpm" = peserta."peserta" 
+WHERE "peserta"."setId" = \'1\'
+AND "peserta"."lokasiId" = \'1\'
+AND "peserta"."stationId" = \'1\'
+AND "peserta"."peserta" NOT IN (SELECT "nilai"."peserta" FROM function_mahasiswa_nilai() as nilai WHERE "nilai"."setId" = \'1\' AND "nilai"."stationId" = \'1\')
+ORDER BY "peserta"."lokasiId" ASC
+ LIMIT 1')
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM function_mahasiswa_station() as peserta
+LEFT JOIN "grade" ON grade."gradeSetId" = peserta."setId" and grade."gradeMahasiswa"= peserta."peserta"
+LEFT JOIN "mahasiswa" ON mahasiswa."mahasiswaNpm" = peserta."peserta" 
+WHERE "peserta"."setId" = \'1\'
+AND "peserta"."lokasiId" = \'1\'
+AND "peserta"."stationId" = \'1\'
+AND "peserta"."peserta" NOT IN (SELECT "nilai"."peserta" FROM function_mahasiswa_nilai() as nilai WHERE "nilai"."setId" = \'1\' AND "nilai"."stationId" = \'1\')
+ORDER BY "peserta"."lokasiId" ASC
+ LIMIT 1')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM function_mahasiswa_station() as peserta
+LEFT JOIN "grade" ON grade."gradeSetId" = peserta."setId" and grade."gradeMahasiswa"= peserta."peserta"
+LEFT JOIN "mahasiswa" ON mahasiswa."mahasiswaNpm" = peserta."peserta" 
+WHERE "peserta"."setId" = :peserta."setId":
+AND "peserta"."lokasiId" = :peserta."lokasiId":
+AND "peserta"."stationId" = :peserta."stationId":
+AND "peserta"."peserta" NOT IN :peserta."peserta":
+ORDER BY "peserta"."lokasiId" ASC
+ LIMIT 1', [...], false)
+ 6 ROOTPATH/modules/Penilaian/Models/PenilaianModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 7 ROOTPATH/modules/Penilaian/Controllers/Penilaian.php(45): Modules\Penilaian\Models\PenilaianModel->getPeserta([...], [...])
+ 8 SYSTEMPATH/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->index()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-12-08 17:46:44 --> ErrorException: pg_query(): Query failed: ERROR:  cannot call json_array_elements on a non-array
+CONTEXT:  SQL statement &quot;SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;'lokasi')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;'station')::INT as stationId,
+		(detail-&gt;&gt;'stationNama')::VARCHAR as stationNama,
+		(detail-&gt;&gt;'penguji')::int as penguji,
+		( mahasiswa -&gt;&gt;'urutan') :: INT AS urutan,
+	( mahasiswa -&gt;&gt; 'mahasiswa' ) :: VARCHAR AS peserta ,
+	( mahasiswa -&gt;&gt; 'kehadiran' ) :: VARCHAR AS kehadiran
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;'data') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;'lokasi')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;'detail') detail(detail),
+	 LATERAL json_array_elements(detail-&gt;'mahasiswa') mahasiswa(mahasiswa)&quot;
+PL/pgSQL function function_mahasiswa_station() line 3 at RETURN QUERY in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/ivan/Cod...', 140, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(140): pg_query(Resource id #15, 'SELECT *\nFROM f...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM f...')
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM f...')
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM f...', Array, false)
+#5 /Users/ivan/Codeigniter/osce_v2/modules/Penilaian/Models/PenilaianModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/ivan/Codeigniter/osce_v2/modules/Penilaian/Controllers/Penilaian.php(45): Modules\Penilaian\Models\PenilaianModel->getPeserta(Array, Array)
+#7 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->index()
+#8 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#12 {main}
+CRITICAL - 2022-12-08 17:46:44 --> pg_query(): Query failed: ERROR:  cannot call json_array_elements on a non-array
+CONTEXT:  SQL statement &quot;SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;'lokasi')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;'station')::INT as stationId,
+		(detail-&gt;&gt;'stationNama')::VARCHAR as stationNama,
+		(detail-&gt;&gt;'penguji')::int as penguji,
+		( mahasiswa -&gt;&gt;'urutan') :: INT AS urutan,
+	( mahasiswa -&gt;&gt; 'mahasiswa' ) :: VARCHAR AS peserta ,
+	( mahasiswa -&gt;&gt; 'kehadiran' ) :: VARCHAR AS kehadiran
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;'data') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;'lokasi')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;'detail') detail(detail),
+	 LATERAL json_array_elements(detail-&gt;'mahasiswa') mahasiswa(mahasiswa)&quot;
+PL/pgSQL function function_mahasiswa_station() line 3 at RETURN QUERY
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  cannot call json_array_elements on a non-array
+CONTEXT:  SQL statement &quot;SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;\'lokasi\')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;\'station\')::INT as stationId,
+		(detail-&gt;&gt;\'stationNama\')::VARCHAR as stationNama,
+		(detail-&gt;&gt;\'penguji\')::int as penguji,
+		( mahasiswa -&gt;&gt;\'urutan\') :: INT AS urutan,
+	( mahasiswa -&gt;&gt; \'mahasiswa\' ) :: VARCHAR AS peserta ,
+	( mahasiswa -&gt;&gt; \'kehadiran\' ) :: VARCHAR AS kehadiran
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;\'data\') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;\'lokasi\')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;\'detail\') detail(detail),
+	 LATERAL json_array_elements(detail-&gt;\'mahasiswa\') mahasiswa(mahasiswa)&quot;
+PL/pgSQL function function_mahasiswa_station() line 3 at RETURN QUERY', 'SYSTEMPATH/Database/Postgre/Connection.php', 140, [...])
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(resource (pgsql link), 'SELECT *
+FROM function_mahasiswa_station() as peserta
+LEFT JOIN "grade" ON grade."gradeSetId" = peserta."setId" and grade."gradeMahasiswa"= peserta."peserta"
+LEFT JOIN "mahasiswa" ON mahasiswa."mahasiswaNpm" = peserta."peserta" 
+WHERE "peserta"."setId" = \'1\'
+AND "peserta"."lokasiId" = \'1\'
+AND "peserta"."stationId" = \'1\'
+AND "peserta"."peserta" NOT IN (SELECT "nilai"."peserta" FROM function_mahasiswa_nilai() as nilai WHERE "nilai"."setId" = \'1\' AND "nilai"."stationId" = \'1\')
+ORDER BY "peserta"."lokasiId" ASC
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *
+FROM function_mahasiswa_station() as peserta
+LEFT JOIN "grade" ON grade."gradeSetId" = peserta."setId" and grade."gradeMahasiswa"= peserta."peserta"
+LEFT JOIN "mahasiswa" ON mahasiswa."mahasiswaNpm" = peserta."peserta" 
+WHERE "peserta"."setId" = \'1\'
+AND "peserta"."lokasiId" = \'1\'
+AND "peserta"."stationId" = \'1\'
+AND "peserta"."peserta" NOT IN (SELECT "nilai"."peserta" FROM function_mahasiswa_nilai() as nilai WHERE "nilai"."setId" = \'1\' AND "nilai"."stationId" = \'1\')
+ORDER BY "peserta"."lokasiId" ASC
+ LIMIT 1')
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM function_mahasiswa_station() as peserta
+LEFT JOIN "grade" ON grade."gradeSetId" = peserta."setId" and grade."gradeMahasiswa"= peserta."peserta"
+LEFT JOIN "mahasiswa" ON mahasiswa."mahasiswaNpm" = peserta."peserta" 
+WHERE "peserta"."setId" = \'1\'
+AND "peserta"."lokasiId" = \'1\'
+AND "peserta"."stationId" = \'1\'
+AND "peserta"."peserta" NOT IN (SELECT "nilai"."peserta" FROM function_mahasiswa_nilai() as nilai WHERE "nilai"."setId" = \'1\' AND "nilai"."stationId" = \'1\')
+ORDER BY "peserta"."lokasiId" ASC
+ LIMIT 1')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM function_mahasiswa_station() as peserta
+LEFT JOIN "grade" ON grade."gradeSetId" = peserta."setId" and grade."gradeMahasiswa"= peserta."peserta"
+LEFT JOIN "mahasiswa" ON mahasiswa."mahasiswaNpm" = peserta."peserta" 
+WHERE "peserta"."setId" = :peserta."setId":
+AND "peserta"."lokasiId" = :peserta."lokasiId":
+AND "peserta"."stationId" = :peserta."stationId":
+AND "peserta"."peserta" NOT IN :peserta."peserta":
+ORDER BY "peserta"."lokasiId" ASC
+ LIMIT 1', [...], false)
+ 6 ROOTPATH/modules/Penilaian/Models/PenilaianModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 7 ROOTPATH/modules/Penilaian/Controllers/Penilaian.php(45): Modules\Penilaian\Models\PenilaianModel->getPeserta([...], [...])
+ 8 SYSTEMPATH/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->index()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-12-08 17:50:18 --> ErrorException: pg_query(): Query failed: ERROR:  cannot call json_array_elements on a non-array
+CONTEXT:  SQL statement &quot;SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;'lokasi')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;'station')::INT as stationId,
+		(detail-&gt;&gt;'stationNama')::VARCHAR as stationNama,
+		(detail-&gt;&gt;'penguji')::int as penguji,
+		( mahasiswa -&gt;&gt;'urutan') :: INT AS urutan,
+	( mahasiswa -&gt;&gt; 'mahasiswa' ) :: VARCHAR AS peserta ,
+	( mahasiswa -&gt;&gt; 'kehadiran' ) :: VARCHAR AS kehadiran
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;'data') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;'lokasi')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;'detail') detail(detail),
+	 LATERAL json_array_elements(detail-&gt;'mahasiswa') mahasiswa(mahasiswa)&quot;
+PL/pgSQL function function_mahasiswa_station() line 3 at RETURN QUERY in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/ivan/Cod...', 140, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(140): pg_query(Resource id #15, 'SELECT *\nFROM f...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM f...')
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM f...')
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM f...', Array, false)
+#5 /Users/ivan/Codeigniter/osce_v2/modules/Penilaian/Models/PenilaianModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/ivan/Codeigniter/osce_v2/modules/Penilaian/Controllers/Penilaian.php(45): Modules\Penilaian\Models\PenilaianModel->getPeserta(Array, Array)
+#7 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->index()
+#8 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#12 {main}
+CRITICAL - 2022-12-08 17:50:18 --> pg_query(): Query failed: ERROR:  cannot call json_array_elements on a non-array
+CONTEXT:  SQL statement &quot;SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;'lokasi')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;'station')::INT as stationId,
+		(detail-&gt;&gt;'stationNama')::VARCHAR as stationNama,
+		(detail-&gt;&gt;'penguji')::int as penguji,
+		( mahasiswa -&gt;&gt;'urutan') :: INT AS urutan,
+	( mahasiswa -&gt;&gt; 'mahasiswa' ) :: VARCHAR AS peserta ,
+	( mahasiswa -&gt;&gt; 'kehadiran' ) :: VARCHAR AS kehadiran
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;'data') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;'lokasi')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;'detail') detail(detail),
+	 LATERAL json_array_elements(detail-&gt;'mahasiswa') mahasiswa(mahasiswa)&quot;
+PL/pgSQL function function_mahasiswa_station() line 3 at RETURN QUERY
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  cannot call json_array_elements on a non-array
+CONTEXT:  SQL statement &quot;SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;\'lokasi\')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;\'station\')::INT as stationId,
+		(detail-&gt;&gt;\'stationNama\')::VARCHAR as stationNama,
+		(detail-&gt;&gt;\'penguji\')::int as penguji,
+		( mahasiswa -&gt;&gt;\'urutan\') :: INT AS urutan,
+	( mahasiswa -&gt;&gt; \'mahasiswa\' ) :: VARCHAR AS peserta ,
+	( mahasiswa -&gt;&gt; \'kehadiran\' ) :: VARCHAR AS kehadiran
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;\'data\') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;\'lokasi\')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;\'detail\') detail(detail),
+	 LATERAL json_array_elements(detail-&gt;\'mahasiswa\') mahasiswa(mahasiswa)&quot;
+PL/pgSQL function function_mahasiswa_station() line 3 at RETURN QUERY', 'SYSTEMPATH/Database/Postgre/Connection.php', 140, [...])
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(resource (pgsql link), 'SELECT *
+FROM function_mahasiswa_station() as peserta
+LEFT JOIN "grade" ON grade."gradeSetId" = peserta."setId" and grade."gradeMahasiswa"= peserta."peserta"
+LEFT JOIN "mahasiswa" ON mahasiswa."mahasiswaNpm" = peserta."peserta" 
+WHERE "peserta"."setId" = \'1\'
+AND "peserta"."lokasiId" = \'1\'
+AND "peserta"."stationId" = \'1\'
+AND "peserta"."peserta" NOT IN (SELECT "nilai"."peserta" FROM function_mahasiswa_nilai() as nilai WHERE "nilai"."setId" = \'1\' AND "nilai"."stationId" = \'1\')
+ORDER BY "peserta"."lokasiId" ASC
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *
+FROM function_mahasiswa_station() as peserta
+LEFT JOIN "grade" ON grade."gradeSetId" = peserta."setId" and grade."gradeMahasiswa"= peserta."peserta"
+LEFT JOIN "mahasiswa" ON mahasiswa."mahasiswaNpm" = peserta."peserta" 
+WHERE "peserta"."setId" = \'1\'
+AND "peserta"."lokasiId" = \'1\'
+AND "peserta"."stationId" = \'1\'
+AND "peserta"."peserta" NOT IN (SELECT "nilai"."peserta" FROM function_mahasiswa_nilai() as nilai WHERE "nilai"."setId" = \'1\' AND "nilai"."stationId" = \'1\')
+ORDER BY "peserta"."lokasiId" ASC
+ LIMIT 1')
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM function_mahasiswa_station() as peserta
+LEFT JOIN "grade" ON grade."gradeSetId" = peserta."setId" and grade."gradeMahasiswa"= peserta."peserta"
+LEFT JOIN "mahasiswa" ON mahasiswa."mahasiswaNpm" = peserta."peserta" 
+WHERE "peserta"."setId" = \'1\'
+AND "peserta"."lokasiId" = \'1\'
+AND "peserta"."stationId" = \'1\'
+AND "peserta"."peserta" NOT IN (SELECT "nilai"."peserta" FROM function_mahasiswa_nilai() as nilai WHERE "nilai"."setId" = \'1\' AND "nilai"."stationId" = \'1\')
+ORDER BY "peserta"."lokasiId" ASC
+ LIMIT 1')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM function_mahasiswa_station() as peserta
+LEFT JOIN "grade" ON grade."gradeSetId" = peserta."setId" and grade."gradeMahasiswa"= peserta."peserta"
+LEFT JOIN "mahasiswa" ON mahasiswa."mahasiswaNpm" = peserta."peserta" 
+WHERE "peserta"."setId" = :peserta."setId":
+AND "peserta"."lokasiId" = :peserta."lokasiId":
+AND "peserta"."stationId" = :peserta."stationId":
+AND "peserta"."peserta" NOT IN :peserta."peserta":
+ORDER BY "peserta"."lokasiId" ASC
+ LIMIT 1', [...], false)
+ 6 ROOTPATH/modules/Penilaian/Models/PenilaianModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 7 ROOTPATH/modules/Penilaian/Controllers/Penilaian.php(45): Modules\Penilaian\Models\PenilaianModel->getPeserta([...], [...])
+ 8 SYSTEMPATH/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->index()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-12-08 17:53:20 --> ErrorException: pg_query(): Query failed: ERROR:  cannot call json_array_elements on a non-array
+CONTEXT:  SQL statement &quot;SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;'lokasi')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;'station')::INT as stationId,
+		(detail-&gt;&gt;'stationNama')::VARCHAR as stationNama,
+		(detail-&gt;&gt;'penguji')::int as penguji,
+		( mahasiswa -&gt;&gt;'urutan') :: INT AS urutan,
+		( mahasiswa -&gt;&gt; 'mahasiswa' ) :: VARCHAR AS peserta ,
+		( mahasiswa -&gt;&gt; 'kehadiran' ) :: int AS kehadiran
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;'data') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;'lokasi')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;'detail') detail(detail),
+	 LATERAL json_array_elements(detail-&gt;'mahasiswa') mahasiswa(mahasiswa)&quot;
+PL/pgSQL function function_mahasiswa_station() line 3 at RETURN QUERY in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/ivan/Cod...', 140, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(140): pg_query(Resource id #15, 'SELECT *\nFROM f...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM f...')
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM f...')
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM f...', Array, false)
+#5 /Users/ivan/Codeigniter/osce_v2/modules/Penilaian/Models/PenilaianModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/ivan/Codeigniter/osce_v2/modules/Penilaian/Controllers/Penilaian.php(45): Modules\Penilaian\Models\PenilaianModel->getPeserta(Array, Array)
+#7 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->index()
+#8 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#12 {main}
+CRITICAL - 2022-12-08 17:53:20 --> pg_query(): Query failed: ERROR:  cannot call json_array_elements on a non-array
+CONTEXT:  SQL statement &quot;SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;'lokasi')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;'station')::INT as stationId,
+		(detail-&gt;&gt;'stationNama')::VARCHAR as stationNama,
+		(detail-&gt;&gt;'penguji')::int as penguji,
+		( mahasiswa -&gt;&gt;'urutan') :: INT AS urutan,
+		( mahasiswa -&gt;&gt; 'mahasiswa' ) :: VARCHAR AS peserta ,
+		( mahasiswa -&gt;&gt; 'kehadiran' ) :: int AS kehadiran
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;'data') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;'lokasi')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;'detail') detail(detail),
+	 LATERAL json_array_elements(detail-&gt;'mahasiswa') mahasiswa(mahasiswa)&quot;
+PL/pgSQL function function_mahasiswa_station() line 3 at RETURN QUERY
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  cannot call json_array_elements on a non-array
+CONTEXT:  SQL statement &quot;SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;\'lokasi\')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;\'station\')::INT as stationId,
+		(detail-&gt;&gt;\'stationNama\')::VARCHAR as stationNama,
+		(detail-&gt;&gt;\'penguji\')::int as penguji,
+		( mahasiswa -&gt;&gt;\'urutan\') :: INT AS urutan,
+		( mahasiswa -&gt;&gt; \'mahasiswa\' ) :: VARCHAR AS peserta ,
+		( mahasiswa -&gt;&gt; \'kehadiran\' ) :: int AS kehadiran
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;\'data\') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;\'lokasi\')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;\'detail\') detail(detail),
+	 LATERAL json_array_elements(detail-&gt;\'mahasiswa\') mahasiswa(mahasiswa)&quot;
+PL/pgSQL function function_mahasiswa_station() line 3 at RETURN QUERY', 'SYSTEMPATH/Database/Postgre/Connection.php', 140, [...])
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(resource (pgsql link), 'SELECT *
+FROM function_mahasiswa_station() as peserta
+LEFT JOIN "grade" ON grade."gradeSetId" = peserta."setId" and grade."gradeMahasiswa"= peserta."peserta"
+LEFT JOIN "mahasiswa" ON mahasiswa."mahasiswaNpm" = peserta."peserta" 
+WHERE "peserta"."setId" = \'1\'
+AND "peserta"."lokasiId" = \'1\'
+AND "peserta"."stationId" = \'1\'
+AND "peserta"."peserta" NOT IN (SELECT "nilai"."peserta" FROM function_mahasiswa_nilai() as nilai WHERE "nilai"."setId" = \'1\' AND "nilai"."stationId" = \'1\')
+ORDER BY "peserta"."lokasiId" ASC
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *
+FROM function_mahasiswa_station() as peserta
+LEFT JOIN "grade" ON grade."gradeSetId" = peserta."setId" and grade."gradeMahasiswa"= peserta."peserta"
+LEFT JOIN "mahasiswa" ON mahasiswa."mahasiswaNpm" = peserta."peserta" 
+WHERE "peserta"."setId" = \'1\'
+AND "peserta"."lokasiId" = \'1\'
+AND "peserta"."stationId" = \'1\'
+AND "peserta"."peserta" NOT IN (SELECT "nilai"."peserta" FROM function_mahasiswa_nilai() as nilai WHERE "nilai"."setId" = \'1\' AND "nilai"."stationId" = \'1\')
+ORDER BY "peserta"."lokasiId" ASC
+ LIMIT 1')
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM function_mahasiswa_station() as peserta
+LEFT JOIN "grade" ON grade."gradeSetId" = peserta."setId" and grade."gradeMahasiswa"= peserta."peserta"
+LEFT JOIN "mahasiswa" ON mahasiswa."mahasiswaNpm" = peserta."peserta" 
+WHERE "peserta"."setId" = \'1\'
+AND "peserta"."lokasiId" = \'1\'
+AND "peserta"."stationId" = \'1\'
+AND "peserta"."peserta" NOT IN (SELECT "nilai"."peserta" FROM function_mahasiswa_nilai() as nilai WHERE "nilai"."setId" = \'1\' AND "nilai"."stationId" = \'1\')
+ORDER BY "peserta"."lokasiId" ASC
+ LIMIT 1')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM function_mahasiswa_station() as peserta
+LEFT JOIN "grade" ON grade."gradeSetId" = peserta."setId" and grade."gradeMahasiswa"= peserta."peserta"
+LEFT JOIN "mahasiswa" ON mahasiswa."mahasiswaNpm" = peserta."peserta" 
+WHERE "peserta"."setId" = :peserta."setId":
+AND "peserta"."lokasiId" = :peserta."lokasiId":
+AND "peserta"."stationId" = :peserta."stationId":
+AND "peserta"."peserta" NOT IN :peserta."peserta":
+ORDER BY "peserta"."lokasiId" ASC
+ LIMIT 1', [...], false)
+ 6 ROOTPATH/modules/Penilaian/Models/PenilaianModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 7 ROOTPATH/modules/Penilaian/Controllers/Penilaian.php(45): Modules\Penilaian\Models\PenilaianModel->getPeserta([...], [...])
+ 8 SYSTEMPATH/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->index()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')

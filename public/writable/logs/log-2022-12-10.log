@@ -1,0 +1,524 @@
+ERROR - 2022-12-10 08:17:51 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;36.88.21.18&quot;, port 5432 failed: Operation timed out
+	Is the server running on that host and accepting TCP/IP connections? in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', '/Users/ivan/Cod...', 69, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(69): pg_connect('host=36.88.21.1...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Model.php(772): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#6 /Users/ivan/Codeigniter/osce_v2/app/Helpers/osce_helper.php(27): CodeIgniter\Model->__call('getWhere', Array)
+#7 /Users/ivan/Codeigniter/osce_v2/modules/Pengawas/Views/pengawas.php(10): getGambarApp()
+#8 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/View/View.php(213): include('/Users/ivan/Cod...')
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#10 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Common.php(1142): CodeIgniter\View\View->render('Modules\\Pengawa...', Array, true)
+#11 /Users/ivan/Codeigniter/osce_v2/modules/Pengawas/Controllers/Pengawas.php(27): view('Modules\\Pengawa...')
+#12 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Modules\Pengawas\Controllers\Pengawas->index()
+#13 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Pengawas\Controllers\Pengawas))
+#14 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#16 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#17 {main}
+CRITICAL - 2022-12-10 08:17:51 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;36.88.21.18&quot;, port 5432 failed: Operation timed out
+	Is the server running on that host and accepting TCP/IP connections?
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "config"
+WHERE "configNama" = :configNama:', [...], false)
+ 3 SYSTEMPATH/Model.php(772): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 4 APPPATH/Helpers/osce_helper.php(27): CodeIgniter\Model->__call('getWhere', [...])
+ 5 ROOTPATH/modules/Pengawas/Views/pengawas.php(10): getGambarApp()
+ 6 SYSTEMPATH/View/View.php(213): include('ROOTPATH/modules/Pengawas/Views/pengawas.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('Modules\\Pengawas\\Views\\pengawas', [], true)
+ 9 ROOTPATH/modules/Pengawas/Controllers/Pengawas.php(27): view('Modules\\Pengawas\\Views\\pengawas')
+10 SYSTEMPATH/CodeIgniter.php(907): Modules\Pengawas\Controllers\Pengawas->index()
+11 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Pengawas\Controllers\Pengawas))
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-12-10 08:17:54 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;36.88.21.18&quot;, port 5432 failed: Network is unreachable
+	Is the server running on that host and accepting TCP/IP connections? in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', '/Users/ivan/Cod...', 69, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(69): pg_connect('host=36.88.21.1...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Model.php(772): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#6 /Users/ivan/Codeigniter/osce_v2/app/Helpers/osce_helper.php(27): CodeIgniter\Model->__call('getWhere', Array)
+#7 /Users/ivan/Codeigniter/osce_v2/modules/Pengawas/Views/pengawas.php(10): getGambarApp()
+#8 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/View/View.php(213): include('/Users/ivan/Cod...')
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#10 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Common.php(1142): CodeIgniter\View\View->render('Modules\\Pengawa...', Array, true)
+#11 /Users/ivan/Codeigniter/osce_v2/modules/Pengawas/Controllers/Pengawas.php(27): view('Modules\\Pengawa...')
+#12 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Modules\Pengawas\Controllers\Pengawas->index()
+#13 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Pengawas\Controllers\Pengawas))
+#14 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#16 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#17 {main}
+CRITICAL - 2022-12-10 08:17:54 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;36.88.21.18&quot;, port 5432 failed: Network is unreachable
+	Is the server running on that host and accepting TCP/IP connections?
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "config"
+WHERE "configNama" = :configNama:', [...], false)
+ 3 SYSTEMPATH/Model.php(772): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 4 APPPATH/Helpers/osce_helper.php(27): CodeIgniter\Model->__call('getWhere', [...])
+ 5 ROOTPATH/modules/Pengawas/Views/pengawas.php(10): getGambarApp()
+ 6 SYSTEMPATH/View/View.php(213): include('ROOTPATH/modules/Pengawas/Views/pengawas.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('Modules\\Pengawas\\Views\\pengawas', [], true)
+ 9 ROOTPATH/modules/Pengawas/Controllers/Pengawas.php(27): view('Modules\\Pengawas\\Views\\pengawas')
+10 SYSTEMPATH/CodeIgniter.php(907): Modules\Pengawas\Controllers\Pengawas->index()
+11 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Pengawas\Controllers\Pengawas))
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-12-10 08:18:14 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;36.88.21.18&quot;, port 5432 failed: Network is unreachable
+	Is the server running on that host and accepting TCP/IP connections? in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', '/Users/ivan/Cod...', 69, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(69): pg_connect('host=36.88.21.1...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Model.php(772): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#6 /Users/ivan/Codeigniter/osce_v2/app/Helpers/osce_helper.php(27): CodeIgniter\Model->__call('getWhere', Array)
+#7 /Users/ivan/Codeigniter/osce_v2/modules/Pengawas/Views/pengawas.php(10): getGambarApp()
+#8 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/View/View.php(213): include('/Users/ivan/Cod...')
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#10 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Common.php(1142): CodeIgniter\View\View->render('Modules\\Pengawa...', Array, true)
+#11 /Users/ivan/Codeigniter/osce_v2/modules/Pengawas/Controllers/Pengawas.php(27): view('Modules\\Pengawa...')
+#12 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Modules\Pengawas\Controllers\Pengawas->index()
+#13 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Pengawas\Controllers\Pengawas))
+#14 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#16 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#17 {main}
+CRITICAL - 2022-12-10 08:18:14 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;36.88.21.18&quot;, port 5432 failed: Network is unreachable
+	Is the server running on that host and accepting TCP/IP connections?
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "config"
+WHERE "configNama" = :configNama:', [...], false)
+ 3 SYSTEMPATH/Model.php(772): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 4 APPPATH/Helpers/osce_helper.php(27): CodeIgniter\Model->__call('getWhere', [...])
+ 5 ROOTPATH/modules/Pengawas/Views/pengawas.php(10): getGambarApp()
+ 6 SYSTEMPATH/View/View.php(213): include('ROOTPATH/modules/Pengawas/Views/pengawas.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('Modules\\Pengawas\\Views\\pengawas', [], true)
+ 9 ROOTPATH/modules/Pengawas/Controllers/Pengawas.php(27): view('Modules\\Pengawas\\Views\\pengawas')
+10 SYSTEMPATH/CodeIgniter.php(907): Modules\Pengawas\Controllers\Pengawas->index()
+11 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Pengawas\Controllers\Pengawas))
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-12-10 08:19:34 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;36.88.21.18&quot;, port 5432 failed: Operation timed out
+	Is the server running on that host and accepting TCP/IP connections? in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', '/Users/ivan/Cod...', 69, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(69): pg_connect('host=36.88.21.1...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Model.php(772): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#6 /Users/ivan/Codeigniter/osce_v2/app/Helpers/osce_helper.php(27): CodeIgniter\Model->__call('getWhere', Array)
+#7 /Users/ivan/Codeigniter/osce_v2/modules/Pengawas/Views/pengawas.php(10): getGambarApp()
+#8 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/View/View.php(213): include('/Users/ivan/Cod...')
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#10 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Common.php(1142): CodeIgniter\View\View->render('Modules\\Pengawa...', Array, true)
+#11 /Users/ivan/Codeigniter/osce_v2/modules/Pengawas/Controllers/Pengawas.php(27): view('Modules\\Pengawa...')
+#12 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Modules\Pengawas\Controllers\Pengawas->index()
+#13 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Pengawas\Controllers\Pengawas))
+#14 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#16 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#17 {main}
+CRITICAL - 2022-12-10 08:19:34 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;36.88.21.18&quot;, port 5432 failed: Operation timed out
+	Is the server running on that host and accepting TCP/IP connections?
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "config"
+WHERE "configNama" = :configNama:', [...], false)
+ 3 SYSTEMPATH/Model.php(772): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 4 APPPATH/Helpers/osce_helper.php(27): CodeIgniter\Model->__call('getWhere', [...])
+ 5 ROOTPATH/modules/Pengawas/Views/pengawas.php(10): getGambarApp()
+ 6 SYSTEMPATH/View/View.php(213): include('ROOTPATH/modules/Pengawas/Views/pengawas.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('Modules\\Pengawas\\Views\\pengawas', [], true)
+ 9 ROOTPATH/modules/Pengawas/Controllers/Pengawas.php(27): view('Modules\\Pengawas\\Views\\pengawas')
+10 SYSTEMPATH/CodeIgniter.php(907): Modules\Pengawas\Controllers\Pengawas->index()
+11 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Pengawas\Controllers\Pengawas))
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-12-10 08:27:40 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;36.88.21.18&quot;, port 5432 failed: Operation timed out
+	Is the server running on that host and accepting TCP/IP connections? in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', '/Users/ivan/Cod...', 69, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(69): pg_connect('host=36.88.21.1...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Model.php(772): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#6 /Users/ivan/Codeigniter/osce_v2/app/Helpers/osce_helper.php(27): CodeIgniter\Model->__call('getWhere', Array)
+#7 /Users/ivan/Codeigniter/osce_v2/modules/Pengawas/Views/pengawas.php(10): getGambarApp()
+#8 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/View/View.php(213): include('/Users/ivan/Cod...')
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#10 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Common.php(1142): CodeIgniter\View\View->render('Modules\\Pengawa...', Array, true)
+#11 /Users/ivan/Codeigniter/osce_v2/modules/Pengawas/Controllers/Pengawas.php(27): view('Modules\\Pengawa...')
+#12 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Modules\Pengawas\Controllers\Pengawas->index()
+#13 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Pengawas\Controllers\Pengawas))
+#14 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#16 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#17 {main}
+CRITICAL - 2022-12-10 08:27:40 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;36.88.21.18&quot;, port 5432 failed: Operation timed out
+	Is the server running on that host and accepting TCP/IP connections?
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "config"
+WHERE "configNama" = :configNama:', [...], false)
+ 3 SYSTEMPATH/Model.php(772): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 4 APPPATH/Helpers/osce_helper.php(27): CodeIgniter\Model->__call('getWhere', [...])
+ 5 ROOTPATH/modules/Pengawas/Views/pengawas.php(10): getGambarApp()
+ 6 SYSTEMPATH/View/View.php(213): include('ROOTPATH/modules/Pengawas/Views/pengawas.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('Modules\\Pengawas\\Views\\pengawas', [], true)
+ 9 ROOTPATH/modules/Pengawas/Controllers/Pengawas.php(27): view('Modules\\Pengawas\\Views\\pengawas')
+10 SYSTEMPATH/CodeIgniter.php(907): Modules\Pengawas\Controllers\Pengawas->index()
+11 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Pengawas\Controllers\Pengawas))
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-12-10 08:28:55 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;36.88.21.18&quot;, port 5432 failed: Operation timed out
+	Is the server running on that host and accepting TCP/IP connections? in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', '/Users/ivan/Cod...', 69, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(69): pg_connect('host=36.88.21.1...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Model.php(772): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#6 /Users/ivan/Codeigniter/osce_v2/app/Helpers/osce_helper.php(27): CodeIgniter\Model->__call('getWhere', Array)
+#7 /Users/ivan/Codeigniter/osce_v2/modules/Pengawas/Views/pengawas.php(10): getGambarApp()
+#8 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/View/View.php(213): include('/Users/ivan/Cod...')
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#10 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Common.php(1142): CodeIgniter\View\View->render('Modules\\Pengawa...', Array, true)
+#11 /Users/ivan/Codeigniter/osce_v2/modules/Pengawas/Controllers/Pengawas.php(27): view('Modules\\Pengawa...')
+#12 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Modules\Pengawas\Controllers\Pengawas->index()
+#13 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Pengawas\Controllers\Pengawas))
+#14 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#16 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#17 {main}
+CRITICAL - 2022-12-10 08:28:55 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;36.88.21.18&quot;, port 5432 failed: Operation timed out
+	Is the server running on that host and accepting TCP/IP connections?
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "config"
+WHERE "configNama" = :configNama:', [...], false)
+ 3 SYSTEMPATH/Model.php(772): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 4 APPPATH/Helpers/osce_helper.php(27): CodeIgniter\Model->__call('getWhere', [...])
+ 5 ROOTPATH/modules/Pengawas/Views/pengawas.php(10): getGambarApp()
+ 6 SYSTEMPATH/View/View.php(213): include('ROOTPATH/modules/Pengawas/Views/pengawas.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('Modules\\Pengawas\\Views\\pengawas', [], true)
+ 9 ROOTPATH/modules/Pengawas/Controllers/Pengawas.php(27): view('Modules\\Pengawas\\Views\\pengawas')
+10 SYSTEMPATH/CodeIgniter.php(907): Modules\Pengawas\Controllers\Pengawas->index()
+11 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Pengawas\Controllers\Pengawas))
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-12-10 10:13:00 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;36.88.21.18&quot;, port 5432 failed: Network is unreachable
+	Is the server running on that host and accepting TCP/IP connections? in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', '/Users/ivan/Cod...', 69, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(69): pg_connect('host=36.88.21.1...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(179): CodeIgniter\Database\BaseConnection->initialize()
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Query.php(323): CodeIgniter\Database\Postgre\Connection->escape('1')
+#5 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT "nilai"....', Array)
+#6 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Query.php(159): CodeIgniter\Database\Query->compileBinds()
+#7 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1568): CodeIgniter\Database\Query->getQuery()
+#8 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1552): CodeIgniter\Database\BaseBuilder->compileFinalQuery('SELECT "nilai"....')
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2952): CodeIgniter\Database\BaseBuilder->getCompiledSelect(false)
+#10 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(926): CodeIgniter\Database\BaseBuilder->buildSubquery(Object(CodeIgniter\Database\Postgre\Builder), true)
+#11 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(815): CodeIgniter\Database\BaseBuilder->_whereIn('"peserta"."pese...', Object(Closure), ' NOT', 'AND ', true)
+#12 /Users/ivan/Codeigniter/osce_v2/modules/Penilaian/Models/PenilaianModel.php(36): CodeIgniter\Database\BaseBuilder->whereNotIn('peserta."pesert...', Object(Closure))
+#13 /Users/ivan/Codeigniter/osce_v2/modules/Penilaian/Controllers/Penilaian.php(53): Modules\Penilaian\Models\PenilaianModel->getPeserta(Array, Array)
+#14 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->index()
+#15 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+#16 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#17 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#18 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#19 {main}
+CRITICAL - 2022-12-10 10:13:00 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;36.88.21.18&quot;, port 5432 failed: Network is unreachable
+	Is the server running on that host and accepting TCP/IP connections?
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/Postgre/Connection.php(179): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/Query.php(323): CodeIgniter\Database\Postgre\Connection->escape('1')
+ 3 SYSTEMPATH/Database/Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT "nilai"."peserta"
+FROM function_mahasiswa_nilai() as nilai
+WHERE "nilai"."setId" = :nilai."setId":
+AND "nilai"."stationId" = :nilai."stationId":', [...])
+ 4 SYSTEMPATH/Database/Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1568): CodeIgniter\Database\Query->getQuery()
+ 6 SYSTEMPATH/Database/BaseBuilder.php(1552): CodeIgniter\Database\BaseBuilder->compileFinalQuery('SELECT "nilai"."peserta"
+FROM function_mahasiswa_nilai() as nilai
+WHERE "nilai"."setId" = :nilai."setId":
+AND "nilai"."stationId" = :nilai."stationId":')
+ 7 SYSTEMPATH/Database/BaseBuilder.php(2952): CodeIgniter\Database\BaseBuilder->getCompiledSelect(false)
+ 8 SYSTEMPATH/Database/BaseBuilder.php(926): CodeIgniter\Database\BaseBuilder->buildSubquery(Object(CodeIgniter\Database\Postgre\Builder), true)
+ 9 SYSTEMPATH/Database/BaseBuilder.php(815): CodeIgniter\Database\BaseBuilder->_whereIn('"peserta"."peserta"', Object(Closure), ' NOT', 'AND ', true)
+10 ROOTPATH/modules/Penilaian/Models/PenilaianModel.php(36): CodeIgniter\Database\BaseBuilder->whereNotIn('peserta."peserta"', Object(Closure))
+11 ROOTPATH/modules/Penilaian/Controllers/Penilaian.php(53): Modules\Penilaian\Models\PenilaianModel->getPeserta([...], [...])
+12 SYSTEMPATH/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->index()
+13 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+14 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-12-10 10:13:03 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;36.88.21.18&quot;, port 5432 failed: Network is unreachable
+	Is the server running on that host and accepting TCP/IP connections? in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', '/Users/ivan/Cod...', 69, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(69): pg_connect('host=36.88.21.1...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(179): CodeIgniter\Database\BaseConnection->initialize()
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Query.php(323): CodeIgniter\Database\Postgre\Connection->escape('1')
+#5 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT "nilai"....', Array)
+#6 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Query.php(159): CodeIgniter\Database\Query->compileBinds()
+#7 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1568): CodeIgniter\Database\Query->getQuery()
+#8 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1552): CodeIgniter\Database\BaseBuilder->compileFinalQuery('SELECT "nilai"....')
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2952): CodeIgniter\Database\BaseBuilder->getCompiledSelect(false)
+#10 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(926): CodeIgniter\Database\BaseBuilder->buildSubquery(Object(CodeIgniter\Database\Postgre\Builder), true)
+#11 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(815): CodeIgniter\Database\BaseBuilder->_whereIn('"peserta"."pese...', Object(Closure), ' NOT', 'AND ', true)
+#12 /Users/ivan/Codeigniter/osce_v2/modules/Penilaian/Models/PenilaianModel.php(36): CodeIgniter\Database\BaseBuilder->whereNotIn('peserta."pesert...', Object(Closure))
+#13 /Users/ivan/Codeigniter/osce_v2/modules/Penilaian/Controllers/Penilaian.php(53): Modules\Penilaian\Models\PenilaianModel->getPeserta(Array, Array)
+#14 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->index()
+#15 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+#16 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#17 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#18 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#19 {main}
+CRITICAL - 2022-12-10 10:13:03 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;36.88.21.18&quot;, port 5432 failed: Network is unreachable
+	Is the server running on that host and accepting TCP/IP connections?
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/Postgre/Connection.php(179): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/Query.php(323): CodeIgniter\Database\Postgre\Connection->escape('1')
+ 3 SYSTEMPATH/Database/Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT "nilai"."peserta"
+FROM function_mahasiswa_nilai() as nilai
+WHERE "nilai"."setId" = :nilai."setId":
+AND "nilai"."stationId" = :nilai."stationId":', [...])
+ 4 SYSTEMPATH/Database/Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1568): CodeIgniter\Database\Query->getQuery()
+ 6 SYSTEMPATH/Database/BaseBuilder.php(1552): CodeIgniter\Database\BaseBuilder->compileFinalQuery('SELECT "nilai"."peserta"
+FROM function_mahasiswa_nilai() as nilai
+WHERE "nilai"."setId" = :nilai."setId":
+AND "nilai"."stationId" = :nilai."stationId":')
+ 7 SYSTEMPATH/Database/BaseBuilder.php(2952): CodeIgniter\Database\BaseBuilder->getCompiledSelect(false)
+ 8 SYSTEMPATH/Database/BaseBuilder.php(926): CodeIgniter\Database\BaseBuilder->buildSubquery(Object(CodeIgniter\Database\Postgre\Builder), true)
+ 9 SYSTEMPATH/Database/BaseBuilder.php(815): CodeIgniter\Database\BaseBuilder->_whereIn('"peserta"."peserta"', Object(Closure), ' NOT', 'AND ', true)
+10 ROOTPATH/modules/Penilaian/Models/PenilaianModel.php(36): CodeIgniter\Database\BaseBuilder->whereNotIn('peserta."peserta"', Object(Closure))
+11 ROOTPATH/modules/Penilaian/Controllers/Penilaian.php(53): Modules\Penilaian\Models\PenilaianModel->getPeserta([...], [...])
+12 SYSTEMPATH/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->index()
+13 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+14 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-12-10 10:13:04 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;36.88.21.18&quot;, port 5432 failed: Network is unreachable
+	Is the server running on that host and accepting TCP/IP connections? in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', '/Users/ivan/Cod...', 69, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(69): pg_connect('host=36.88.21.1...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(179): CodeIgniter\Database\BaseConnection->initialize()
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Query.php(323): CodeIgniter\Database\Postgre\Connection->escape('1')
+#5 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT "nilai"....', Array)
+#6 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Query.php(159): CodeIgniter\Database\Query->compileBinds()
+#7 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1568): CodeIgniter\Database\Query->getQuery()
+#8 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1552): CodeIgniter\Database\BaseBuilder->compileFinalQuery('SELECT "nilai"....')
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2952): CodeIgniter\Database\BaseBuilder->getCompiledSelect(false)
+#10 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(926): CodeIgniter\Database\BaseBuilder->buildSubquery(Object(CodeIgniter\Database\Postgre\Builder), true)
+#11 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(815): CodeIgniter\Database\BaseBuilder->_whereIn('"peserta"."pese...', Object(Closure), ' NOT', 'AND ', true)
+#12 /Users/ivan/Codeigniter/osce_v2/modules/Penilaian/Models/PenilaianModel.php(36): CodeIgniter\Database\BaseBuilder->whereNotIn('peserta."pesert...', Object(Closure))
+#13 /Users/ivan/Codeigniter/osce_v2/modules/Penilaian/Controllers/Penilaian.php(53): Modules\Penilaian\Models\PenilaianModel->getPeserta(Array, Array)
+#14 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->index()
+#15 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+#16 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#17 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#18 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#19 {main}
+CRITICAL - 2022-12-10 10:13:04 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;36.88.21.18&quot;, port 5432 failed: Network is unreachable
+	Is the server running on that host and accepting TCP/IP connections?
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/Postgre/Connection.php(179): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/Query.php(323): CodeIgniter\Database\Postgre\Connection->escape('1')
+ 3 SYSTEMPATH/Database/Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT "nilai"."peserta"
+FROM function_mahasiswa_nilai() as nilai
+WHERE "nilai"."setId" = :nilai."setId":
+AND "nilai"."stationId" = :nilai."stationId":', [...])
+ 4 SYSTEMPATH/Database/Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1568): CodeIgniter\Database\Query->getQuery()
+ 6 SYSTEMPATH/Database/BaseBuilder.php(1552): CodeIgniter\Database\BaseBuilder->compileFinalQuery('SELECT "nilai"."peserta"
+FROM function_mahasiswa_nilai() as nilai
+WHERE "nilai"."setId" = :nilai."setId":
+AND "nilai"."stationId" = :nilai."stationId":')
+ 7 SYSTEMPATH/Database/BaseBuilder.php(2952): CodeIgniter\Database\BaseBuilder->getCompiledSelect(false)
+ 8 SYSTEMPATH/Database/BaseBuilder.php(926): CodeIgniter\Database\BaseBuilder->buildSubquery(Object(CodeIgniter\Database\Postgre\Builder), true)
+ 9 SYSTEMPATH/Database/BaseBuilder.php(815): CodeIgniter\Database\BaseBuilder->_whereIn('"peserta"."peserta"', Object(Closure), ' NOT', 'AND ', true)
+10 ROOTPATH/modules/Penilaian/Models/PenilaianModel.php(36): CodeIgniter\Database\BaseBuilder->whereNotIn('peserta."peserta"', Object(Closure))
+11 ROOTPATH/modules/Penilaian/Controllers/Penilaian.php(53): Modules\Penilaian\Models\PenilaianModel->getPeserta([...], [...])
+12 SYSTEMPATH/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->index()
+13 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+14 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-12-10 10:13:05 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;36.88.21.18&quot;, port 5432 failed: Network is unreachable
+	Is the server running on that host and accepting TCP/IP connections? in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', '/Users/ivan/Cod...', 69, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(69): pg_connect('host=36.88.21.1...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(179): CodeIgniter\Database\BaseConnection->initialize()
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Query.php(323): CodeIgniter\Database\Postgre\Connection->escape('1')
+#5 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT "nilai"....', Array)
+#6 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Query.php(159): CodeIgniter\Database\Query->compileBinds()
+#7 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1568): CodeIgniter\Database\Query->getQuery()
+#8 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1552): CodeIgniter\Database\BaseBuilder->compileFinalQuery('SELECT "nilai"....')
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2952): CodeIgniter\Database\BaseBuilder->getCompiledSelect(false)
+#10 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(926): CodeIgniter\Database\BaseBuilder->buildSubquery(Object(CodeIgniter\Database\Postgre\Builder), true)
+#11 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(815): CodeIgniter\Database\BaseBuilder->_whereIn('"peserta"."pese...', Object(Closure), ' NOT', 'AND ', true)
+#12 /Users/ivan/Codeigniter/osce_v2/modules/Penilaian/Models/PenilaianModel.php(36): CodeIgniter\Database\BaseBuilder->whereNotIn('peserta."pesert...', Object(Closure))
+#13 /Users/ivan/Codeigniter/osce_v2/modules/Penilaian/Controllers/Penilaian.php(53): Modules\Penilaian\Models\PenilaianModel->getPeserta(Array, Array)
+#14 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->index()
+#15 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+#16 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#17 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#18 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#19 {main}
+CRITICAL - 2022-12-10 10:13:05 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;36.88.21.18&quot;, port 5432 failed: Network is unreachable
+	Is the server running on that host and accepting TCP/IP connections?
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/Postgre/Connection.php(179): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/Query.php(323): CodeIgniter\Database\Postgre\Connection->escape('1')
+ 3 SYSTEMPATH/Database/Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT "nilai"."peserta"
+FROM function_mahasiswa_nilai() as nilai
+WHERE "nilai"."setId" = :nilai."setId":
+AND "nilai"."stationId" = :nilai."stationId":', [...])
+ 4 SYSTEMPATH/Database/Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1568): CodeIgniter\Database\Query->getQuery()
+ 6 SYSTEMPATH/Database/BaseBuilder.php(1552): CodeIgniter\Database\BaseBuilder->compileFinalQuery('SELECT "nilai"."peserta"
+FROM function_mahasiswa_nilai() as nilai
+WHERE "nilai"."setId" = :nilai."setId":
+AND "nilai"."stationId" = :nilai."stationId":')
+ 7 SYSTEMPATH/Database/BaseBuilder.php(2952): CodeIgniter\Database\BaseBuilder->getCompiledSelect(false)
+ 8 SYSTEMPATH/Database/BaseBuilder.php(926): CodeIgniter\Database\BaseBuilder->buildSubquery(Object(CodeIgniter\Database\Postgre\Builder), true)
+ 9 SYSTEMPATH/Database/BaseBuilder.php(815): CodeIgniter\Database\BaseBuilder->_whereIn('"peserta"."peserta"', Object(Closure), ' NOT', 'AND ', true)
+10 ROOTPATH/modules/Penilaian/Models/PenilaianModel.php(36): CodeIgniter\Database\BaseBuilder->whereNotIn('peserta."peserta"', Object(Closure))
+11 ROOTPATH/modules/Penilaian/Controllers/Penilaian.php(53): Modules\Penilaian\Models\PenilaianModel->getPeserta([...], [...])
+12 SYSTEMPATH/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->index()
+13 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+14 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-12-10 10:13:05 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;36.88.21.18&quot;, port 5432 failed: Network is unreachable
+	Is the server running on that host and accepting TCP/IP connections? in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', '/Users/ivan/Cod...', 69, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(69): pg_connect('host=36.88.21.1...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(179): CodeIgniter\Database\BaseConnection->initialize()
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Query.php(323): CodeIgniter\Database\Postgre\Connection->escape('1')
+#5 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT "nilai"....', Array)
+#6 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Query.php(159): CodeIgniter\Database\Query->compileBinds()
+#7 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1568): CodeIgniter\Database\Query->getQuery()
+#8 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1552): CodeIgniter\Database\BaseBuilder->compileFinalQuery('SELECT "nilai"....')
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2952): CodeIgniter\Database\BaseBuilder->getCompiledSelect(false)
+#10 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(926): CodeIgniter\Database\BaseBuilder->buildSubquery(Object(CodeIgniter\Database\Postgre\Builder), true)
+#11 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(815): CodeIgniter\Database\BaseBuilder->_whereIn('"peserta"."pese...', Object(Closure), ' NOT', 'AND ', true)
+#12 /Users/ivan/Codeigniter/osce_v2/modules/Penilaian/Models/PenilaianModel.php(36): CodeIgniter\Database\BaseBuilder->whereNotIn('peserta."pesert...', Object(Closure))
+#13 /Users/ivan/Codeigniter/osce_v2/modules/Penilaian/Controllers/Penilaian.php(53): Modules\Penilaian\Models\PenilaianModel->getPeserta(Array, Array)
+#14 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->index()
+#15 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+#16 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#17 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#18 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#19 {main}
+CRITICAL - 2022-12-10 10:13:05 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;36.88.21.18&quot;, port 5432 failed: Network is unreachable
+	Is the server running on that host and accepting TCP/IP connections?
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/Postgre/Connection.php(179): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/Query.php(323): CodeIgniter\Database\Postgre\Connection->escape('1')
+ 3 SYSTEMPATH/Database/Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT "nilai"."peserta"
+FROM function_mahasiswa_nilai() as nilai
+WHERE "nilai"."setId" = :nilai."setId":
+AND "nilai"."stationId" = :nilai."stationId":', [...])
+ 4 SYSTEMPATH/Database/Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1568): CodeIgniter\Database\Query->getQuery()
+ 6 SYSTEMPATH/Database/BaseBuilder.php(1552): CodeIgniter\Database\BaseBuilder->compileFinalQuery('SELECT "nilai"."peserta"
+FROM function_mahasiswa_nilai() as nilai
+WHERE "nilai"."setId" = :nilai."setId":
+AND "nilai"."stationId" = :nilai."stationId":')
+ 7 SYSTEMPATH/Database/BaseBuilder.php(2952): CodeIgniter\Database\BaseBuilder->getCompiledSelect(false)
+ 8 SYSTEMPATH/Database/BaseBuilder.php(926): CodeIgniter\Database\BaseBuilder->buildSubquery(Object(CodeIgniter\Database\Postgre\Builder), true)
+ 9 SYSTEMPATH/Database/BaseBuilder.php(815): CodeIgniter\Database\BaseBuilder->_whereIn('"peserta"."peserta"', Object(Closure), ' NOT', 'AND ', true)
+10 ROOTPATH/modules/Penilaian/Models/PenilaianModel.php(36): CodeIgniter\Database\BaseBuilder->whereNotIn('peserta."peserta"', Object(Closure))
+11 ROOTPATH/modules/Penilaian/Controllers/Penilaian.php(53): Modules\Penilaian\Models\PenilaianModel->getPeserta([...], [...])
+12 SYSTEMPATH/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->index()
+13 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+14 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-10 11:37:25 --> Undefined variable: peserta
+in ROOTPATH/modules/FilePendukung/Views/filePendukung.php on line 9.
+ 1 ROOTPATH/modules/FilePendukung/Views/filePendukung.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: peserta', 'ROOTPATH/modules/FilePendukung/Views/filePendukung.php', 9, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('ROOTPATH/modules/FilePendukung/Views/filePendukung.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('Modules\\FilePendukung\\Views\\filePendukung', [], true)
+ 5 ROOTPATH/modules/FilePendukung/Controllers/FilePendukung.php(25): view('Modules\\FilePendukung\\Views\\filePendukung', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): Modules\FilePendukung\Controllers\FilePendukung->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\FilePendukung\Controllers\FilePendukung))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-10 11:37:53 --> Undefined variable: peserta
+in ROOTPATH/modules/FilePendukung/Views/filePendukung.php on line 9.
+ 1 ROOTPATH/modules/FilePendukung/Views/filePendukung.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: peserta', 'ROOTPATH/modules/FilePendukung/Views/filePendukung.php', 9, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('ROOTPATH/modules/FilePendukung/Views/filePendukung.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('Modules\\FilePendukung\\Views\\filePendukung', [], true)
+ 5 ROOTPATH/modules/FilePendukung/Controllers/FilePendukung.php(25): view('Modules\\FilePendukung\\Views\\filePendukung', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): Modules\FilePendukung\Controllers\FilePendukung->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\FilePendukung\Controllers\FilePendukung))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-10 15:47:53 --> array_search() expects parameter 2 to be array, string given
+in ROOTPATH/modules/Penilaian/Controllers/Penilaian.php on line 68.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_search() expects parameter 2 to be array, string given', 'ROOTPATH/modules/Penilaian/Controllers/Penilaian.php', 68, [...])
+ 2 ROOTPATH/modules/Penilaian/Controllers/Penilaian.php(68): array_search('instruksi.pdf', '[null,null]')
+ 3 SYSTEMPATH/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->index()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')

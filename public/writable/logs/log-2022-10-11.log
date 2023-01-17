@@ -1,0 +1,1049 @@
+CRITICAL - 2022-10-11 08:36:08 --> Call to undefined method Modules\Penilaian\Models\PenilaianModel::findOne
+in SYSTEMPATH/Model.php on line 774.
+ 1 ROOTPATH/modules/Penilaian/Controllers/Penilaian.php(87): CodeIgniter\Model->__call('findOne', [])
+ 2 SYSTEMPATH/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->add()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-11 08:37:16 --> Call to undefined method Modules\Penilaian\Models\PenilaianModel::firstRow
+in SYSTEMPATH/Model.php on line 774.
+ 1 ROOTPATH/modules/Penilaian/Controllers/Penilaian.php(87): CodeIgniter\Model->__call('firstRow', [])
+ 2 SYSTEMPATH/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->add()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-10-11 08:52:30 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;setCreatedDate&quot; of relation &quot;grade&quot; does not exist
+LINE 1: ...e&quot; (&quot;gradeSetId&quot;, &quot;gradeMahasiswa&quot;, &quot;gradeNilai&quot;, &quot;setCreate...
+                                                             ^ in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/ivan/Cod...', 140, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(140): pg_query(Resource id #16, 'INSERT INTO "gr...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "gr...')
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "gr...')
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "gr...', Array, false)
+#5 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#6 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#7 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#8 /Users/ivan/Codeigniter/osce_v2/modules/Penilaian/Controllers/Penilaian.php(95): CodeIgniter\Model->insert(Array)
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->add()
+#10 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+#11 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#14 {main}
+CRITICAL - 2022-10-11 08:52:30 --> pg_query(): Query failed: ERROR:  column &quot;setCreatedDate&quot; of relation &quot;grade&quot; does not exist
+LINE 1: ...e&quot; (&quot;gradeSetId&quot;, &quot;gradeMahasiswa&quot;, &quot;gradeNilai&quot;, &quot;setCreate...
+                                                             ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  column &quot;setCreatedDate&quot; of relation &quot;grade&quot; does not exist
+LINE 1: ...e&quot; (&quot;gradeSetId&quot;, &quot;gradeMahasiswa&quot;, &quot;gradeNilai&quot;, &quot;setCreate...
+                                                             ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140, [...])
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(resource (pgsql link), 'INSERT INTO "grade" ("gradeSetId", "gradeMahasiswa", "gradeNilai", "setCreatedDate", "setModifiedDate") VALUES (8, \'1607210040\', \'{"data":[{"station":1,"globalRate":2,"detail":[{"nilai":[{"kompetensi":1,"value":4},{"kompetensi":2,"value":3},{"kompetensi":5,"value":2}]}]}]}\', \'2022-10-11 08:52:30\', \'2022-10-11 08:52:30\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "grade" ("gradeSetId", "gradeMahasiswa", "gradeNilai", "setCreatedDate", "setModifiedDate") VALUES (8, \'1607210040\', \'{"data":[{"station":1,"globalRate":2,"detail":[{"nilai":[{"kompetensi":1,"value":4},{"kompetensi":2,"value":3},{"kompetensi":5,"value":2}]}]}]}\', \'2022-10-11 08:52:30\', \'2022-10-11 08:52:30\')')
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "grade" ("gradeSetId", "gradeMahasiswa", "gradeNilai", "setCreatedDate", "setModifiedDate") VALUES (8, \'1607210040\', \'{"data":[{"station":1,"globalRate":2,"detail":[{"nilai":[{"kompetensi":1,"value":4},{"kompetensi":2,"value":3},{"kompetensi":5,"value":2}]}]}]}\', \'2022-10-11 08:52:30\', \'2022-10-11 08:52:30\')')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "grade" ("gradeSetId", "gradeMahasiswa", "gradeNilai", "setCreatedDate", "setModifiedDate") VALUES (:gradeSetId:, :gradeMahasiswa:, :gradeNilai:, :setCreatedDate:, :setModifiedDate:)', [...], false)
+ 6 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH/BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 9 ROOTPATH/modules/Penilaian/Controllers/Penilaian.php(95): CodeIgniter\Model->insert([...])
+10 SYSTEMPATH/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->add()
+11 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-11 09:09:54 --> Trying to access array offset on value of type null
+in ROOTPATH/modules/Penilaian/Views/penilaian.php on line 98.
+ 1 ROOTPATH/modules/Penilaian/Views/penilaian.php(98): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'ROOTPATH/modules/Penilaian/Views/penilaian.php', 98, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('ROOTPATH/modules/Penilaian/Views/penilaian.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('Modules\\Penilaian\\Views\\penilaian', [], true)
+ 5 ROOTPATH/modules/Penilaian/Controllers/Penilaian.php(54): view('Modules\\Penilaian\\Views\\penilaian', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-11 10:17:43 --> array_pop() expects parameter 1 to be array, string given
+in APPPATH/Helpers/validation_helper.php on line 21.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_pop() expects parameter 1 to be array, string given', 'APPPATH/Helpers/validation_helper.php', 21, [...])
+ 2 APPPATH/Helpers/validation_helper.php(21): array_pop('1607210040')
+ 3 APPPATH/Helpers/validation_helper.php(29): array_pop_unshift('1607210040')
+ 4 ROOTPATH/modules/Penguji/Controllers/Penguji.php(108): susunpeserta([...], 1)
+ 5 SYSTEMPATH/CodeIgniter.php(907): Modules\Penguji\Controllers\Penguji->edit('8')
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penguji\Controllers\Penguji))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-11 10:18:16 --> json_decode() expects parameter 1 to be string, array given
+in ROOTPATH/modules/Penguji/Controllers/Penguji.php on line 107.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'json_decode() expects parameter 1 to be string, array given', 'ROOTPATH/modules/Penguji/Controllers/Penguji.php', 107, [...])
+ 2 ROOTPATH/modules/Penguji/Controllers/Penguji.php(107): json_decode([...])
+ 3 SYSTEMPATH/CodeIgniter.php(907): Modules\Penguji\Controllers\Penguji->edit('8')
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penguji\Controllers\Penguji))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-11 10:21:05 --> Undefined variable: new
+in APPPATH/Helpers/validation_helper.php on line 31.
+ 1 APPPATH/Helpers/validation_helper.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: new', 'APPPATH/Helpers/validation_helper.php', 31, [...])
+ 2 ROOTPATH/modules/Penguji/Controllers/Penguji.php(108): susunpeserta([...], 0)
+ 3 SYSTEMPATH/CodeIgniter.php(907): Modules\Penguji\Controllers\Penguji->edit('8')
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penguji\Controllers\Penguji))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-11 10:25:13 --> Undefined variable: new
+in APPPATH/Helpers/validation_helper.php on line 34.
+ 1 APPPATH/Helpers/validation_helper.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: new', 'APPPATH/Helpers/validation_helper.php', 34, [...])
+ 2 ROOTPATH/modules/Penguji/Controllers/Penguji.php(108): susunpeserta([...], 0)
+ 3 SYSTEMPATH/CodeIgniter.php(907): Modules\Penguji\Controllers\Penguji->edit('8')
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penguji\Controllers\Penguji))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-11 10:32:13 --> array_unshift() expects parameter 1 to be array, null given
+in APPPATH/Helpers/validation_helper.php on line 24.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_unshift() expects parameter 1 to be array, null given', 'APPPATH/Helpers/validation_helper.php', 24, [...])
+ 2 APPPATH/Helpers/validation_helper.php(24): array_unshift(null, '1607210042')
+ 3 ROOTPATH/modules/Penguji/Controllers/Penguji.php(108): susunpeserta([...], 2)
+ 4 SYSTEMPATH/CodeIgniter.php(907): Modules\Penguji\Controllers\Penguji->edit('8')
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penguji\Controllers\Penguji))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-10-11 11:47:32 --> ErrorException: pg_query(): Query failed: ERROR:  more than one row returned by a subquery used as an expression
+CONTEXT:  SQL statement &quot;SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;'lokasi')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;'station')::INT as stationId,
+		(detail-&gt;&gt;'stationNama')::VARCHAR as stationNama,
+		(detail-&gt;&gt;'penguji')::int as penguji,
+		(detail-&gt;&gt;'stationKey')::VARCHAR as key,
+		(select peserta from function_mahasiswa_station() as mhs where mhs.&quot;lokasiId&quot; =(raw_json-&gt;&gt;'lokasi')::INT and mhs.&quot;stationId&quot; = 1 and mhs.&quot;urutan&quot; =(detail-&gt;&gt;'station')::INT) as mahasiswa
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;'data') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;'lokasi')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;'detail') detail(detail)
+	 WHERE settingtes.&quot;setId&quot;= idSetting&quot;
+PL/pgSQL function function_tampil_penguji(integer) line 3 at RETURN QUERY in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/ivan/Cod...', 140, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(140): pg_query(Resource id #16, 'SELECT *\nFROM f...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM f...')
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM f...')
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM f...', Array, false)
+#5 /Users/ivan/Codeigniter/osce_v2/modules/Penguji/Models/PengujiModel.php(32): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/ivan/Codeigniter/osce_v2/modules/Penguji/Controllers/Penguji.php(48): Modules\Penguji\Models\PengujiModel->getPengujiById('8')
+#7 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Modules\Penguji\Controllers\Penguji->getById('8')
+#8 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penguji\Controllers\Penguji))
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#12 {main}
+CRITICAL - 2022-10-11 11:47:32 --> pg_query(): Query failed: ERROR:  more than one row returned by a subquery used as an expression
+CONTEXT:  SQL statement &quot;SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;'lokasi')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;'station')::INT as stationId,
+		(detail-&gt;&gt;'stationNama')::VARCHAR as stationNama,
+		(detail-&gt;&gt;'penguji')::int as penguji,
+		(detail-&gt;&gt;'stationKey')::VARCHAR as key,
+		(select peserta from function_mahasiswa_station() as mhs where mhs.&quot;lokasiId&quot; =(raw_json-&gt;&gt;'lokasi')::INT and mhs.&quot;stationId&quot; = 1 and mhs.&quot;urutan&quot; =(detail-&gt;&gt;'station')::INT) as mahasiswa
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;'data') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;'lokasi')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;'detail') detail(detail)
+	 WHERE settingtes.&quot;setId&quot;= idSetting&quot;
+PL/pgSQL function function_tampil_penguji(integer) line 3 at RETURN QUERY
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  more than one row returned by a subquery used as an expression
+CONTEXT:  SQL statement &quot;SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;\'lokasi\')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;\'station\')::INT as stationId,
+		(detail-&gt;&gt;\'stationNama\')::VARCHAR as stationNama,
+		(detail-&gt;&gt;\'penguji\')::int as penguji,
+		(detail-&gt;&gt;\'stationKey\')::VARCHAR as key,
+		(select peserta from function_mahasiswa_station() as mhs where mhs.&quot;lokasiId&quot; =(raw_json-&gt;&gt;\'lokasi\')::INT and mhs.&quot;stationId&quot; = 1 and mhs.&quot;urutan&quot; =(detail-&gt;&gt;\'station\')::INT) as mahasiswa
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;\'data\') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;\'lokasi\')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;\'detail\') detail(detail)
+	 WHERE settingtes.&quot;setId&quot;= idSetting&quot;
+PL/pgSQL function function_tampil_penguji(integer) line 3 at RETURN QUERY', 'SYSTEMPATH/Database/Postgre/Connection.php', 140, [...])
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(resource (pgsql link), 'SELECT *
+FROM function_tampil_penguji(\'8\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *
+FROM function_tampil_penguji(\'8\')')
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM function_tampil_penguji(\'8\')')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM function_tampil_penguji(\'8\')', [], false)
+ 6 ROOTPATH/modules/Penguji/Models/PengujiModel.php(32): CodeIgniter\Database\BaseBuilder->get()
+ 7 ROOTPATH/modules/Penguji/Controllers/Penguji.php(48): Modules\Penguji\Models\PengujiModel->getPengujiById('8')
+ 8 SYSTEMPATH/CodeIgniter.php(907): Modules\Penguji\Controllers\Penguji->getById('8')
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penguji\Controllers\Penguji))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-11 11:47:32 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/API/ResponseTrait.php(348): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/API/ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Debug/Exceptions.php(132): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+in SYSTEMPATH/Format/JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-10-11 11:47:35 --> ErrorException: pg_query(): Query failed: ERROR:  more than one row returned by a subquery used as an expression
+CONTEXT:  SQL statement &quot;SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;'lokasi')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;'station')::INT as stationId,
+		(detail-&gt;&gt;'stationNama')::VARCHAR as stationNama,
+		(detail-&gt;&gt;'penguji')::int as penguji,
+		(detail-&gt;&gt;'stationKey')::VARCHAR as key,
+		(select peserta from function_mahasiswa_station() as mhs where mhs.&quot;lokasiId&quot; =(raw_json-&gt;&gt;'lokasi')::INT and mhs.&quot;stationId&quot; = 1 and mhs.&quot;urutan&quot; =(detail-&gt;&gt;'station')::INT) as mahasiswa
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;'data') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;'lokasi')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;'detail') detail(detail)
+	 WHERE settingtes.&quot;setId&quot;= idSetting&quot;
+PL/pgSQL function function_tampil_penguji(integer) line 3 at RETURN QUERY in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/ivan/Cod...', 140, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(140): pg_query(Resource id #16, 'SELECT *\nFROM f...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM f...')
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM f...')
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM f...', Array, false)
+#5 /Users/ivan/Codeigniter/osce_v2/modules/Penguji/Models/PengujiModel.php(32): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/ivan/Codeigniter/osce_v2/modules/Penguji/Controllers/Penguji.php(48): Modules\Penguji\Models\PengujiModel->getPengujiById('8')
+#7 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Modules\Penguji\Controllers\Penguji->getById('8')
+#8 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penguji\Controllers\Penguji))
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#12 {main}
+CRITICAL - 2022-10-11 11:47:35 --> pg_query(): Query failed: ERROR:  more than one row returned by a subquery used as an expression
+CONTEXT:  SQL statement &quot;SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;'lokasi')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;'station')::INT as stationId,
+		(detail-&gt;&gt;'stationNama')::VARCHAR as stationNama,
+		(detail-&gt;&gt;'penguji')::int as penguji,
+		(detail-&gt;&gt;'stationKey')::VARCHAR as key,
+		(select peserta from function_mahasiswa_station() as mhs where mhs.&quot;lokasiId&quot; =(raw_json-&gt;&gt;'lokasi')::INT and mhs.&quot;stationId&quot; = 1 and mhs.&quot;urutan&quot; =(detail-&gt;&gt;'station')::INT) as mahasiswa
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;'data') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;'lokasi')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;'detail') detail(detail)
+	 WHERE settingtes.&quot;setId&quot;= idSetting&quot;
+PL/pgSQL function function_tampil_penguji(integer) line 3 at RETURN QUERY
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  more than one row returned by a subquery used as an expression
+CONTEXT:  SQL statement &quot;SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;\'lokasi\')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;\'station\')::INT as stationId,
+		(detail-&gt;&gt;\'stationNama\')::VARCHAR as stationNama,
+		(detail-&gt;&gt;\'penguji\')::int as penguji,
+		(detail-&gt;&gt;\'stationKey\')::VARCHAR as key,
+		(select peserta from function_mahasiswa_station() as mhs where mhs.&quot;lokasiId&quot; =(raw_json-&gt;&gt;\'lokasi\')::INT and mhs.&quot;stationId&quot; = 1 and mhs.&quot;urutan&quot; =(detail-&gt;&gt;\'station\')::INT) as mahasiswa
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;\'data\') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;\'lokasi\')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;\'detail\') detail(detail)
+	 WHERE settingtes.&quot;setId&quot;= idSetting&quot;
+PL/pgSQL function function_tampil_penguji(integer) line 3 at RETURN QUERY', 'SYSTEMPATH/Database/Postgre/Connection.php', 140, [...])
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(resource (pgsql link), 'SELECT *
+FROM function_tampil_penguji(\'8\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *
+FROM function_tampil_penguji(\'8\')')
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM function_tampil_penguji(\'8\')')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM function_tampil_penguji(\'8\')', [], false)
+ 6 ROOTPATH/modules/Penguji/Models/PengujiModel.php(32): CodeIgniter\Database\BaseBuilder->get()
+ 7 ROOTPATH/modules/Penguji/Controllers/Penguji.php(48): Modules\Penguji\Models\PengujiModel->getPengujiById('8')
+ 8 SYSTEMPATH/CodeIgniter.php(907): Modules\Penguji\Controllers\Penguji->getById('8')
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penguji\Controllers\Penguji))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-11 11:47:35 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/API/ResponseTrait.php(348): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/API/ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Debug/Exceptions.php(132): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+in SYSTEMPATH/Format/JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-10-11 11:47:53 --> ErrorException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;,&quot;
+LINE 2: FROM function_tampil_skenario(, )
+                                      ^ in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/ivan/Cod...', 140, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(140): pg_query(Resource id #15, 'SELECT *\nFROM f...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM f...')
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM f...')
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM f...', Array, false)
+#5 /Users/ivan/Codeigniter/osce_v2/modules/Penilaian/Models/PenilaianModel.php(22): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/ivan/Codeigniter/osce_v2/modules/Penilaian/Controllers/Penilaian.php(49): Modules\Penilaian\Models\PenilaianModel->getSkenario(NULL, NULL)
+#7 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->index()
+#8 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#12 {main}
+CRITICAL - 2022-10-11 11:47:53 --> pg_query(): Query failed: ERROR:  syntax error at or near &quot;,&quot;
+LINE 2: FROM function_tampil_skenario(, )
+                                      ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  syntax error at or near &quot;,&quot;
+LINE 2: FROM function_tampil_skenario(, )
+                                      ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140, [...])
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(resource (pgsql link), 'SELECT *
+FROM function_tampil_skenario(, )')
+ 3 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *
+FROM function_tampil_skenario(, )')
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM function_tampil_skenario(, )')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM function_tampil_skenario(, )', [], false)
+ 6 ROOTPATH/modules/Penilaian/Models/PenilaianModel.php(22): CodeIgniter\Database\BaseBuilder->get()
+ 7 ROOTPATH/modules/Penilaian/Controllers/Penilaian.php(49): Modules\Penilaian\Models\PenilaianModel->getSkenario(null, null)
+ 8 SYSTEMPATH/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->index()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-10-11 11:48:12 --> ErrorException: pg_query(): Query failed: ERROR:  more than one row returned by a subquery used as an expression
+CONTEXT:  SQL statement &quot;SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;'lokasi')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;'station')::INT as stationId,
+		(detail-&gt;&gt;'stationNama')::VARCHAR as stationNama,
+		(detail-&gt;&gt;'penguji')::int as penguji,
+		(detail-&gt;&gt;'stationKey')::VARCHAR as key,
+		(select peserta from function_mahasiswa_station() as mhs where mhs.&quot;lokasiId&quot; =(raw_json-&gt;&gt;'lokasi')::INT and mhs.&quot;stationId&quot; = 1 and mhs.&quot;urutan&quot; =(detail-&gt;&gt;'station')::INT) as mahasiswa
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;'data') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;'lokasi')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;'detail') detail(detail)
+	 WHERE settingtes.&quot;setId&quot;= idSetting&quot;
+PL/pgSQL function function_tampil_penguji(integer) line 3 at RETURN QUERY in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/ivan/Cod...', 140, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(140): pg_query(Resource id #16, 'SELECT *\nFROM f...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM f...')
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM f...')
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM f...', Array, false)
+#5 /Users/ivan/Codeigniter/osce_v2/modules/Penguji/Models/PengujiModel.php(32): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/ivan/Codeigniter/osce_v2/modules/Penguji/Controllers/Penguji.php(48): Modules\Penguji\Models\PengujiModel->getPengujiById('8')
+#7 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Modules\Penguji\Controllers\Penguji->getById('8')
+#8 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penguji\Controllers\Penguji))
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#12 {main}
+CRITICAL - 2022-10-11 11:48:12 --> pg_query(): Query failed: ERROR:  more than one row returned by a subquery used as an expression
+CONTEXT:  SQL statement &quot;SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;'lokasi')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;'station')::INT as stationId,
+		(detail-&gt;&gt;'stationNama')::VARCHAR as stationNama,
+		(detail-&gt;&gt;'penguji')::int as penguji,
+		(detail-&gt;&gt;'stationKey')::VARCHAR as key,
+		(select peserta from function_mahasiswa_station() as mhs where mhs.&quot;lokasiId&quot; =(raw_json-&gt;&gt;'lokasi')::INT and mhs.&quot;stationId&quot; = 1 and mhs.&quot;urutan&quot; =(detail-&gt;&gt;'station')::INT) as mahasiswa
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;'data') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;'lokasi')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;'detail') detail(detail)
+	 WHERE settingtes.&quot;setId&quot;= idSetting&quot;
+PL/pgSQL function function_tampil_penguji(integer) line 3 at RETURN QUERY
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  more than one row returned by a subquery used as an expression
+CONTEXT:  SQL statement &quot;SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;\'lokasi\')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;\'station\')::INT as stationId,
+		(detail-&gt;&gt;\'stationNama\')::VARCHAR as stationNama,
+		(detail-&gt;&gt;\'penguji\')::int as penguji,
+		(detail-&gt;&gt;\'stationKey\')::VARCHAR as key,
+		(select peserta from function_mahasiswa_station() as mhs where mhs.&quot;lokasiId&quot; =(raw_json-&gt;&gt;\'lokasi\')::INT and mhs.&quot;stationId&quot; = 1 and mhs.&quot;urutan&quot; =(detail-&gt;&gt;\'station\')::INT) as mahasiswa
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;\'data\') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;\'lokasi\')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;\'detail\') detail(detail)
+	 WHERE settingtes.&quot;setId&quot;= idSetting&quot;
+PL/pgSQL function function_tampil_penguji(integer) line 3 at RETURN QUERY', 'SYSTEMPATH/Database/Postgre/Connection.php', 140, [...])
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(resource (pgsql link), 'SELECT *
+FROM function_tampil_penguji(\'8\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *
+FROM function_tampil_penguji(\'8\')')
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM function_tampil_penguji(\'8\')')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM function_tampil_penguji(\'8\')', [], false)
+ 6 ROOTPATH/modules/Penguji/Models/PengujiModel.php(32): CodeIgniter\Database\BaseBuilder->get()
+ 7 ROOTPATH/modules/Penguji/Controllers/Penguji.php(48): Modules\Penguji\Models\PengujiModel->getPengujiById('8')
+ 8 SYSTEMPATH/CodeIgniter.php(907): Modules\Penguji\Controllers\Penguji->getById('8')
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penguji\Controllers\Penguji))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-11 11:48:12 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/API/ResponseTrait.php(348): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/API/ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Debug/Exceptions.php(132): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+in SYSTEMPATH/Format/JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-11 12:56:47 --> Undefined variable: new
+in APPPATH/Helpers/validation_helper.php on line 41.
+ 1 APPPATH/Helpers/validation_helper.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: new', 'APPPATH/Helpers/validation_helper.php', 41, [...])
+ 2 ROOTPATH/modules/Penguji/Controllers/Penguji.php(107): susunpeserta([...], 0)
+ 3 SYSTEMPATH/CodeIgniter.php(907): Modules\Penguji\Controllers\Penguji->edit('8')
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penguji\Controllers\Penguji))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-10-11 14:20:44 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;peserta&quot; does not exist
+LINE 11:   (select peserta from function_mahasiswa_station() as mhs w...
+                   ^
+QUERY:  SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;'lokasi')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;'station')::INT as stationId,
+		(detail-&gt;&gt;'stationNama')::VARCHAR as stationNama,
+		(detail-&gt;&gt;'penguji')::int as penguji,
+		(detail-&gt;&gt;'stationKey')::VARCHAR as key,
+		(select peserta from function_mahasiswa_station() as mhs where mhs.&quot;setId&quot;= idSetting and mhs.&quot;lokasiId&quot; =(raw_json-&gt;&gt;'lokasi')::INT and mhs.&quot;stationId&quot; = 1 and mhs.&quot;urutan&quot; =(detail-&gt;&gt;'station')::INT)::VARCHAR as mahasiswa
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;'data') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;'lokasi')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;'detail') detail(detail)
+	 WHERE settingtes.&quot;setId&quot;= idSetting
+CONTEXT:  PL/pgSQL function function_tampil_setting_penguji_peserta(integer) line 3 at RETURN QUERY in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/ivan/Cod...', 140, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(140): pg_query(Resource id #16, 'SELECT *\nFROM f...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM f...')
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM f...')
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM f...', Array, false)
+#5 /Users/ivan/Codeigniter/osce_v2/modules/Penguji/Models/PengujiModel.php(32): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/ivan/Codeigniter/osce_v2/modules/Penguji/Controllers/Penguji.php(48): Modules\Penguji\Models\PengujiModel->getPengujiById('13')
+#7 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Modules\Penguji\Controllers\Penguji->getById('13')
+#8 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penguji\Controllers\Penguji))
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#12 {main}
+CRITICAL - 2022-10-11 14:20:44 --> pg_query(): Query failed: ERROR:  column &quot;peserta&quot; does not exist
+LINE 11:   (select peserta from function_mahasiswa_station() as mhs w...
+                   ^
+QUERY:  SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;'lokasi')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;'station')::INT as stationId,
+		(detail-&gt;&gt;'stationNama')::VARCHAR as stationNama,
+		(detail-&gt;&gt;'penguji')::int as penguji,
+		(detail-&gt;&gt;'stationKey')::VARCHAR as key,
+		(select peserta from function_mahasiswa_station() as mhs where mhs.&quot;setId&quot;= idSetting and mhs.&quot;lokasiId&quot; =(raw_json-&gt;&gt;'lokasi')::INT and mhs.&quot;stationId&quot; = 1 and mhs.&quot;urutan&quot; =(detail-&gt;&gt;'station')::INT)::VARCHAR as mahasiswa
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;'data') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;'lokasi')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;'detail') detail(detail)
+	 WHERE settingtes.&quot;setId&quot;= idSetting
+CONTEXT:  PL/pgSQL function function_tampil_setting_penguji_peserta(integer) line 3 at RETURN QUERY
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  column &quot;peserta&quot; does not exist
+LINE 11:   (select peserta from function_mahasiswa_station() as mhs w...
+                   ^
+QUERY:  SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;\'lokasi\')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;\'station\')::INT as stationId,
+		(detail-&gt;&gt;\'stationNama\')::VARCHAR as stationNama,
+		(detail-&gt;&gt;\'penguji\')::int as penguji,
+		(detail-&gt;&gt;\'stationKey\')::VARCHAR as key,
+		(select peserta from function_mahasiswa_station() as mhs where mhs.&quot;setId&quot;= idSetting and mhs.&quot;lokasiId&quot; =(raw_json-&gt;&gt;\'lokasi\')::INT and mhs.&quot;stationId&quot; = 1 and mhs.&quot;urutan&quot; =(detail-&gt;&gt;\'station\')::INT)::VARCHAR as mahasiswa
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;\'data\') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;\'lokasi\')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;\'detail\') detail(detail)
+	 WHERE settingtes.&quot;setId&quot;= idSetting
+CONTEXT:  PL/pgSQL function function_tampil_setting_penguji_peserta(integer) line 3 at RETURN QUERY', 'SYSTEMPATH/Database/Postgre/Connection.php', 140, [...])
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(resource (pgsql link), 'SELECT *
+FROM function_tampil_setting_penguji_peserta(\'13\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *
+FROM function_tampil_setting_penguji_peserta(\'13\')')
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM function_tampil_setting_penguji_peserta(\'13\')')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM function_tampil_setting_penguji_peserta(\'13\')', [], false)
+ 6 ROOTPATH/modules/Penguji/Models/PengujiModel.php(32): CodeIgniter\Database\BaseBuilder->get()
+ 7 ROOTPATH/modules/Penguji/Controllers/Penguji.php(48): Modules\Penguji\Models\PengujiModel->getPengujiById('13')
+ 8 SYSTEMPATH/CodeIgniter.php(907): Modules\Penguji\Controllers\Penguji->getById('13')
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penguji\Controllers\Penguji))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-11 14:20:44 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/API/ResponseTrait.php(348): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/API/ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Debug/Exceptions.php(132): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+in SYSTEMPATH/Format/JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-10-11 14:21:04 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;peserta&quot; does not exist
+LINE 11:   (select peserta from function_mahasiswa_station() as mhs w...
+                   ^
+QUERY:  SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;'lokasi')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;'station')::INT as stationId,
+		(detail-&gt;&gt;'stationNama')::VARCHAR as stationNama,
+		(detail-&gt;&gt;'penguji')::int as penguji,
+		(detail-&gt;&gt;'stationKey')::VARCHAR as key,
+		(select peserta from function_mahasiswa_station() as mhs where mhs.&quot;setId&quot;= idSetting and mhs.&quot;lokasiId&quot; =(raw_json-&gt;&gt;'lokasi')::INT and mhs.&quot;stationId&quot; = 1 and mhs.&quot;urutan&quot; =(detail-&gt;&gt;'station')::INT)::VARCHAR as mahasiswa
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;'data') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;'lokasi')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;'detail') detail(detail)
+	 WHERE settingtes.&quot;setId&quot;= idSetting
+CONTEXT:  PL/pgSQL function function_tampil_setting_penguji_peserta(integer) line 3 at RETURN QUERY in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/ivan/Cod...', 140, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(140): pg_query(Resource id #16, 'SELECT *\nFROM f...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM f...')
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM f...')
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM f...', Array, false)
+#5 /Users/ivan/Codeigniter/osce_v2/modules/Penguji/Models/PengujiModel.php(32): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/ivan/Codeigniter/osce_v2/modules/Penguji/Controllers/Penguji.php(48): Modules\Penguji\Models\PengujiModel->getPengujiById('13')
+#7 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Modules\Penguji\Controllers\Penguji->getById('13')
+#8 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penguji\Controllers\Penguji))
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#12 {main}
+CRITICAL - 2022-10-11 14:21:04 --> pg_query(): Query failed: ERROR:  column &quot;peserta&quot; does not exist
+LINE 11:   (select peserta from function_mahasiswa_station() as mhs w...
+                   ^
+QUERY:  SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;'lokasi')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;'station')::INT as stationId,
+		(detail-&gt;&gt;'stationNama')::VARCHAR as stationNama,
+		(detail-&gt;&gt;'penguji')::int as penguji,
+		(detail-&gt;&gt;'stationKey')::VARCHAR as key,
+		(select peserta from function_mahasiswa_station() as mhs where mhs.&quot;setId&quot;= idSetting and mhs.&quot;lokasiId&quot; =(raw_json-&gt;&gt;'lokasi')::INT and mhs.&quot;stationId&quot; = 1 and mhs.&quot;urutan&quot; =(detail-&gt;&gt;'station')::INT)::VARCHAR as mahasiswa
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;'data') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;'lokasi')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;'detail') detail(detail)
+	 WHERE settingtes.&quot;setId&quot;= idSetting
+CONTEXT:  PL/pgSQL function function_tampil_setting_penguji_peserta(integer) line 3 at RETURN QUERY
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  column &quot;peserta&quot; does not exist
+LINE 11:   (select peserta from function_mahasiswa_station() as mhs w...
+                   ^
+QUERY:  SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;\'lokasi\')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;\'station\')::INT as stationId,
+		(detail-&gt;&gt;\'stationNama\')::VARCHAR as stationNama,
+		(detail-&gt;&gt;\'penguji\')::int as penguji,
+		(detail-&gt;&gt;\'stationKey\')::VARCHAR as key,
+		(select peserta from function_mahasiswa_station() as mhs where mhs.&quot;setId&quot;= idSetting and mhs.&quot;lokasiId&quot; =(raw_json-&gt;&gt;\'lokasi\')::INT and mhs.&quot;stationId&quot; = 1 and mhs.&quot;urutan&quot; =(detail-&gt;&gt;\'station\')::INT)::VARCHAR as mahasiswa
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;\'data\') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;\'lokasi\')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;\'detail\') detail(detail)
+	 WHERE settingtes.&quot;setId&quot;= idSetting
+CONTEXT:  PL/pgSQL function function_tampil_setting_penguji_peserta(integer) line 3 at RETURN QUERY', 'SYSTEMPATH/Database/Postgre/Connection.php', 140, [...])
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(resource (pgsql link), 'SELECT *
+FROM function_tampil_setting_penguji_peserta(\'13\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *
+FROM function_tampil_setting_penguji_peserta(\'13\')')
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM function_tampil_setting_penguji_peserta(\'13\')')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM function_tampil_setting_penguji_peserta(\'13\')', [], false)
+ 6 ROOTPATH/modules/Penguji/Models/PengujiModel.php(32): CodeIgniter\Database\BaseBuilder->get()
+ 7 ROOTPATH/modules/Penguji/Controllers/Penguji.php(48): Modules\Penguji\Models\PengujiModel->getPengujiById('13')
+ 8 SYSTEMPATH/CodeIgniter.php(907): Modules\Penguji\Controllers\Penguji->getById('13')
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penguji\Controllers\Penguji))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-11 14:21:04 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/API/ResponseTrait.php(348): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/API/ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Debug/Exceptions.php(132): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+in SYSTEMPATH/Format/JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-10-11 14:21:08 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;peserta&quot; does not exist
+LINE 11:   (select peserta from function_mahasiswa_station() as mhs w...
+                   ^
+QUERY:  SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;'lokasi')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;'station')::INT as stationId,
+		(detail-&gt;&gt;'stationNama')::VARCHAR as stationNama,
+		(detail-&gt;&gt;'penguji')::int as penguji,
+		(detail-&gt;&gt;'stationKey')::VARCHAR as key,
+		(select peserta from function_mahasiswa_station() as mhs where mhs.&quot;setId&quot;= idSetting and mhs.&quot;lokasiId&quot; =(raw_json-&gt;&gt;'lokasi')::INT and mhs.&quot;stationId&quot; = 1 and mhs.&quot;urutan&quot; =(detail-&gt;&gt;'station')::INT)::VARCHAR as mahasiswa
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;'data') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;'lokasi')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;'detail') detail(detail)
+	 WHERE settingtes.&quot;setId&quot;= idSetting
+CONTEXT:  PL/pgSQL function function_tampil_setting_penguji_peserta(integer) line 3 at RETURN QUERY in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/ivan/Cod...', 140, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(140): pg_query(Resource id #16, 'SELECT *\nFROM f...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM f...')
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM f...')
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM f...', Array, false)
+#5 /Users/ivan/Codeigniter/osce_v2/modules/Penguji/Models/PengujiModel.php(32): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/ivan/Codeigniter/osce_v2/modules/Penguji/Controllers/Penguji.php(48): Modules\Penguji\Models\PengujiModel->getPengujiById('13')
+#7 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Modules\Penguji\Controllers\Penguji->getById('13')
+#8 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penguji\Controllers\Penguji))
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#12 {main}
+CRITICAL - 2022-10-11 14:21:08 --> pg_query(): Query failed: ERROR:  column &quot;peserta&quot; does not exist
+LINE 11:   (select peserta from function_mahasiswa_station() as mhs w...
+                   ^
+QUERY:  SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;'lokasi')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;'station')::INT as stationId,
+		(detail-&gt;&gt;'stationNama')::VARCHAR as stationNama,
+		(detail-&gt;&gt;'penguji')::int as penguji,
+		(detail-&gt;&gt;'stationKey')::VARCHAR as key,
+		(select peserta from function_mahasiswa_station() as mhs where mhs.&quot;setId&quot;= idSetting and mhs.&quot;lokasiId&quot; =(raw_json-&gt;&gt;'lokasi')::INT and mhs.&quot;stationId&quot; = 1 and mhs.&quot;urutan&quot; =(detail-&gt;&gt;'station')::INT)::VARCHAR as mahasiswa
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;'data') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;'lokasi')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;'detail') detail(detail)
+	 WHERE settingtes.&quot;setId&quot;= idSetting
+CONTEXT:  PL/pgSQL function function_tampil_setting_penguji_peserta(integer) line 3 at RETURN QUERY
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  column &quot;peserta&quot; does not exist
+LINE 11:   (select peserta from function_mahasiswa_station() as mhs w...
+                   ^
+QUERY:  SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;\'lokasi\')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;\'station\')::INT as stationId,
+		(detail-&gt;&gt;\'stationNama\')::VARCHAR as stationNama,
+		(detail-&gt;&gt;\'penguji\')::int as penguji,
+		(detail-&gt;&gt;\'stationKey\')::VARCHAR as key,
+		(select peserta from function_mahasiswa_station() as mhs where mhs.&quot;setId&quot;= idSetting and mhs.&quot;lokasiId&quot; =(raw_json-&gt;&gt;\'lokasi\')::INT and mhs.&quot;stationId&quot; = 1 and mhs.&quot;urutan&quot; =(detail-&gt;&gt;\'station\')::INT)::VARCHAR as mahasiswa
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;\'data\') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;\'lokasi\')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;\'detail\') detail(detail)
+	 WHERE settingtes.&quot;setId&quot;= idSetting
+CONTEXT:  PL/pgSQL function function_tampil_setting_penguji_peserta(integer) line 3 at RETURN QUERY', 'SYSTEMPATH/Database/Postgre/Connection.php', 140, [...])
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(resource (pgsql link), 'SELECT *
+FROM function_tampil_setting_penguji_peserta(\'13\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *
+FROM function_tampil_setting_penguji_peserta(\'13\')')
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM function_tampil_setting_penguji_peserta(\'13\')')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM function_tampil_setting_penguji_peserta(\'13\')', [], false)
+ 6 ROOTPATH/modules/Penguji/Models/PengujiModel.php(32): CodeIgniter\Database\BaseBuilder->get()
+ 7 ROOTPATH/modules/Penguji/Controllers/Penguji.php(48): Modules\Penguji\Models\PengujiModel->getPengujiById('13')
+ 8 SYSTEMPATH/CodeIgniter.php(907): Modules\Penguji\Controllers\Penguji->getById('13')
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penguji\Controllers\Penguji))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-11 14:21:08 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/API/ResponseTrait.php(348): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/API/ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Debug/Exceptions.php(132): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+in SYSTEMPATH/Format/JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-10-11 14:21:24 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;peserta&quot; does not exist
+LINE 11:   (select peserta from function_mahasiswa_station() as mhs w...
+                   ^
+QUERY:  SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;'lokasi')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;'station')::INT as stationId,
+		(detail-&gt;&gt;'stationNama')::VARCHAR as stationNama,
+		(detail-&gt;&gt;'penguji')::int as penguji,
+		(detail-&gt;&gt;'stationKey')::VARCHAR as key,
+		(select peserta from function_mahasiswa_station() as mhs where mhs.&quot;setId&quot;= idSetting and mhs.&quot;lokasiId&quot; =(raw_json-&gt;&gt;'lokasi')::INT and mhs.&quot;stationId&quot; = 1 and mhs.&quot;urutan&quot; =(detail-&gt;&gt;'station')::INT)::VARCHAR as mahasiswa
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;'data') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;'lokasi')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;'detail') detail(detail)
+	 WHERE settingtes.&quot;setId&quot;= idSetting
+CONTEXT:  PL/pgSQL function function_tampil_setting_penguji_peserta(integer) line 3 at RETURN QUERY in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/ivan/Cod...', 140, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(140): pg_query(Resource id #16, 'SELECT *\nFROM f...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM f...')
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM f...')
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM f...', Array, false)
+#5 /Users/ivan/Codeigniter/osce_v2/modules/Penguji/Models/PengujiModel.php(32): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/ivan/Codeigniter/osce_v2/modules/Penguji/Controllers/Penguji.php(48): Modules\Penguji\Models\PengujiModel->getPengujiById('13')
+#7 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Modules\Penguji\Controllers\Penguji->getById('13')
+#8 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penguji\Controllers\Penguji))
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#12 {main}
+CRITICAL - 2022-10-11 14:21:24 --> pg_query(): Query failed: ERROR:  column &quot;peserta&quot; does not exist
+LINE 11:   (select peserta from function_mahasiswa_station() as mhs w...
+                   ^
+QUERY:  SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;'lokasi')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;'station')::INT as stationId,
+		(detail-&gt;&gt;'stationNama')::VARCHAR as stationNama,
+		(detail-&gt;&gt;'penguji')::int as penguji,
+		(detail-&gt;&gt;'stationKey')::VARCHAR as key,
+		(select peserta from function_mahasiswa_station() as mhs where mhs.&quot;setId&quot;= idSetting and mhs.&quot;lokasiId&quot; =(raw_json-&gt;&gt;'lokasi')::INT and mhs.&quot;stationId&quot; = 1 and mhs.&quot;urutan&quot; =(detail-&gt;&gt;'station')::INT)::VARCHAR as mahasiswa
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;'data') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;'lokasi')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;'detail') detail(detail)
+	 WHERE settingtes.&quot;setId&quot;= idSetting
+CONTEXT:  PL/pgSQL function function_tampil_setting_penguji_peserta(integer) line 3 at RETURN QUERY
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  column &quot;peserta&quot; does not exist
+LINE 11:   (select peserta from function_mahasiswa_station() as mhs w...
+                   ^
+QUERY:  SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;\'lokasi\')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;\'station\')::INT as stationId,
+		(detail-&gt;&gt;\'stationNama\')::VARCHAR as stationNama,
+		(detail-&gt;&gt;\'penguji\')::int as penguji,
+		(detail-&gt;&gt;\'stationKey\')::VARCHAR as key,
+		(select peserta from function_mahasiswa_station() as mhs where mhs.&quot;setId&quot;= idSetting and mhs.&quot;lokasiId&quot; =(raw_json-&gt;&gt;\'lokasi\')::INT and mhs.&quot;stationId&quot; = 1 and mhs.&quot;urutan&quot; =(detail-&gt;&gt;\'station\')::INT)::VARCHAR as mahasiswa
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;\'data\') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;\'lokasi\')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;\'detail\') detail(detail)
+	 WHERE settingtes.&quot;setId&quot;= idSetting
+CONTEXT:  PL/pgSQL function function_tampil_setting_penguji_peserta(integer) line 3 at RETURN QUERY', 'SYSTEMPATH/Database/Postgre/Connection.php', 140, [...])
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(resource (pgsql link), 'SELECT *
+FROM function_tampil_setting_penguji_peserta(\'13\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *
+FROM function_tampil_setting_penguji_peserta(\'13\')')
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM function_tampil_setting_penguji_peserta(\'13\')')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM function_tampil_setting_penguji_peserta(\'13\')', [], false)
+ 6 ROOTPATH/modules/Penguji/Models/PengujiModel.php(32): CodeIgniter\Database\BaseBuilder->get()
+ 7 ROOTPATH/modules/Penguji/Controllers/Penguji.php(48): Modules\Penguji\Models\PengujiModel->getPengujiById('13')
+ 8 SYSTEMPATH/CodeIgniter.php(907): Modules\Penguji\Controllers\Penguji->getById('13')
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penguji\Controllers\Penguji))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-11 14:21:24 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/API/ResponseTrait.php(348): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/API/ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Debug/Exceptions.php(132): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+in SYSTEMPATH/Format/JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-10-11 14:24:09 --> ErrorException: pg_query(): Query failed: ERROR:  cannot call json_object_keys on a scalar
+CONTEXT:  SQL statement &quot;SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;'lokasi')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;'station')::INT as stationId,
+		(detail-&gt;&gt;'stationNama')::VARCHAR as stationNama,
+		(detail-&gt;&gt;'penguji')::int as penguji,
+		(json_object_keys(mahasiswa)::int)::int as urutan,
+		(mahasiswa-&gt;&gt;(json_object_keys(mahasiswa)::varchar))::VARCHAR as peserta
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;'data') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;'lokasi')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;'detail') detail(detail),
+	 LATERAL json_array_elements(detail-&gt;'mahasiswa') mahasiswa(mahasiswa)&quot;
+PL/pgSQL function function_mahasiswa_station() line 3 at RETURN QUERY
+SQL statement &quot;SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;'lokasi')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;'station')::INT as stationId,
+		(detail-&gt;&gt;'stationNama')::VARCHAR as stationNama,
+		(detail-&gt;&gt;'penguji')::int as penguji,
+		(detail-&gt;&gt;'stationKey')::VARCHAR as key,
+		(select peserta from function_mahasiswa_station() as mhs where mhs.&quot;setId&quot;= idSetting and mhs.&quot;lokasiId&quot; =(raw_json-&gt;&gt;'lokasi')::INT and mhs.&quot;stationId&quot; = 1 and mhs.&quot;urutan&quot; =(detail-&gt;&gt;'station')::INT)::VARCHAR as mahasiswa
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;'data') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;'lokasi')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;'detail') detail(detail)
+	 WHERE settingtes.&quot;setId&quot;= idSetting&quot;
+PL/pgSQL function function_tampil_setting_penguji_peserta(integer) line 3 at RETURN QUERY in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/ivan/Cod...', 140, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(140): pg_query(Resource id #16, 'SELECT *\nFROM f...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM f...')
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM f...')
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM f...', Array, false)
+#5 /Users/ivan/Codeigniter/osce_v2/modules/Penguji/Models/PengujiModel.php(32): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/ivan/Codeigniter/osce_v2/modules/Penguji/Controllers/Penguji.php(48): Modules\Penguji\Models\PengujiModel->getPengujiById('13')
+#7 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Modules\Penguji\Controllers\Penguji->getById('13')
+#8 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penguji\Controllers\Penguji))
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#12 {main}
+CRITICAL - 2022-10-11 14:24:09 --> pg_query(): Query failed: ERROR:  cannot call json_object_keys on a scalar
+CONTEXT:  SQL statement &quot;SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;'lokasi')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;'station')::INT as stationId,
+		(detail-&gt;&gt;'stationNama')::VARCHAR as stationNama,
+		(detail-&gt;&gt;'penguji')::int as penguji,
+		(json_object_keys(mahasiswa)::int)::int as urutan,
+		(mahasiswa-&gt;&gt;(json_object_keys(mahasiswa)::varchar))::VARCHAR as peserta
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;'data') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;'lokasi')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;'detail') detail(detail),
+	 LATERAL json_array_elements(detail-&gt;'mahasiswa') mahasiswa(mahasiswa)&quot;
+PL/pgSQL function function_mahasiswa_station() line 3 at RETURN QUERY
+SQL statement &quot;SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;'lokasi')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;'station')::INT as stationId,
+		(detail-&gt;&gt;'stationNama')::VARCHAR as stationNama,
+		(detail-&gt;&gt;'penguji')::int as penguji,
+		(detail-&gt;&gt;'stationKey')::VARCHAR as key,
+		(select peserta from function_mahasiswa_station() as mhs where mhs.&quot;setId&quot;= idSetting and mhs.&quot;lokasiId&quot; =(raw_json-&gt;&gt;'lokasi')::INT and mhs.&quot;stationId&quot; = 1 and mhs.&quot;urutan&quot; =(detail-&gt;&gt;'station')::INT)::VARCHAR as mahasiswa
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;'data') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;'lokasi')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;'detail') detail(detail)
+	 WHERE settingtes.&quot;setId&quot;= idSetting&quot;
+PL/pgSQL function function_tampil_setting_penguji_peserta(integer) line 3 at RETURN QUERY
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  cannot call json_object_keys on a scalar
+CONTEXT:  SQL statement &quot;SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;\'lokasi\')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;\'station\')::INT as stationId,
+		(detail-&gt;&gt;\'stationNama\')::VARCHAR as stationNama,
+		(detail-&gt;&gt;\'penguji\')::int as penguji,
+		(json_object_keys(mahasiswa)::int)::int as urutan,
+		(mahasiswa-&gt;&gt;(json_object_keys(mahasiswa)::varchar))::VARCHAR as peserta
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;\'data\') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;\'lokasi\')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;\'detail\') detail(detail),
+	 LATERAL json_array_elements(detail-&gt;\'mahasiswa\') mahasiswa(mahasiswa)&quot;
+PL/pgSQL function function_mahasiswa_station() line 3 at RETURN QUERY
+SQL statement &quot;SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;\'lokasi\')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;\'station\')::INT as stationId,
+		(detail-&gt;&gt;\'stationNama\')::VARCHAR as stationNama,
+		(detail-&gt;&gt;\'penguji\')::int as penguji,
+		(detail-&gt;&gt;\'stationKey\')::VARCHAR as key,
+		(select peserta from function_mahasiswa_station() as mhs where mhs.&quot;setId&quot;= idSetting and mhs.&quot;lokasiId&quot; =(raw_json-&gt;&gt;\'lokasi\')::INT and mhs.&quot;stationId&quot; = 1 and mhs.&quot;urutan&quot; =(detail-&gt;&gt;\'station\')::INT)::VARCHAR as mahasiswa
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;\'data\') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;\'lokasi\')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;\'detail\') detail(detail)
+	 WHERE settingtes.&quot;setId&quot;= idSetting&quot;
+PL/pgSQL function function_tampil_setting_penguji_peserta(integer) line 3 at RETURN QUERY', 'SYSTEMPATH/Database/Postgre/Connection.php', 140, [...])
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(resource (pgsql link), 'SELECT *
+FROM function_tampil_setting_penguji_peserta(\'13\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *
+FROM function_tampil_setting_penguji_peserta(\'13\')')
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM function_tampil_setting_penguji_peserta(\'13\')')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM function_tampil_setting_penguji_peserta(\'13\')', [], false)
+ 6 ROOTPATH/modules/Penguji/Models/PengujiModel.php(32): CodeIgniter\Database\BaseBuilder->get()
+ 7 ROOTPATH/modules/Penguji/Controllers/Penguji.php(48): Modules\Penguji\Models\PengujiModel->getPengujiById('13')
+ 8 SYSTEMPATH/CodeIgniter.php(907): Modules\Penguji\Controllers\Penguji->getById('13')
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penguji\Controllers\Penguji))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-11 14:24:09 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/API/ResponseTrait.php(348): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/API/ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Debug/Exceptions.php(132): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+in SYSTEMPATH/Format/JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-11 14:33:20 --> Undefined offset: 0
+in ROOTPATH/modules/Penilaian/Views/penilaian.php on line 29.
+ 1 ROOTPATH/modules/Penilaian/Views/penilaian.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'ROOTPATH/modules/Penilaian/Views/penilaian.php', 29, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('ROOTPATH/modules/Penilaian/Views/penilaian.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('Modules\\Penilaian\\Views\\penilaian', [], true)
+ 5 ROOTPATH/modules/Penilaian/Controllers/Penilaian.php(54): view('Modules\\Penilaian\\Views\\penilaian', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-11 14:33:32 --> Undefined offset: 0
+in ROOTPATH/modules/Penilaian/Views/penilaian.php on line 29.
+ 1 ROOTPATH/modules/Penilaian/Views/penilaian.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'ROOTPATH/modules/Penilaian/Views/penilaian.php', 29, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('ROOTPATH/modules/Penilaian/Views/penilaian.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('Modules\\Penilaian\\Views\\penilaian', [], true)
+ 5 ROOTPATH/modules/Penilaian/Controllers/Penilaian.php(54): view('Modules\\Penilaian\\Views\\penilaian', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')

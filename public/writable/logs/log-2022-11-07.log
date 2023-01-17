@@ -1,0 +1,36 @@
+ERROR - 2022-11-07 16:02:23 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;192.168.201.249&quot;, port 5432 failed: FATAL:  database &quot;osce_v2&quot; does not exist in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', '/Users/ivan/Cod...', 69, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(69): pg_connect('host=192.168.20...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Model.php(182): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/BaseModel.php(523): CodeIgniter\Model->doFind(true, '1')
+#7 /Users/ivan/Codeigniter/osce_v2/vendor/myth/auth/src/Authentication/AuthenticationBase.php(130): CodeIgniter\BaseModel->find('1')
+#8 /Users/ivan/Codeigniter/osce_v2/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/myth/auth/src/Filters/LoginFilter.php(29): Myth\Auth\Authentication\LocalAuthenticator->check()
+#10 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Filters/Filters.php(173): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#11 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('configSet', 'before')
+#12 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#15 {main}
+CRITICAL - 2022-11-07 16:02:23 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;192.168.201.249&quot;, port 5432 failed: FATAL:  database &quot;osce_v2&quot; does not exist
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "users"
+WHERE "users"."deleted_at" IS NULL
+AND "users"."id" = :users.id:', [...], false)
+ 3 SYSTEMPATH/Model.php(182): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(523): CodeIgniter\Model->doFind(true, '1')
+ 5 VENDORPATH/myth/auth/src/Authentication/AuthenticationBase.php(130): CodeIgniter\BaseModel->find('1')
+ 6 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+ 7 VENDORPATH/myth/auth/src/Filters/LoginFilter.php(29): Myth\Auth\Authentication\LocalAuthenticator->check()
+ 8 SYSTEMPATH/Filters/Filters.php(173): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 9 SYSTEMPATH/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('configSet', 'before')
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')

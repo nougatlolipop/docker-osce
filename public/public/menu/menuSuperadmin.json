@@ -1,0 +1,156 @@
+[{
+        "__comment__": "title 1-50",
+        "id": "1",
+        "nama": "Home",
+        "parent": "0",
+        "level": "title",
+        "status": true,
+        "icon": "",
+        "pages": ""
+    },
+    {
+        "id": "2",
+        "nama": "Data",
+        "parent": "0",
+        "level": "title",
+        "status": true,
+        "icon": "",
+        "pages": ""
+    },
+    {
+        "id": "3",
+        "nama": "Setting Test",
+        "parent": "0",
+        "level": "title",
+        "status": true,
+        "icon": "",
+        "pages": ""
+    },
+    {
+        "id": "4",
+        "nama": "Laporan",
+        "parent": "0",
+        "level": "title",
+        "status": true,
+        "icon": "",
+        "pages": ""
+    },
+    {
+        "id": "5",
+        "nama": "General Setting",
+        "parent": "0",
+        "level": "title",
+        "status": true,
+        "icon": "",
+        "pages": ""
+    },
+    {
+        "id": "6",
+        "nama": "User",
+        "parent": "0",
+        "level": "title",
+        "status": true,
+        "icon": "",
+        "pages": ""
+    },
+    {
+        "__comment__": "parent 51-300",
+        "id": "51",
+        "nama": "Dashboard",
+        "parent": "1",
+        "level": "child",
+        "status": true,
+        "icon": "fas fa-home",
+        "pages": "/dashboard"
+    },
+    {
+        "id": "52",
+        "nama": "Dosen",
+        "parent": "2",
+        "level": "child",
+        "status": true,
+        "icon": "fas fa-user-doctor",
+        "pages": "/dosen"
+    },
+    {
+        "id": "53",
+        "nama": "Mahasiswa",
+        "parent": "2",
+        "level": "child",
+        "status": true,
+        "icon": "fas fa-users",
+        "pages": "/mahasiswa"
+    },
+    {
+        "id": "54",
+        "nama": "Kompetensi",
+        "parent": "2",
+        "level": "child",
+        "status": true,
+        "icon": "fas fa-shapes",
+        "pages": "/kompetensi"
+    },
+    {
+        "id": "55",
+        "nama": "Lokasi",
+        "parent": "2",
+        "level": "child",
+        "status": true,
+        "icon": "fas fa-location-dot",
+        "pages": "/lokasi"
+    },
+    {
+        "id": "56",
+        "nama": "Penjadwalan Test",
+        "parent": "3",
+        "level": "child",
+        "status": true,
+        "icon": "fas fa-clipboard-list",
+        "pages": "/setting"
+    },
+    {
+        "id": "57",
+        "nama": "Penguji dan Peserta",
+        "parent": "3",
+        "level": "child",
+        "status": true,
+        "icon": "fas fa-chalkboard-user",
+        "pages": "/penguji"
+    },
+    {
+        "id": "58",
+        "nama": "Pertanyaan",
+        "parent": "3",
+        "level": "child",
+        "status": true,
+        "icon": "fas fa-question",
+        "pages": "/pertanyaan"
+    },
+    {
+        "id": "59",
+        "nama": "Hasil Test",
+        "parent": "4",
+        "level": "child",
+        "status": true,
+        "icon": "fas fa-square-poll-horizontal",
+        "pages": "/grade"
+    },
+    {
+        "id": "60",
+        "nama": "Setting",
+        "parent": "5",
+        "level": "child",
+        "status": true,
+        "icon": "fas fa-gear",
+        "pages": "/configSet"
+    },
+    {
+        "id": "61",
+        "nama": "Manajemen Akun",
+        "parent": "6",
+        "level": "child",
+        "status": false,
+        "icon": "fas fa-user",
+        "pages": "/manajemenAkun"
+    }
+]

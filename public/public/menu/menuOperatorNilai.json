@@ -1,0 +1,39 @@
+[{
+        "__comment__": "title 1-50",
+        "id": "1",
+        "nama": "Home",
+        "parent": "0",
+        "level": "title",
+        "status": true,
+        "icon": "",
+        "pages": ""
+    },
+    {
+        "id": "2",
+        "nama": "Laporan",
+        "parent": "0",
+        "level": "title",
+        "status": true,
+        "icon": "",
+        "pages": ""
+    },
+    {
+        "__comment__": "parent 51-300",
+        "id": "51",
+        "nama": "Dashboard",
+        "parent": "1",
+        "level": "child",
+        "status": true,
+        "icon": "fas fa-home",
+        "pages": "/dashboard"
+    },
+    {
+        "id": "52",
+        "nama": "Hasil Test",
+        "parent": "2",
+        "level": "child",
+        "status": true,
+        "icon": "fas fa-square-poll-horizontal",
+        "pages": "/grade"
+    }
+]

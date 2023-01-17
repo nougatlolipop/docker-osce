@@ -1,0 +1,428 @@
+CRITICAL - 2022-10-06 08:56:32 --> Trying to get property 'data' of non-object
+in ROOTPATH/modules/Penguji/Controllers/Penguji.php on line 104.
+ 1 ROOTPATH/modules/Penguji/Controllers/Penguji.php(104): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'data\' of non-object', 'ROOTPATH/modules/Penguji/Controllers/Penguji.php', 104, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): Modules\Penguji\Controllers\Penguji->edit('8')
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penguji\Controllers\Penguji))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-06 08:56:54 --> Trying to get property 'data' of non-object
+in ROOTPATH/modules/Penguji/Controllers/Penguji.php on line 104.
+ 1 ROOTPATH/modules/Penguji/Controllers/Penguji.php(104): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'data\' of non-object', 'ROOTPATH/modules/Penguji/Controllers/Penguji.php', 104, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): Modules\Penguji\Controllers\Penguji->edit('8')
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penguji\Controllers\Penguji))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-06 08:57:05 --> Undefined offset: 0
+in ROOTPATH/modules/Penguji/Controllers/Penguji.php on line 104.
+ 1 ROOTPATH/modules/Penguji/Controllers/Penguji.php(104): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'ROOTPATH/modules/Penguji/Controllers/Penguji.php', 104, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): Modules\Penguji\Controllers\Penguji->edit('8')
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penguji\Controllers\Penguji))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-06 10:06:08 --> Undefined offset: 6
+in ROOTPATH/modules/Penguji/Controllers/Penguji.php on line 96.
+ 1 ROOTPATH/modules/Penguji/Controllers/Penguji.php(96): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 6', 'ROOTPATH/modules/Penguji/Controllers/Penguji.php', 96, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): Modules\Penguji\Controllers\Penguji->getMahasiswa('8')
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penguji\Controllers\Penguji))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-06 10:06:45 --> Undefined offset: 6
+in ROOTPATH/modules/Penguji/Controllers/Penguji.php on line 96.
+ 1 ROOTPATH/modules/Penguji/Controllers/Penguji.php(96): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 6', 'ROOTPATH/modules/Penguji/Controllers/Penguji.php', 96, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): Modules\Penguji\Controllers\Penguji->getMahasiswa('8')
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penguji\Controllers\Penguji))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-06 10:07:27 --> Undefined offset: -1
+in ROOTPATH/modules/Penguji/Controllers/Penguji.php on line 96.
+ 1 ROOTPATH/modules/Penguji/Controllers/Penguji.php(96): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: -1', 'ROOTPATH/modules/Penguji/Controllers/Penguji.php', 96, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): Modules\Penguji\Controllers\Penguji->getMahasiswa('8')
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penguji\Controllers\Penguji))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-10-06 11:17:03 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;false&quot;
+CONTEXT:  SQL statement &quot;SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;'lokasi')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;'station')::INT as stationId,
+		(detail-&gt;&gt;'stationNama')::VARCHAR as stationNama,
+		(detail-&gt;&gt;'penguji')::int as penguji,
+		(detail-&gt;&gt;'stationKey')::VARCHAR as key,
+		(detail-&gt;'mahasiswa'-&gt;0-&gt;&gt;'1')::VARCHAR as mahasiswa
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;'data') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;'lokasi')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;'detail') detail(detail)
+	 WHERE settingtes.&quot;setId&quot;= idSetting&quot;
+PL/pgSQL function function_tampil_penguji(integer) line 3 at RETURN QUERY in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/ivan/Cod...', 140, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(140): pg_query(Resource id #16, 'SELECT *\nFROM f...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM f...')
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM f...')
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM f...', Array, false)
+#5 /Users/ivan/Codeigniter/osce_v2/modules/Penguji/Models/PengujiModel.php(32): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/ivan/Codeigniter/osce_v2/modules/Penguji/Controllers/Penguji.php(86): Modules\Penguji\Models\PengujiModel->getPengujiById('8')
+#7 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Modules\Penguji\Controllers\Penguji->getById('8')
+#8 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penguji\Controllers\Penguji))
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#12 {main}
+CRITICAL - 2022-10-06 11:17:03 --> pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;false&quot;
+CONTEXT:  SQL statement &quot;SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;'lokasi')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;'station')::INT as stationId,
+		(detail-&gt;&gt;'stationNama')::VARCHAR as stationNama,
+		(detail-&gt;&gt;'penguji')::int as penguji,
+		(detail-&gt;&gt;'stationKey')::VARCHAR as key,
+		(detail-&gt;'mahasiswa'-&gt;0-&gt;&gt;'1')::VARCHAR as mahasiswa
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;'data') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;'lokasi')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;'detail') detail(detail)
+	 WHERE settingtes.&quot;setId&quot;= idSetting&quot;
+PL/pgSQL function function_tampil_penguji(integer) line 3 at RETURN QUERY
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;false&quot;
+CONTEXT:  SQL statement &quot;SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;\'lokasi\')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;\'station\')::INT as stationId,
+		(detail-&gt;&gt;\'stationNama\')::VARCHAR as stationNama,
+		(detail-&gt;&gt;\'penguji\')::int as penguji,
+		(detail-&gt;&gt;\'stationKey\')::VARCHAR as key,
+		(detail-&gt;\'mahasiswa\'-&gt;0-&gt;&gt;\'1\')::VARCHAR as mahasiswa
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;\'data\') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;\'lokasi\')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;\'detail\') detail(detail)
+	 WHERE settingtes.&quot;setId&quot;= idSetting&quot;
+PL/pgSQL function function_tampil_penguji(integer) line 3 at RETURN QUERY', 'SYSTEMPATH/Database/Postgre/Connection.php', 140, [...])
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(resource (pgsql link), 'SELECT *
+FROM function_tampil_penguji(\'8\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *
+FROM function_tampil_penguji(\'8\')')
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM function_tampil_penguji(\'8\')')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM function_tampil_penguji(\'8\')', [], false)
+ 6 ROOTPATH/modules/Penguji/Models/PengujiModel.php(32): CodeIgniter\Database\BaseBuilder->get()
+ 7 ROOTPATH/modules/Penguji/Controllers/Penguji.php(86): Modules\Penguji\Models\PengujiModel->getPengujiById('8')
+ 8 SYSTEMPATH/CodeIgniter.php(907): Modules\Penguji\Controllers\Penguji->getById('8')
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penguji\Controllers\Penguji))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-06 11:17:03 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/API/ResponseTrait.php(348): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/API/ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Debug/Exceptions.php(132): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+in SYSTEMPATH/Format/JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-10-06 11:21:05 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;false&quot;
+CONTEXT:  SQL statement &quot;SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;'lokasi')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;'station')::INT as stationId,
+		(detail-&gt;&gt;'stationNama')::VARCHAR as stationNama,
+		(detail-&gt;&gt;'penguji')::int as penguji,
+		(detail-&gt;&gt;'stationKey')::VARCHAR as key,
+		(detail-&gt;'mahasiswa'-&gt;0-&gt;&gt;'1')::VARCHAR as mahasiswa
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;'data') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;'lokasi')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;'detail') detail(detail)
+	 WHERE settingtes.&quot;setId&quot;= idSetting&quot;
+PL/pgSQL function function_tampil_penguji(integer) line 3 at RETURN QUERY in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/ivan/Cod...', 140, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(140): pg_query(Resource id #16, 'SELECT *\nFROM f...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM f...')
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM f...')
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM f...', Array, false)
+#5 /Users/ivan/Codeigniter/osce_v2/modules/Penguji/Models/PengujiModel.php(32): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/ivan/Codeigniter/osce_v2/modules/Penguji/Controllers/Penguji.php(86): Modules\Penguji\Models\PengujiModel->getPengujiById('8')
+#7 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Modules\Penguji\Controllers\Penguji->getById('8')
+#8 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penguji\Controllers\Penguji))
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#12 {main}
+CRITICAL - 2022-10-06 11:21:05 --> pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;false&quot;
+CONTEXT:  SQL statement &quot;SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;'lokasi')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;'station')::INT as stationId,
+		(detail-&gt;&gt;'stationNama')::VARCHAR as stationNama,
+		(detail-&gt;&gt;'penguji')::int as penguji,
+		(detail-&gt;&gt;'stationKey')::VARCHAR as key,
+		(detail-&gt;'mahasiswa'-&gt;0-&gt;&gt;'1')::VARCHAR as mahasiswa
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;'data') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;'lokasi')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;'detail') detail(detail)
+	 WHERE settingtes.&quot;setId&quot;= idSetting&quot;
+PL/pgSQL function function_tampil_penguji(integer) line 3 at RETURN QUERY
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;false&quot;
+CONTEXT:  SQL statement &quot;SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;\'lokasi\')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;\'station\')::INT as stationId,
+		(detail-&gt;&gt;\'stationNama\')::VARCHAR as stationNama,
+		(detail-&gt;&gt;\'penguji\')::int as penguji,
+		(detail-&gt;&gt;\'stationKey\')::VARCHAR as key,
+		(detail-&gt;\'mahasiswa\'-&gt;0-&gt;&gt;\'1\')::VARCHAR as mahasiswa
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;\'data\') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;\'lokasi\')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;\'detail\') detail(detail)
+	 WHERE settingtes.&quot;setId&quot;= idSetting&quot;
+PL/pgSQL function function_tampil_penguji(integer) line 3 at RETURN QUERY', 'SYSTEMPATH/Database/Postgre/Connection.php', 140, [...])
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(resource (pgsql link), 'SELECT *
+FROM function_tampil_penguji(\'8\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *
+FROM function_tampil_penguji(\'8\')')
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM function_tampil_penguji(\'8\')')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM function_tampil_penguji(\'8\')', [], false)
+ 6 ROOTPATH/modules/Penguji/Models/PengujiModel.php(32): CodeIgniter\Database\BaseBuilder->get()
+ 7 ROOTPATH/modules/Penguji/Controllers/Penguji.php(86): Modules\Penguji\Models\PengujiModel->getPengujiById('8')
+ 8 SYSTEMPATH/CodeIgniter.php(907): Modules\Penguji\Controllers\Penguji->getById('8')
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penguji\Controllers\Penguji))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-06 11:21:05 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/API/ResponseTrait.php(348): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/API/ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Debug/Exceptions.php(132): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+in SYSTEMPATH/Format/JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-10-06 11:21:18 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;false&quot;
+CONTEXT:  SQL statement &quot;SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;'lokasi')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;'station')::INT as stationId,
+		(detail-&gt;&gt;'stationNama')::VARCHAR as stationNama,
+		(detail-&gt;&gt;'penguji')::int as penguji,
+		(detail-&gt;&gt;'stationKey')::VARCHAR as key,
+		(detail-&gt;'mahasiswa'-&gt;0-&gt;&gt;'1')::VARCHAR as mahasiswa
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;'data') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;'lokasi')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;'detail') detail(detail)
+	 WHERE settingtes.&quot;setId&quot;= idSetting&quot;
+PL/pgSQL function function_tampil_penguji(integer) line 3 at RETURN QUERY in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/ivan/Cod...', 140, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(140): pg_query(Resource id #16, 'SELECT *\nFROM f...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM f...')
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM f...')
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM f...', Array, false)
+#5 /Users/ivan/Codeigniter/osce_v2/modules/Penguji/Models/PengujiModel.php(32): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/ivan/Codeigniter/osce_v2/modules/Penguji/Controllers/Penguji.php(86): Modules\Penguji\Models\PengujiModel->getPengujiById('8')
+#7 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Modules\Penguji\Controllers\Penguji->getById('8')
+#8 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penguji\Controllers\Penguji))
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#12 {main}
+CRITICAL - 2022-10-06 11:21:18 --> pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;false&quot;
+CONTEXT:  SQL statement &quot;SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;'lokasi')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;'station')::INT as stationId,
+		(detail-&gt;&gt;'stationNama')::VARCHAR as stationNama,
+		(detail-&gt;&gt;'penguji')::int as penguji,
+		(detail-&gt;&gt;'stationKey')::VARCHAR as key,
+		(detail-&gt;'mahasiswa'-&gt;0-&gt;&gt;'1')::VARCHAR as mahasiswa
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;'data') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;'lokasi')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;'detail') detail(detail)
+	 WHERE settingtes.&quot;setId&quot;= idSetting&quot;
+PL/pgSQL function function_tampil_penguji(integer) line 3 at RETURN QUERY
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;false&quot;
+CONTEXT:  SQL statement &quot;SELECT
+		settingtes.&quot;setId&quot; as setId,
+		settingtes.&quot;setDeskripsi&quot; as setDeskripsi,
+		settingtes.&quot;setStartDate&quot; as setStartDate,
+		(raw_json-&gt;&gt;\'lokasi\')::INT as lokasiId,
+		lokasi.&quot;lokasiNama&quot; as lokasiNama,
+		(detail-&gt;&gt;\'station\')::INT as stationId,
+		(detail-&gt;&gt;\'stationNama\')::VARCHAR as stationNama,
+		(detail-&gt;&gt;\'penguji\')::int as penguji,
+		(detail-&gt;&gt;\'stationKey\')::VARCHAR as key,
+		(detail-&gt;\'mahasiswa\'-&gt;0-&gt;&gt;\'1\')::VARCHAR as mahasiswa
+	 FROM
+		settingtes,
+	 LATERAL JSON_ARRAY_ELEMENTS(settingtes.&quot;setStation&quot;-&gt;\'data\') raw_json
+	 LEFT JOIN lokasi on lokasi.&quot;lokasiId&quot; = (raw_json-&gt;&gt;\'lokasi\')::INT,
+	 LATERAL json_array_elements(raw_json -&gt;\'detail\') detail(detail)
+	 WHERE settingtes.&quot;setId&quot;= idSetting&quot;
+PL/pgSQL function function_tampil_penguji(integer) line 3 at RETURN QUERY', 'SYSTEMPATH/Database/Postgre/Connection.php', 140, [...])
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(resource (pgsql link), 'SELECT *
+FROM function_tampil_penguji(\'8\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *
+FROM function_tampil_penguji(\'8\')')
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM function_tampil_penguji(\'8\')')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM function_tampil_penguji(\'8\')', [], false)
+ 6 ROOTPATH/modules/Penguji/Models/PengujiModel.php(32): CodeIgniter\Database\BaseBuilder->get()
+ 7 ROOTPATH/modules/Penguji/Controllers/Penguji.php(86): Modules\Penguji\Models\PengujiModel->getPengujiById('8')
+ 8 SYSTEMPATH/CodeIgniter.php(907): Modules\Penguji\Controllers\Penguji->getById('8')
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penguji\Controllers\Penguji))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-06 11:21:18 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/API/ResponseTrait.php(348): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/API/ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Debug/Exceptions.php(132): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+in SYSTEMPATH/Format/JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-06 15:01:53 --> Illegal offset type
+in ROOTPATH/modules/Penguji/Controllers/Penguji.php on line 115.
+ 1 ROOTPATH/modules/Penguji/Controllers/Penguji.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal offset type', 'ROOTPATH/modules/Penguji/Controllers/Penguji.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): Modules\Penguji\Controllers\Penguji->edit('8')
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penguji\Controllers\Penguji))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-06 17:58:19 --> register filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 493.
+ 1 SYSTEMPATH/Filters/Filters.php(493): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('register')
+ 2 SYSTEMPATH/Filters/Filters.php(243): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH/Filters/Filters.php(163): CodeIgniter\Filters\Filters->initialize('/')
+ 4 SYSTEMPATH/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('/', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-06 18:09:58 --> Undefined variable: title
+in ROOTPATH/modules/Penilaian/Views/penilaian.php on line 9.
+ 1 ROOTPATH/modules/Penilaian/Views/penilaian.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: title', 'ROOTPATH/modules/Penilaian/Views/penilaian.php', 9, [])
+ 2 SYSTEMPATH/View/View.php(213): include('ROOTPATH/modules/Penilaian/Views/penilaian.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('Modules\\Penilaian\\Views\\penilaian', [], true)
+ 5 ROOTPATH/modules/Penilaian/Controllers/Penilaian.php(18): view('Modules\\Penilaian\\Views\\penilaian', [])
+ 6 SYSTEMPATH/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-06 18:15:28 --> Undefined property: Modules\Penilaian\Controllers\Penilaian::$reservedRoutes
+in ROOTPATH/modules/Penilaian/Controllers/Penilaian.php on line 19.
+ 1 ROOTPATH/modules/Penilaian/Controllers/Penilaian.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: Modules\\Penilaian\\Controllers\\Penilaian::$reservedRoutes', 'ROOTPATH/modules/Penilaian/Controllers/Penilaian.php', 19, [])
+ 2 SYSTEMPATH/CodeIgniter.php(869): Modules\Penilaian\Controllers\Penilaian->__construct()
+ 3 SYSTEMPATH/CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-06 18:17:19 --> Trying to get property 'reservedRoutes' of non-object
+in ROOTPATH/modules/Penilaian/Controllers/Penilaian.php on line 20.
+ 1 ROOTPATH/modules/Penilaian/Controllers/Penilaian.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'reservedRoutes\' of non-object', 'ROOTPATH/modules/Penilaian/Controllers/Penilaian.php', 20, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(869): Modules\Penilaian\Controllers\Penilaian->__construct()
+ 3 SYSTEMPATH/CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-06 18:17:31 --> Trying to get property 'reservedRoutes' of non-object
+in ROOTPATH/modules/Penilaian/Controllers/Penilaian.php on line 20.
+ 1 ROOTPATH/modules/Penilaian/Controllers/Penilaian.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'reservedRoutes\' of non-object', 'ROOTPATH/modules/Penilaian/Controllers/Penilaian.php', 20, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(869): Modules\Penilaian\Controllers\Penilaian->__construct()
+ 3 SYSTEMPATH/CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-06 18:38:31 --> auth filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 340.
+ 1 SYSTEMPATH/Filters/Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('auth')
+ 2 SYSTEMPATH/CodeIgniter.php(422): CodeIgniter\Filters\Filters->enableFilter('auth', 'before')
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-06 18:40:06 --> auth filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 340.
+ 1 SYSTEMPATH/Filters/Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('auth')
+ 2 SYSTEMPATH/CodeIgniter.php(422): CodeIgniter\Filters\Filters->enableFilter('auth', 'before')
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-06 18:40:08 --> auth filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 340.
+ 1 SYSTEMPATH/Filters/Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('auth')
+ 2 SYSTEMPATH/CodeIgniter.php(422): CodeIgniter\Filters\Filters->enableFilter('auth', 'before')
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-06 18:42:19 --> Undefined variable: data
+in ROOTPATH/modules/Penilaian/Views/penilaian.php on line 17.
+ 1 ROOTPATH/modules/Penilaian/Views/penilaian.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'ROOTPATH/modules/Penilaian/Views/penilaian.php', 17, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('ROOTPATH/modules/Penilaian/Views/penilaian.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('Modules\\Penilaian\\Views\\penilaian', [], true)
+ 5 ROOTPATH/modules/Station/Controllers/Station.php(40): view('Modules\\Penilaian\\Views\\penilaian', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): Modules\Station\Controllers\Station->login()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Station\Controllers\Station))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')

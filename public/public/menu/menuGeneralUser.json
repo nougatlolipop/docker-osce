@@ -1,0 +1,19 @@
+[{
+        "id": "1",
+        "nama": "Home",
+        "parent": "0",
+        "level": "title",
+        "status": true,
+        "icon": "",
+        "pages": ""
+    },
+    {
+        "id": "2",
+        "nama": "Dashboard",
+        "parent": "1",
+        "level": "child",
+        "status": true,
+        "icon": "fas fa-home",
+        "pages": "/dashboard"
+    }
+]

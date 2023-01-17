@@ -1,0 +1,48 @@
+CRITICAL - 2022-12-07 09:46:12 --> Undefined variable: edit
+in ROOTPATH/modules/Pengawas/Views/pengawas.php on line 17.
+ 1 ROOTPATH/modules/Pengawas/Views/pengawas.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: edit', 'ROOTPATH/modules/Pengawas/Views/pengawas.php', 17, [])
+ 2 SYSTEMPATH/View/View.php(213): include('ROOTPATH/modules/Pengawas/Views/pengawas.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('Modules\\Pengawas\\Views\\pengawas', [], true)
+ 5 ROOTPATH/modules/Pengawas/Controllers/Pengawas.php(27): view('Modules\\Pengawas\\Views\\pengawas')
+ 6 SYSTEMPATH/CodeIgniter.php(907): Modules\Pengawas\Controllers\Pengawas->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Pengawas\Controllers\Pengawas))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-07 19:08:35 --> Undefined variable: edit
+in ROOTPATH/modules/Penilaian/Views/penilaian.php on line 93.
+ 1 ROOTPATH/modules/Penilaian/Views/penilaian.php(93): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: edit', 'ROOTPATH/modules/Penilaian/Views/penilaian.php', 93, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('ROOTPATH/modules/Penilaian/Views/penilaian.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('Modules\\Penilaian\\Views\\penilaian', [], true)
+ 5 ROOTPATH/modules/Penilaian/Controllers/Penilaian.php(54): view('Modules\\Penilaian\\Views\\penilaian', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-07 19:26:19 --> Undefined index: gr
+in ROOTPATH/modules/Penilaian/Controllers/Penilaian.php on line 81.
+ 1 ROOTPATH/modules/Penilaian/Controllers/Penilaian.php(81): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: gr', 'ROOTPATH/modules/Penilaian/Controllers/Penilaian.php', 81, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->add()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-07 19:26:29 --> Undefined index: gr
+in ROOTPATH/modules/Penilaian/Controllers/Penilaian.php on line 81.
+ 1 ROOTPATH/modules/Penilaian/Controllers/Penilaian.php(81): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: gr', 'ROOTPATH/modules/Penilaian/Controllers/Penilaian.php', 81, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->add()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-07 19:31:33 --> Undefined index: gr
+in ROOTPATH/modules/Penilaian/Controllers/Penilaian.php on line 84.
+ 1 ROOTPATH/modules/Penilaian/Controllers/Penilaian.php(84): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: gr', 'ROOTPATH/modules/Penilaian/Controllers/Penilaian.php', 84, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->add()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')

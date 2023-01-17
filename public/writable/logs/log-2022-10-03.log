@@ -1,0 +1,1333 @@
+ERROR - 2022-10-03 08:20:32 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;192.168.201.249&quot;, port 3306 failed: Operation timed out
+	Is the server running on that host and accepting TCP/IP connections? in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', '/Users/ivan/Cod...', 69, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(69): pg_connect('host=192.168.20...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 /Users/ivan/Codeigniter/osce_v2/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+#8 /Users/ivan/Codeigniter/osce_v2/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/myth/auth/src/Controllers/AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#10 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Myth\Auth\Controllers\AuthController->attemptLogin()
+#11 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#12 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#15 {main}
+CRITICAL - 2022-10-03 08:20:32 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;192.168.201.249&quot;, port 3306 failed: Operation timed out
+	Is the server running on that host and accepting TCP/IP connections?
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "users"
+WHERE "email" = :email:
+AND "users"."deleted_at" IS NULL
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 5 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+ 6 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 7 VENDORPATH/myth/auth/src/Controllers/AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+ 8 SYSTEMPATH/CodeIgniter.php(907): Myth\Auth\Controllers\AuthController->attemptLogin()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-10-03 08:21:57 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;192.168.201.249&quot;, port 3306 failed: Operation timed out
+	Is the server running on that host and accepting TCP/IP connections? in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', '/Users/ivan/Cod...', 69, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(69): pg_connect('host=192.168.20...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 /Users/ivan/Codeigniter/osce_v2/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+#8 /Users/ivan/Codeigniter/osce_v2/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/myth/auth/src/Controllers/AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#10 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Myth\Auth\Controllers\AuthController->attemptLogin()
+#11 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#12 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#15 {main}
+CRITICAL - 2022-10-03 08:21:57 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;192.168.201.249&quot;, port 3306 failed: Operation timed out
+	Is the server running on that host and accepting TCP/IP connections?
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "users"
+WHERE "email" = :email:
+AND "users"."deleted_at" IS NULL
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 5 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+ 6 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 7 VENDORPATH/myth/auth/src/Controllers/AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+ 8 SYSTEMPATH/CodeIgniter.php(907): Myth\Auth\Controllers\AuthController->attemptLogin()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-10-03 08:22:47 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;localhost&quot; (127.0.0.1), port 3306 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at &quot;localhost&quot; (::1), port 3306 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections? in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', '/Users/ivan/Cod...', 69, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(69): pg_connect('host=localhost ...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 /Users/ivan/Codeigniter/osce_v2/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+#8 /Users/ivan/Codeigniter/osce_v2/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/myth/auth/src/Controllers/AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#10 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Myth\Auth\Controllers\AuthController->attemptLogin()
+#11 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#12 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#15 {main}
+CRITICAL - 2022-10-03 08:22:47 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;localhost&quot; (127.0.0.1), port 3306 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at &quot;localhost&quot; (::1), port 3306 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "users"
+WHERE "email" = :email:
+AND "users"."deleted_at" IS NULL
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 5 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+ 6 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 7 VENDORPATH/myth/auth/src/Controllers/AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+ 8 SYSTEMPATH/CodeIgniter.php(907): Myth\Auth\Controllers\AuthController->attemptLogin()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-10-03 08:23:44 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;localhost&quot; (127.0.0.1), port 3306 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at &quot;localhost&quot; (::1), port 3306 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections? in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', '/Users/ivan/Cod...', 69, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(69): pg_connect('host=localhost ...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 /Users/ivan/Codeigniter/osce_v2/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+#8 /Users/ivan/Codeigniter/osce_v2/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/myth/auth/src/Controllers/AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#10 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Myth\Auth\Controllers\AuthController->attemptLogin()
+#11 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#12 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#15 {main}
+CRITICAL - 2022-10-03 08:23:44 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;localhost&quot; (127.0.0.1), port 3306 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at &quot;localhost&quot; (::1), port 3306 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "users"
+WHERE "email" = :email:
+AND "users"."deleted_at" IS NULL
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 5 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+ 6 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 7 VENDORPATH/myth/auth/src/Controllers/AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+ 8 SYSTEMPATH/CodeIgniter.php(907): Myth\Auth\Controllers\AuthController->attemptLogin()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-10-03 08:23:50 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;localhost&quot; (127.0.0.1), port 3306 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at &quot;localhost&quot; (::1), port 3306 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections? in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', '/Users/ivan/Cod...', 69, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(69): pg_connect('host=localhost ...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 /Users/ivan/Codeigniter/osce_v2/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+#8 /Users/ivan/Codeigniter/osce_v2/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/myth/auth/src/Controllers/AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#10 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Myth\Auth\Controllers\AuthController->attemptLogin()
+#11 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#12 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#15 {main}
+CRITICAL - 2022-10-03 08:23:50 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;localhost&quot; (127.0.0.1), port 3306 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at &quot;localhost&quot; (::1), port 3306 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "users"
+WHERE "email" = :email:
+AND "users"."deleted_at" IS NULL
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 5 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+ 6 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 7 VENDORPATH/myth/auth/src/Controllers/AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+ 8 SYSTEMPATH/CodeIgniter.php(907): Myth\Auth\Controllers\AuthController->attemptLogin()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-10-03 08:25:24 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;localhost&quot; (127.0.0.1), port 3306 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at &quot;localhost&quot; (::1), port 3306 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections? in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', '/Users/ivan/Cod...', 69, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(69): pg_connect('host=localhost ...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 /Users/ivan/Codeigniter/osce_v2/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+#8 /Users/ivan/Codeigniter/osce_v2/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/myth/auth/src/Controllers/AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#10 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Myth\Auth\Controllers\AuthController->attemptLogin()
+#11 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#12 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#15 {main}
+CRITICAL - 2022-10-03 08:25:24 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;localhost&quot; (127.0.0.1), port 3306 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at &quot;localhost&quot; (::1), port 3306 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "users"
+WHERE "email" = :email:
+AND "users"."deleted_at" IS NULL
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 5 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+ 6 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 7 VENDORPATH/myth/auth/src/Controllers/AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+ 8 SYSTEMPATH/CodeIgniter.php(907): Myth\Auth\Controllers\AuthController->attemptLogin()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-10-03 08:25:59 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;192.168.201.249&quot;, port 3306 failed: No route to host
+	Is the server running on that host and accepting TCP/IP connections? in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', '/Users/ivan/Cod...', 69, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(69): pg_connect('host=192.168.20...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 /Users/ivan/Codeigniter/osce_v2/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+#8 /Users/ivan/Codeigniter/osce_v2/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/myth/auth/src/Controllers/AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#10 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Myth\Auth\Controllers\AuthController->attemptLogin()
+#11 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#12 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#15 {main}
+CRITICAL - 2022-10-03 08:25:59 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;192.168.201.249&quot;, port 3306 failed: No route to host
+	Is the server running on that host and accepting TCP/IP connections?
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "users"
+WHERE "email" = :email:
+AND "users"."deleted_at" IS NULL
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 5 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+ 6 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 7 VENDORPATH/myth/auth/src/Controllers/AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+ 8 SYSTEMPATH/CodeIgniter.php(907): Myth\Auth\Controllers\AuthController->attemptLogin()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-10-03 08:27:36 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;192.168.201.249&quot;, port 3306 failed: Operation timed out
+	Is the server running on that host and accepting TCP/IP connections? in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', '/Users/ivan/Cod...', 69, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(69): pg_connect('host=192.168.20...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 /Users/ivan/Codeigniter/osce_v2/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+#8 /Users/ivan/Codeigniter/osce_v2/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/myth/auth/src/Controllers/AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#10 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Myth\Auth\Controllers\AuthController->attemptLogin()
+#11 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#12 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#15 {main}
+CRITICAL - 2022-10-03 08:27:36 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;192.168.201.249&quot;, port 3306 failed: Operation timed out
+	Is the server running on that host and accepting TCP/IP connections?
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "users"
+WHERE "email" = :email:
+AND "users"."deleted_at" IS NULL
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 5 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+ 6 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 7 VENDORPATH/myth/auth/src/Controllers/AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+ 8 SYSTEMPATH/CodeIgniter.php(907): Myth\Auth\Controllers\AuthController->attemptLogin()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-10-03 08:29:33 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;192.168.201.249&quot;, port 3306 failed: Operation timed out
+	Is the server running on that host and accepting TCP/IP connections? in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', '/Users/ivan/Cod...', 69, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(69): pg_connect('host=192.168.20...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 /Users/ivan/Codeigniter/osce_v2/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+#8 /Users/ivan/Codeigniter/osce_v2/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/myth/auth/src/Controllers/AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#10 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Myth\Auth\Controllers\AuthController->attemptLogin()
+#11 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#12 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#15 {main}
+CRITICAL - 2022-10-03 08:29:33 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;192.168.201.249&quot;, port 3306 failed: Operation timed out
+	Is the server running on that host and accepting TCP/IP connections?
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "users"
+WHERE "email" = :email:
+AND "users"."deleted_at" IS NULL
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 5 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+ 6 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 7 VENDORPATH/myth/auth/src/Controllers/AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+ 8 SYSTEMPATH/CodeIgniter.php(907): Myth\Auth\Controllers\AuthController->attemptLogin()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-10-03 08:30:55 --> Session: Unable to obtain lock for file '/Users/ivan/Codeigniter/osce_v2/writable/session/ci_session75njcrpf9k7tg064rsk7eh53d0906rup'.
+CRITICAL - 2022-10-03 08:30:55 --> session_start(): Failed to read session data: user (path: /Users/ivan/Codeigniter/osce_v2/writable/session)
+in SYSTEMPATH/Session/Session.php on line 920.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_start(): Failed to read session data: user (path: /Users/ivan/Codeigniter/osce_v2/writable/session)', 'SYSTEMPATH/Session/Session.php', 920, [])
+ 2 SYSTEMPATH/Session/Session.php(920): session_start()
+ 3 SYSTEMPATH/Session/Session.php(242): CodeIgniter\Session\Session->startSession()
+ 4 SYSTEMPATH/Config/Services.php(665): CodeIgniter\Session\Session->start()
+ 5 SYSTEMPATH/Config/BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 6 SYSTEMPATH/Config/BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 7 SYSTEMPATH/Config/Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 8 SYSTEMPATH/Config/BaseService.php(253): CodeIgniter\Config\Services::session()
+ 9 SYSTEMPATH/Common.php(939): CodeIgniter\Config\BaseService::__callStatic('session', [])
+10 VENDORPATH/myth/auth/src/Authentication/AuthenticationBase.php(128): session('logged_in')
+11 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+12 VENDORPATH/myth/auth/src/Filters/LoginFilter.php(29): Myth\Auth\Authentication\LocalAuthenticator->check()
+13 SYSTEMPATH/Filters/Filters.php(173): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+14 SYSTEMPATH/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('/', 'before')
+15 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-10-03 08:31:00 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;192.168.201.249&quot;, port 5432 failed: Operation timed out
+	Is the server running on that host and accepting TCP/IP connections? in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', '/Users/ivan/Cod...', 69, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(69): pg_connect('host=192.168.20...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 /Users/ivan/Codeigniter/osce_v2/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+#8 /Users/ivan/Codeigniter/osce_v2/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/myth/auth/src/Controllers/AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#10 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Myth\Auth\Controllers\AuthController->attemptLogin()
+#11 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#12 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#15 {main}
+CRITICAL - 2022-10-03 08:31:00 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;192.168.201.249&quot;, port 5432 failed: Operation timed out
+	Is the server running on that host and accepting TCP/IP connections?
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "users"
+WHERE "email" = :email:
+AND "users"."deleted_at" IS NULL
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 5 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+ 6 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 7 VENDORPATH/myth/auth/src/Controllers/AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+ 8 SYSTEMPATH/CodeIgniter.php(907): Myth\Auth\Controllers\AuthController->attemptLogin()
+ 9 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+10 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-10-03 08:49:44 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;users&quot; does not exist
+LINE 2: FROM &quot;users&quot;
+             ^ in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/ivan/Cod...', 140, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(140): pg_query(Resource id #16, 'SELECT *\nFROM "...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Model.php(182): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/BaseModel.php(523): CodeIgniter\Model->doFind(true, '2')
+#7 /Users/ivan/Codeigniter/osce_v2/vendor/myth/auth/src/Authentication/AuthenticationBase.php(130): CodeIgniter\BaseModel->find('2')
+#8 /Users/ivan/Codeigniter/osce_v2/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/myth/auth/src/Controllers/AuthController.php(107): Myth\Auth\Authentication\LocalAuthenticator->check()
+#10 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Myth\Auth\Controllers\AuthController->logout()
+#11 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#12 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#15 {main}
+CRITICAL - 2022-10-03 08:49:44 --> pg_query(): Query failed: ERROR:  relation &quot;users&quot; does not exist
+LINE 2: FROM &quot;users&quot;
+             ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  relation &quot;users&quot; does not exist
+LINE 2: FROM &quot;users&quot;
+             ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140, [...])
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(resource (pgsql link), 'SELECT *
+FROM "users"
+WHERE "users"."deleted_at" IS NULL
+AND "users"."id" = \'2\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *
+FROM "users"
+WHERE "users"."deleted_at" IS NULL
+AND "users"."id" = \'2\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM "users"
+WHERE "users"."deleted_at" IS NULL
+AND "users"."id" = \'2\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "users"
+WHERE "users"."deleted_at" IS NULL
+AND "users"."id" = :users.id:', [...], false)
+ 6 SYSTEMPATH/Model.php(182): CodeIgniter\Database\BaseBuilder->get()
+ 7 SYSTEMPATH/BaseModel.php(523): CodeIgniter\Model->doFind(true, '2')
+ 8 VENDORPATH/myth/auth/src/Authentication/AuthenticationBase.php(130): CodeIgniter\BaseModel->find('2')
+ 9 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+10 VENDORPATH/myth/auth/src/Controllers/AuthController.php(107): Myth\Auth\Authentication\LocalAuthenticator->check()
+11 SYSTEMPATH/CodeIgniter.php(907): Myth\Auth\Controllers\AuthController->logout()
+12 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+13 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-10-03 08:49:51 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;users&quot; does not exist
+LINE 2: FROM &quot;users&quot;
+             ^ in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/ivan/Cod...', 140, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(140): pg_query(Resource id #16, 'SELECT *\nFROM "...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Model.php(182): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/BaseModel.php(523): CodeIgniter\Model->doFind(true, '2')
+#7 /Users/ivan/Codeigniter/osce_v2/vendor/myth/auth/src/Authentication/AuthenticationBase.php(130): CodeIgniter\BaseModel->find('2')
+#8 /Users/ivan/Codeigniter/osce_v2/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/myth/auth/src/Filters/LoginFilter.php(29): Myth\Auth\Authentication\LocalAuthenticator->check()
+#10 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Filters/Filters.php(173): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#11 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('/', 'before')
+#12 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#15 {main}
+CRITICAL - 2022-10-03 08:49:51 --> pg_query(): Query failed: ERROR:  relation &quot;users&quot; does not exist
+LINE 2: FROM &quot;users&quot;
+             ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  relation &quot;users&quot; does not exist
+LINE 2: FROM &quot;users&quot;
+             ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140, [...])
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(resource (pgsql link), 'SELECT *
+FROM "users"
+WHERE "users"."deleted_at" IS NULL
+AND "users"."id" = \'2\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *
+FROM "users"
+WHERE "users"."deleted_at" IS NULL
+AND "users"."id" = \'2\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM "users"
+WHERE "users"."deleted_at" IS NULL
+AND "users"."id" = \'2\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "users"
+WHERE "users"."deleted_at" IS NULL
+AND "users"."id" = :users.id:', [...], false)
+ 6 SYSTEMPATH/Model.php(182): CodeIgniter\Database\BaseBuilder->get()
+ 7 SYSTEMPATH/BaseModel.php(523): CodeIgniter\Model->doFind(true, '2')
+ 8 VENDORPATH/myth/auth/src/Authentication/AuthenticationBase.php(130): CodeIgniter\BaseModel->find('2')
+ 9 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+10 VENDORPATH/myth/auth/src/Filters/LoginFilter.php(29): Myth\Auth\Authentication\LocalAuthenticator->check()
+11 SYSTEMPATH/Filters/Filters.php(173): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+12 SYSTEMPATH/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('/', 'before')
+13 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-10-03 08:49:52 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;users&quot; does not exist
+LINE 2: FROM &quot;users&quot;
+             ^ in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/ivan/Cod...', 140, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(140): pg_query(Resource id #16, 'SELECT *\nFROM "...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Model.php(182): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/BaseModel.php(523): CodeIgniter\Model->doFind(true, '2')
+#7 /Users/ivan/Codeigniter/osce_v2/vendor/myth/auth/src/Authentication/AuthenticationBase.php(130): CodeIgniter\BaseModel->find('2')
+#8 /Users/ivan/Codeigniter/osce_v2/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/myth/auth/src/Filters/LoginFilter.php(29): Myth\Auth\Authentication\LocalAuthenticator->check()
+#10 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Filters/Filters.php(173): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#11 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('/', 'before')
+#12 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#15 {main}
+CRITICAL - 2022-10-03 08:49:52 --> pg_query(): Query failed: ERROR:  relation &quot;users&quot; does not exist
+LINE 2: FROM &quot;users&quot;
+             ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  relation &quot;users&quot; does not exist
+LINE 2: FROM &quot;users&quot;
+             ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140, [...])
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(resource (pgsql link), 'SELECT *
+FROM "users"
+WHERE "users"."deleted_at" IS NULL
+AND "users"."id" = \'2\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *
+FROM "users"
+WHERE "users"."deleted_at" IS NULL
+AND "users"."id" = \'2\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM "users"
+WHERE "users"."deleted_at" IS NULL
+AND "users"."id" = \'2\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "users"
+WHERE "users"."deleted_at" IS NULL
+AND "users"."id" = :users.id:', [...], false)
+ 6 SYSTEMPATH/Model.php(182): CodeIgniter\Database\BaseBuilder->get()
+ 7 SYSTEMPATH/BaseModel.php(523): CodeIgniter\Model->doFind(true, '2')
+ 8 VENDORPATH/myth/auth/src/Authentication/AuthenticationBase.php(130): CodeIgniter\BaseModel->find('2')
+ 9 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+10 VENDORPATH/myth/auth/src/Filters/LoginFilter.php(29): Myth\Auth\Authentication\LocalAuthenticator->check()
+11 SYSTEMPATH/Filters/Filters.php(173): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+12 SYSTEMPATH/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('/', 'before')
+13 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-10-03 08:49:55 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;users&quot; does not exist
+LINE 2: FROM &quot;users&quot;
+             ^ in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/ivan/Cod...', 140, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(140): pg_query(Resource id #16, 'SELECT *\nFROM "...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Model.php(182): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/BaseModel.php(523): CodeIgniter\Model->doFind(true, '2')
+#7 /Users/ivan/Codeigniter/osce_v2/vendor/myth/auth/src/Authentication/AuthenticationBase.php(130): CodeIgniter\BaseModel->find('2')
+#8 /Users/ivan/Codeigniter/osce_v2/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/myth/auth/src/Filters/LoginFilter.php(29): Myth\Auth\Authentication\LocalAuthenticator->check()
+#10 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Filters/Filters.php(173): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#11 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('/', 'before')
+#12 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#15 {main}
+CRITICAL - 2022-10-03 08:49:55 --> pg_query(): Query failed: ERROR:  relation &quot;users&quot; does not exist
+LINE 2: FROM &quot;users&quot;
+             ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  relation &quot;users&quot; does not exist
+LINE 2: FROM &quot;users&quot;
+             ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140, [...])
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(resource (pgsql link), 'SELECT *
+FROM "users"
+WHERE "users"."deleted_at" IS NULL
+AND "users"."id" = \'2\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *
+FROM "users"
+WHERE "users"."deleted_at" IS NULL
+AND "users"."id" = \'2\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM "users"
+WHERE "users"."deleted_at" IS NULL
+AND "users"."id" = \'2\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "users"
+WHERE "users"."deleted_at" IS NULL
+AND "users"."id" = :users.id:', [...], false)
+ 6 SYSTEMPATH/Model.php(182): CodeIgniter\Database\BaseBuilder->get()
+ 7 SYSTEMPATH/BaseModel.php(523): CodeIgniter\Model->doFind(true, '2')
+ 8 VENDORPATH/myth/auth/src/Authentication/AuthenticationBase.php(130): CodeIgniter\BaseModel->find('2')
+ 9 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+10 VENDORPATH/myth/auth/src/Filters/LoginFilter.php(29): Myth\Auth\Authentication\LocalAuthenticator->check()
+11 SYSTEMPATH/Filters/Filters.php(173): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+12 SYSTEMPATH/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('/', 'before')
+13 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-03 08:52:21 --> Undefined offset: 0
+in APPPATH/Controllers/BaseController.php on line 60.
+ 1 APPPATH/Controllers/BaseController.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH/Controllers/BaseController.php', 60, [...])
+ 2 ROOTPATH/modules/Dashboard/Controllers/Dashboard.php(16): App\Controllers\BaseController->fetchMenu()
+ 3 SYSTEMPATH/CodeIgniter.php(907): Modules\Dashboard\Controllers\Dashboard->index()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Dashboard\Controllers\Dashboard))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-03 09:07:17 --> Invalid argument supplied for foreach()
+in APPPATH/Controllers/BaseController.php on line 72.
+ 1 APPPATH/Controllers/BaseController.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH/Controllers/BaseController.php', 72, [...])
+ 2 ROOTPATH/modules/Dashboard/Controllers/Dashboard.php(16): App\Controllers\BaseController->fetchMenu()
+ 3 SYSTEMPATH/CodeIgniter.php(907): Modules\Dashboard\Controllers\Dashboard->index()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Dashboard\Controllers\Dashboard))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-03 09:09:28 --> Invalid argument supplied for foreach()
+in APPPATH/Controllers/BaseController.php on line 72.
+ 1 APPPATH/Controllers/BaseController.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH/Controllers/BaseController.php', 72, [...])
+ 2 ROOTPATH/modules/Dashboard/Controllers/Dashboard.php(16): App\Controllers\BaseController->fetchMenu()
+ 3 SYSTEMPATH/CodeIgniter.php(907): Modules\Dashboard\Controllers\Dashboard->index()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Dashboard\Controllers\Dashboard))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-03 09:09:30 --> Invalid argument supplied for foreach()
+in APPPATH/Controllers/BaseController.php on line 72.
+ 1 APPPATH/Controllers/BaseController.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH/Controllers/BaseController.php', 72, [...])
+ 2 ROOTPATH/modules/Dashboard/Controllers/Dashboard.php(16): App\Controllers\BaseController->fetchMenu()
+ 3 SYSTEMPATH/CodeIgniter.php(907): Modules\Dashboard\Controllers\Dashboard->index()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Dashboard\Controllers\Dashboard))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-03 09:09:31 --> Invalid argument supplied for foreach()
+in APPPATH/Controllers/BaseController.php on line 72.
+ 1 APPPATH/Controllers/BaseController.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH/Controllers/BaseController.php', 72, [...])
+ 2 ROOTPATH/modules/Dashboard/Controllers/Dashboard.php(16): App\Controllers\BaseController->fetchMenu()
+ 3 SYSTEMPATH/CodeIgniter.php(907): Modules\Dashboard\Controllers\Dashboard->index()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Dashboard\Controllers\Dashboard))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-03 09:09:43 --> Invalid argument supplied for foreach()
+in APPPATH/Controllers/BaseController.php on line 72.
+ 1 APPPATH/Controllers/BaseController.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH/Controllers/BaseController.php', 72, [...])
+ 2 ROOTPATH/modules/Dashboard/Controllers/Dashboard.php(16): App\Controllers\BaseController->fetchMenu()
+ 3 SYSTEMPATH/CodeIgniter.php(907): Modules\Dashboard\Controllers\Dashboard->index()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Dashboard\Controllers\Dashboard))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-03 09:10:07 --> Invalid argument supplied for foreach()
+in APPPATH/Controllers/BaseController.php on line 72.
+ 1 APPPATH/Controllers/BaseController.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH/Controllers/BaseController.php', 72, [...])
+ 2 ROOTPATH/modules/Dashboard/Controllers/Dashboard.php(16): App\Controllers\BaseController->fetchMenu()
+ 3 SYSTEMPATH/CodeIgniter.php(907): Modules\Dashboard\Controllers\Dashboard->index()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Dashboard\Controllers\Dashboard))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-03 09:10:16 --> Invalid argument supplied for foreach()
+in APPPATH/Controllers/BaseController.php on line 72.
+ 1 APPPATH/Controllers/BaseController.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH/Controllers/BaseController.php', 72, [...])
+ 2 ROOTPATH/modules/Dashboard/Controllers/Dashboard.php(16): App\Controllers\BaseController->fetchMenu()
+ 3 SYSTEMPATH/CodeIgniter.php(907): Modules\Dashboard\Controllers\Dashboard->index()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Dashboard\Controllers\Dashboard))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-03 09:13:10 --> Undefined property: stdClass::$parent
+in APPPATH/Controllers/BaseController.php on line 73.
+ 1 APPPATH/Controllers/BaseController.php(73): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$parent', 'APPPATH/Controllers/BaseController.php', 73, [...])
+ 2 ROOTPATH/modules/Dashboard/Controllers/Dashboard.php(16): App\Controllers\BaseController->fetchMenu()
+ 3 SYSTEMPATH/CodeIgniter.php(907): Modules\Dashboard\Controllers\Dashboard->index()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Dashboard\Controllers\Dashboard))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-03 11:08:18 --> Undefined variable: menu
+in ROOTPATH/modules/Lokasi/Views/lokasi.php on line 5.
+ 1 ROOTPATH/modules/Lokasi/Views/lokasi.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: menu', 'ROOTPATH/modules/Lokasi/Views/lokasi.php', 5, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('ROOTPATH/modules/Lokasi/Views/lokasi.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('Modules\\Lokasi\\Views\\lokasi', [], true)
+ 5 ROOTPATH/modules/Lokasi/Controllers/Lokasi.php(27): view('Modules\\Lokasi\\Views\\lokasi', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): Modules\Lokasi\Controllers\Lokasi->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Lokasi\Controllers\Lokasi))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-03 11:31:03 --> Call to undefined method Modules\Lokasi\Models\LokasiModel::getPoli
+in SYSTEMPATH/Model.php on line 774.
+ 1 ROOTPATH/modules/Lokasi/Controllers/Lokasi.php(25): CodeIgniter\Model->__call('getPoli', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): Modules\Lokasi\Controllers\Lokasi->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Lokasi\Controllers\Lokasi))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-03 11:37:55 --> Undefined property: stdClass::$lokasiName
+in ROOTPATH/modules/Lokasi/Views/lokasi.php on line 115.
+ 1 ROOTPATH/modules/Lokasi/Views/lokasi.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$lokasiName', 'ROOTPATH/modules/Lokasi/Views/lokasi.php', 115, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('ROOTPATH/modules/Lokasi/Views/lokasi.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('Modules\\Lokasi\\Views\\lokasi', [], true)
+ 5 ROOTPATH/modules/Lokasi/Controllers/Lokasi.php(36): view('Modules\\Lokasi\\Views\\lokasi', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): Modules\Lokasi\Controllers\Lokasi->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Lokasi\Controllers\Lokasi))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-10-03 11:42:35 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;lokasiCretatedBy&quot; of relation &quot;lokasi&quot; does not exist
+LINE 1: INSERT INTO &quot;lokasi&quot; (&quot;lokasiNama&quot;, &quot;lokasiCretatedBy&quot;, &quot;lok...
+                                            ^ in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/ivan/Cod...', 140, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(140): pg_query(Resource id #16, 'INSERT INTO "lo...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "lo...')
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "lo...')
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "lo...', Array, false)
+#5 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#6 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#7 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#8 /Users/ivan/Codeigniter/osce_v2/modules/Lokasi/Controllers/Lokasi.php(53): CodeIgniter\Model->insert(Array)
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Modules\Lokasi\Controllers\Lokasi->add()
+#10 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Lokasi\Controllers\Lokasi))
+#11 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#14 {main}
+CRITICAL - 2022-10-03 11:42:35 --> pg_query(): Query failed: ERROR:  column &quot;lokasiCretatedBy&quot; of relation &quot;lokasi&quot; does not exist
+LINE 1: INSERT INTO &quot;lokasi&quot; (&quot;lokasiNama&quot;, &quot;lokasiCretatedBy&quot;, &quot;lok...
+                                            ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  column &quot;lokasiCretatedBy&quot; of relation &quot;lokasi&quot; does not exist
+LINE 1: INSERT INTO &quot;lokasi&quot; (&quot;lokasiNama&quot;, &quot;lokasiCretatedBy&quot;, &quot;lok...
+                                            ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140, [...])
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(resource (pgsql link), 'INSERT INTO "lokasi" ("lokasiNama", "lokasiCretatedBy", "lokasiCreatedDate", "lokasiModifiedDate") VALUES (\'Lokasi 3\', \'august.ivan20@gmail.com\', \'2022-10-03 11:42:35\', \'2022-10-03 11:42:35\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "lokasi" ("lokasiNama", "lokasiCretatedBy", "lokasiCreatedDate", "lokasiModifiedDate") VALUES (\'Lokasi 3\', \'august.ivan20@gmail.com\', \'2022-10-03 11:42:35\', \'2022-10-03 11:42:35\')')
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "lokasi" ("lokasiNama", "lokasiCretatedBy", "lokasiCreatedDate", "lokasiModifiedDate") VALUES (\'Lokasi 3\', \'august.ivan20@gmail.com\', \'2022-10-03 11:42:35\', \'2022-10-03 11:42:35\')')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "lokasi" ("lokasiNama", "lokasiCretatedBy", "lokasiCreatedDate", "lokasiModifiedDate") VALUES (:lokasiNama:, :lokasiCretatedBy:, :lokasiCreatedDate:, :lokasiModifiedDate:)', [...], false)
+ 6 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH/BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 9 ROOTPATH/modules/Lokasi/Controllers/Lokasi.php(53): CodeIgniter\Model->insert([...])
+10 SYSTEMPATH/CodeIgniter.php(907): Modules\Lokasi\Controllers\Lokasi->add()
+11 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Lokasi\Controllers\Lokasi))
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-10-03 11:56:47 --> ErrorException: pg_query(): Query failed: ERROR:  column kompetensi.kompetensiDeletedDate does not exist
+LINE 3: WHERE &quot;kompetensi&quot;.&quot;kompetensiDeletedDate&quot; IS NULL
+              ^ in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/ivan/Cod...', 140, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(140): pg_query(Resource id #16, 'SELECT COUNT(*)...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT COUNT(*)...')
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#5 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#6 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/BaseModel.php(1085): CodeIgniter\Model->countAllResults(false)
+#7 /Users/ivan/Codeigniter/osce_v2/modules/Kompetensi/Controllers/Kompetensi.php(30): CodeIgniter\BaseModel->paginate(20, 'kompetensi')
+#8 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Modules\Kompetensi\Controllers\Kompetensi->index()
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Kompetensi\Controllers\Kompetensi))
+#10 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#13 {main}
+CRITICAL - 2022-10-03 11:56:47 --> pg_query(): Query failed: ERROR:  column kompetensi.kompetensiDeletedDate does not exist
+LINE 3: WHERE &quot;kompetensi&quot;.&quot;kompetensiDeletedDate&quot; IS NULL
+              ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  column kompetensi.kompetensiDeletedDate does not exist
+LINE 3: WHERE &quot;kompetensi&quot;.&quot;kompetensiDeletedDate&quot; IS NULL
+              ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140, [...])
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(resource (pgsql link), 'SELECT COUNT(*) AS "numrows"
+FROM "kompetensi"
+WHERE "kompetensi"."kompetensiDeletedDate" IS NULL')
+ 3 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT COUNT(*) AS "numrows"
+FROM "kompetensi"
+WHERE "kompetensi"."kompetensiDeletedDate" IS NULL')
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS "numrows"
+FROM "kompetensi"
+WHERE "kompetensi"."kompetensiDeletedDate" IS NULL')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS "numrows"
+FROM "kompetensi"
+WHERE "kompetensi"."kompetensiDeletedDate" IS NULL', [], false)
+ 6 SYSTEMPATH/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 7 SYSTEMPATH/BaseModel.php(1085): CodeIgniter\Model->countAllResults(false)
+ 8 ROOTPATH/modules/Kompetensi/Controllers/Kompetensi.php(30): CodeIgniter\BaseModel->paginate(20, 'kompetensi')
+ 9 SYSTEMPATH/CodeIgniter.php(907): Modules\Kompetensi\Controllers\Kompetensi->index()
+10 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Kompetensi\Controllers\Kompetensi))
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-03 11:58:17 --> Undefined variable: lokasi
+in ROOTPATH/modules/Kompetensi/Views/kompetensi.php on line 116.
+ 1 ROOTPATH/modules/Kompetensi/Views/kompetensi.php(116): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: lokasi', 'ROOTPATH/modules/Kompetensi/Views/kompetensi.php', 116, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('ROOTPATH/modules/Kompetensi/Views/kompetensi.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('Modules\\Kompetensi\\Views\\kompetensi', [], true)
+ 5 ROOTPATH/modules/Kompetensi/Controllers/Kompetensi.php(36): view('Modules\\Kompetensi\\Views\\kompetensi', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): Modules\Kompetensi\Controllers\Kompetensi->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Kompetensi\Controllers\Kompetensi))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-10-03 12:14:19 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;uuid&quot; does not exist
+LINE 2: WHERE &quot;uuid&quot; = '2'
+              ^ in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/ivan/Cod...', 140, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(140): pg_query(Resource id #16, 'UPDATE "kompete...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "kompete...')
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "kompete...')
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE "kompete...', Array, false)
+#5 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+#6 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/BaseModel.php(865): CodeIgniter\Model->doUpdate(NULL, Array)
+#7 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Model.php(693): CodeIgniter\BaseModel->update(NULL, Array)
+#8 /Users/ivan/Codeigniter/osce_v2/modules/Kompetensi/Models/KompetensiModel.php(34): CodeIgniter\Model->update()
+#9 /Users/ivan/Codeigniter/osce_v2/modules/Kompetensi/Controllers/Kompetensi.php(79): Modules\Kompetensi\Models\KompetensiModel->updateData(Array, Array)
+#10 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Modules\Kompetensi\Controllers\Kompetensi->edit('2')
+#11 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Kompetensi\Controllers\Kompetensi))
+#12 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#15 {main}
+CRITICAL - 2022-10-03 12:14:19 --> pg_query(): Query failed: ERROR:  column &quot;uuid&quot; does not exist
+LINE 2: WHERE &quot;uuid&quot; = '2'
+              ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  column &quot;uuid&quot; does not exist
+LINE 2: WHERE &quot;uuid&quot; = \'2\'
+              ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140, [...])
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(resource (pgsql link), 'UPDATE "kompetensi" SET "kompetensiNama" = \'Pemeriksaan Fisik\', "kompetensiSingkatan" = \'Fis\', "kompetensiModifiedBy" = \'august.ivan20@gmail.com\', "kompetensiModifiedDate" = \'2022-10-03 12:14:19\'
+WHERE "uuid" = \'2\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "kompetensi" SET "kompetensiNama" = \'Pemeriksaan Fisik\', "kompetensiSingkatan" = \'Fis\', "kompetensiModifiedBy" = \'august.ivan20@gmail.com\', "kompetensiModifiedDate" = \'2022-10-03 12:14:19\'
+WHERE "uuid" = \'2\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "kompetensi" SET "kompetensiNama" = \'Pemeriksaan Fisik\', "kompetensiSingkatan" = \'Fis\', "kompetensiModifiedBy" = \'august.ivan20@gmail.com\', "kompetensiModifiedDate" = \'2022-10-03 12:14:19\'
+WHERE "uuid" = \'2\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE "kompetensi" SET "kompetensiNama" = :kompetensiNama:, "kompetensiSingkatan" = :kompetensiSingkatan:, "kompetensiModifiedBy" = :kompetensiModifiedBy:, "kompetensiModifiedDate" = :kompetensiModifiedDate:
+WHERE "uuid" = :uuid:', [...], false)
+ 6 SYSTEMPATH/Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+ 7 SYSTEMPATH/BaseModel.php(865): CodeIgniter\Model->doUpdate(null, [...])
+ 8 SYSTEMPATH/Model.php(693): CodeIgniter\BaseModel->update(null, [...])
+ 9 ROOTPATH/modules/Kompetensi/Models/KompetensiModel.php(34): CodeIgniter\Model->update()
+10 ROOTPATH/modules/Kompetensi/Controllers/Kompetensi.php(79): Modules\Kompetensi\Models\KompetensiModel->updateData([...], [...])
+11 SYSTEMPATH/CodeIgniter.php(907): Modules\Kompetensi\Controllers\Kompetensi->edit('2')
+12 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Kompetensi\Controllers\Kompetensi))
+13 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-10-03 12:21:45 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;setting&quot; does not exist
+LINE 2: FROM &quot;setting&quot;
+             ^ in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/ivan/Cod...', 140, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(140): pg_query(Resource id #17, 'SELECT COUNT(*)...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT COUNT(*)...')
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#5 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#6 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/BaseModel.php(1085): CodeIgniter\Model->countAllResults(false)
+#7 /Users/ivan/Codeigniter/osce_v2/modules/Setting/Controllers/Setting.php(30): CodeIgniter\BaseModel->paginate(20, 'setting')
+#8 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Modules\Setting\Controllers\Setting->index()
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Setting\Controllers\Setting))
+#10 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#13 {main}
+CRITICAL - 2022-10-03 12:21:45 --> pg_query(): Query failed: ERROR:  relation &quot;setting&quot; does not exist
+LINE 2: FROM &quot;setting&quot;
+             ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  relation &quot;setting&quot; does not exist
+LINE 2: FROM &quot;setting&quot;
+             ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140, [...])
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(resource (pgsql link), 'SELECT COUNT(*) AS "numrows"
+FROM "setting"
+WHERE "setting"."settingDeletedDate" IS NULL')
+ 3 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT COUNT(*) AS "numrows"
+FROM "setting"
+WHERE "setting"."settingDeletedDate" IS NULL')
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS "numrows"
+FROM "setting"
+WHERE "setting"."settingDeletedDate" IS NULL')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS "numrows"
+FROM "setting"
+WHERE "setting"."settingDeletedDate" IS NULL', [], false)
+ 6 SYSTEMPATH/Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 7 SYSTEMPATH/BaseModel.php(1085): CodeIgniter\Model->countAllResults(false)
+ 8 ROOTPATH/modules/Setting/Controllers/Setting.php(30): CodeIgniter\BaseModel->paginate(20, 'setting')
+ 9 SYSTEMPATH/CodeIgniter.php(907): Modules\Setting\Controllers\Setting->index()
+10 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Setting\Controllers\Setting))
+11 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-03 12:43:41 --> Undefined variable: set
+in ROOTPATH/modules/Setting/Views/setting.php on line 122.
+ 1 ROOTPATH/modules/Setting/Views/setting.php(122): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: set', 'ROOTPATH/modules/Setting/Views/setting.php', 122, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('ROOTPATH/modules/Setting/Views/setting.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('Modules\\Setting\\Views\\setting', [], true)
+ 5 ROOTPATH/modules/Setting/Controllers/Setting.php(36): view('Modules\\Setting\\Views\\setting', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): Modules\Setting\Controllers\Setting->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Setting\Controllers\Setting))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-03 13:11:09 --> json_decode() expects parameter 1 to be string, array given
+in ROOTPATH/modules/Setting/Controllers/Setting.php on line 47.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'json_decode() expects parameter 1 to be string, array given', 'ROOTPATH/modules/Setting/Controllers/Setting.php', 47, [])
+ 2 ROOTPATH/modules/Setting/Controllers/Setting.php(47): json_decode([...])
+ 3 SYSTEMPATH/CodeIgniter.php(907): Modules\Setting\Controllers\Setting->add()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Setting\Controllers\Setting))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-03 13:30:05 --> count(): Parameter must be an array or an object that implements Countable
+in ROOTPATH/modules/Setting/Controllers/Setting.php on line 55.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parameter must be an array or an object that implements Countable', 'ROOTPATH/modules/Setting/Controllers/Setting.php', 55, [...])
+ 2 ROOTPATH/modules/Setting/Controllers/Setting.php(55): count(null)
+ 3 SYSTEMPATH/CodeIgniter.php(907): Modules\Setting\Controllers\Setting->add()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Setting\Controllers\Setting))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-03 13:30:33 --> Invalid argument supplied for foreach()
+in ROOTPATH/modules/Setting/Controllers/Setting.php on line 56.
+ 1 ROOTPATH/modules/Setting/Controllers/Setting.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'ROOTPATH/modules/Setting/Controllers/Setting.php', 56, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): Modules\Setting\Controllers\Setting->add()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Setting\Controllers\Setting))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-10-03 13:36:58 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;setCreatedDate&quot; of relation &quot;settingTes&quot; does not exist
+LINE 1: ... &quot;setLokasi&quot;, &quot;setJumlahStation&quot;, &quot;setStartDate&quot;, &quot;setCreate...
+                                                             ^ in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/ivan/Cod...', 140, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(140): pg_query(Resource id #16, 'INSERT INTO "se...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "se...')
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "se...')
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "se...', Array, false)
+#5 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#6 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#7 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#8 /Users/ivan/Codeigniter/osce_v2/modules/Setting/Controllers/Setting.php(72): CodeIgniter\Model->insert(Array)
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Modules\Setting\Controllers\Setting->add()
+#10 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Setting\Controllers\Setting))
+#11 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#14 {main}
+CRITICAL - 2022-10-03 13:36:58 --> pg_query(): Query failed: ERROR:  column &quot;setCreatedDate&quot; of relation &quot;settingTes&quot; does not exist
+LINE 1: ... &quot;setLokasi&quot;, &quot;setJumlahStation&quot;, &quot;setStartDate&quot;, &quot;setCreate...
+                                                             ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  column &quot;setCreatedDate&quot; of relation &quot;settingTes&quot; does not exist
+LINE 1: ... &quot;setLokasi&quot;, &quot;setJumlahStation&quot;, &quot;setStartDate&quot;, &quot;setCreate...
+                                                             ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140, [...])
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(resource (pgsql link), 'INSERT INTO "settingTes" ("setDeskripsi", "setLokasi", "setJumlahStation", "setStartDate", "setCreatedDate", "setModifiedDate") VALUES (\'Simulasi\', \'{"data":[{"lokasi":"1"}]}\', \'3\', \'2022-10-04 01:35:00\', \'2022-10-03 13:36:58\', \'2022-10-03 13:36:58\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "settingTes" ("setDeskripsi", "setLokasi", "setJumlahStation", "setStartDate", "setCreatedDate", "setModifiedDate") VALUES (\'Simulasi\', \'{"data":[{"lokasi":"1"}]}\', \'3\', \'2022-10-04 01:35:00\', \'2022-10-03 13:36:58\', \'2022-10-03 13:36:58\')')
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "settingTes" ("setDeskripsi", "setLokasi", "setJumlahStation", "setStartDate", "setCreatedDate", "setModifiedDate") VALUES (\'Simulasi\', \'{"data":[{"lokasi":"1"}]}\', \'3\', \'2022-10-04 01:35:00\', \'2022-10-03 13:36:58\', \'2022-10-03 13:36:58\')')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "settingTes" ("setDeskripsi", "setLokasi", "setJumlahStation", "setStartDate", "setCreatedDate", "setModifiedDate") VALUES (:setDeskripsi:, :setLokasi:, :setJumlahStation:, :setStartDate:, :setCreatedDate:, :setModifiedDate:)', [...], false)
+ 6 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH/BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 9 ROOTPATH/modules/Setting/Controllers/Setting.php(72): CodeIgniter\Model->insert([...])
+10 SYSTEMPATH/CodeIgniter.php(907): Modules\Setting\Controllers\Setting->add()
+11 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Setting\Controllers\Setting))
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-03 13:37:27 --> Undefined property: stdClass::$setSingkatan
+in ROOTPATH/modules/Setting/Views/setting.php on line 155.
+ 1 ROOTPATH/modules/Setting/Views/setting.php(155): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$setSingkatan', 'ROOTPATH/modules/Setting/Views/setting.php', 155, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('ROOTPATH/modules/Setting/Views/setting.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('Modules\\Setting\\Views\\setting', [], true)
+ 5 ROOTPATH/modules/Setting/Controllers/Setting.php(40): view('Modules\\Setting\\Views\\setting', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): Modules\Setting\Controllers\Setting->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Setting\Controllers\Setting))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-03 13:41:33 --> Undefined property: stdClass::$setSingkatan
+in ROOTPATH/modules/Setting/Views/setting.php on line 66.
+ 1 ROOTPATH/modules/Setting/Views/setting.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$setSingkatan', 'ROOTPATH/modules/Setting/Views/setting.php', 66, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('ROOTPATH/modules/Setting/Views/setting.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('Modules\\Setting\\Views\\setting', [], true)
+ 5 ROOTPATH/modules/Setting/Controllers/Setting.php(40): view('Modules\\Setting\\Views\\setting', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): Modules\Setting\Controllers\Setting->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Setting\Controllers\Setting))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-03 13:46:10 --> Cannot use object of type stdClass as array
+in ROOTPATH/modules/Setting/Views/setting.php on line 70.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('Modules\\Setting\\Views\\setting', [], true)
+ 4 ROOTPATH/modules/Setting/Controllers/Setting.php(40): view('Modules\\Setting\\Views\\setting', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(907): Modules\Setting\Controllers\Setting->index()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Setting\Controllers\Setting))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-03 13:46:23 --> Cannot use object of type stdClass as array
+in ROOTPATH/modules/Setting/Views/setting.php on line 70.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('Modules\\Setting\\Views\\setting', [], true)
+ 4 ROOTPATH/modules/Setting/Controllers/Setting.php(40): view('Modules\\Setting\\Views\\setting', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(907): Modules\Setting\Controllers\Setting->index()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Setting\Controllers\Setting))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-03 13:46:44 --> Cannot use object of type stdClass as array
+in ROOTPATH/modules/Setting/Views/setting.php on line 71.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('Modules\\Setting\\Views\\setting', [], true)
+ 4 ROOTPATH/modules/Setting/Controllers/Setting.php(40): view('Modules\\Setting\\Views\\setting', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(907): Modules\Setting\Controllers\Setting->index()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Setting\Controllers\Setting))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-03 13:56:59 --> Undefined variable: menu
+in ROOTPATH/modules/Maintenance/Views/maintenance.php on line 5.
+ 1 ROOTPATH/modules/Maintenance/Views/maintenance.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: menu', 'ROOTPATH/modules/Maintenance/Views/maintenance.php', 5, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('ROOTPATH/modules/Maintenance/Views/maintenance.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('Modules\\Maintenance\\Views\\maintenance', [], true)
+ 5 ROOTPATH/modules/Maintenance/Controllers/Maintenance.php(20): view('Modules\\Maintenance\\Views\\maintenance', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): Modules\Maintenance\Controllers\Maintenance->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Maintenance\Controllers\Maintenance))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-10-03 14:47:34 --> ErrorException: pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;setting&quot;
+LINE 4: ORDER BY &quot;setting&quot;.&quot;setId&quot; DESC
+                 ^ in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/ivan/Cod...', 140, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(140): pg_query(Resource id #17, 'SELECT *\nFROM "...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/BaseModel.php(584): CodeIgniter\Model->doFindAll(20, 0)
+#7 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/BaseModel.php(1089): CodeIgniter\BaseModel->findAll(20, 0)
+#8 /Users/ivan/Codeigniter/osce_v2/modules/Setting/Controllers/Setting.php(33): CodeIgniter\BaseModel->paginate(20, 'setting')
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Modules\Setting\Controllers\Setting->index()
+#10 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Setting\Controllers\Setting))
+#11 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#14 {main}
+CRITICAL - 2022-10-03 14:47:34 --> pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;setting&quot;
+LINE 4: ORDER BY &quot;setting&quot;.&quot;setId&quot; DESC
+                 ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;setting&quot;
+LINE 4: ORDER BY &quot;setting&quot;.&quot;setId&quot; DESC
+                 ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140, [...])
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(resource (pgsql link), 'SELECT *
+FROM "settingtes"
+WHERE "settingtes"."setDeletedDate" IS NULL
+ORDER BY "setting"."setId" DESC
+ LIMIT 20')
+ 3 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *
+FROM "settingtes"
+WHERE "settingtes"."setDeletedDate" IS NULL
+ORDER BY "setting"."setId" DESC
+ LIMIT 20')
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM "settingtes"
+WHERE "settingtes"."setDeletedDate" IS NULL
+ORDER BY "setting"."setId" DESC
+ LIMIT 20')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "settingtes"
+WHERE "settingtes"."setDeletedDate" IS NULL
+ORDER BY "setting"."setId" DESC
+ LIMIT 20', [], false)
+ 6 SYSTEMPATH/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 7 SYSTEMPATH/BaseModel.php(584): CodeIgniter\Model->doFindAll(20, 0)
+ 8 SYSTEMPATH/BaseModel.php(1089): CodeIgniter\BaseModel->findAll(20, 0)
+ 9 ROOTPATH/modules/Setting/Controllers/Setting.php(33): CodeIgniter\BaseModel->paginate(20, 'setting')
+10 SYSTEMPATH/CodeIgniter.php(907): Modules\Setting\Controllers\Setting->index()
+11 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Setting\Controllers\Setting))
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-10-03 14:51:29 --> ErrorException: pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;setting&quot;
+LINE 4: ORDER BY &quot;setting&quot;.&quot;setId&quot; DESC
+                 ^ in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/ivan/Cod...', 140, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(140): pg_query(Resource id #16, 'SELECT *\nFROM "...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#6 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/BaseModel.php(584): CodeIgniter\Model->doFindAll(20, 0)
+#7 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/BaseModel.php(1089): CodeIgniter\BaseModel->findAll(20, 0)
+#8 /Users/ivan/Codeigniter/osce_v2/modules/Setting/Controllers/Setting.php(33): CodeIgniter\BaseModel->paginate(20, 'setting')
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Modules\Setting\Controllers\Setting->index()
+#10 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Setting\Controllers\Setting))
+#11 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#14 {main}
+CRITICAL - 2022-10-03 14:51:29 --> pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;setting&quot;
+LINE 4: ORDER BY &quot;setting&quot;.&quot;setId&quot; DESC
+                 ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;setting&quot;
+LINE 4: ORDER BY &quot;setting&quot;.&quot;setId&quot; DESC
+                 ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140, [...])
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(resource (pgsql link), 'SELECT *
+FROM "settingtes"
+WHERE "settingtes"."setDeletedDate" IS NULL
+ORDER BY "setting"."setId" DESC
+ LIMIT 20')
+ 3 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('SELECT *
+FROM "settingtes"
+WHERE "settingtes"."setDeletedDate" IS NULL
+ORDER BY "setting"."setId" DESC
+ LIMIT 20')
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM "settingtes"
+WHERE "settingtes"."setDeletedDate" IS NULL
+ORDER BY "setting"."setId" DESC
+ LIMIT 20')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "settingtes"
+WHERE "settingtes"."setDeletedDate" IS NULL
+ORDER BY "setting"."setId" DESC
+ LIMIT 20', [], false)
+ 6 SYSTEMPATH/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 7 SYSTEMPATH/BaseModel.php(584): CodeIgniter\Model->doFindAll(20, 0)
+ 8 SYSTEMPATH/BaseModel.php(1089): CodeIgniter\BaseModel->findAll(20, 0)
+ 9 ROOTPATH/modules/Setting/Controllers/Setting.php(33): CodeIgniter\BaseModel->paginate(20, 'setting')
+10 SYSTEMPATH/CodeIgniter.php(907): Modules\Setting\Controllers\Setting->index()
+11 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Setting\Controllers\Setting))
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-10-03 14:52:33 --> Call to undefined method CodeIgniter\Database\Postgre\Builder::paginate()
+in ROOTPATH/modules/Setting/Controllers/Setting.php on line 33.
+ 1 SYSTEMPATH/CodeIgniter.php(907): Modules\Setting\Controllers\Setting->index()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Setting\Controllers\Setting))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-10-03 15:23:25 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;settingId&quot; does not exist
+LINE 2: WHERE &quot;settingId&quot; = '5'
+              ^ in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/ivan/Cod...', 140, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(140): pg_query(Resource id #16, 'UPDATE "setting...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "setting...')
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "setting...')
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE "setting...', Array, false)
+#5 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Model.php(398): CodeIgniter\Database\BaseBuilder->update(Array)
+#6 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/BaseModel.php(963): CodeIgniter\Model->doDelete(NULL, false)
+#7 /Users/ivan/Codeigniter/osce_v2/modules/Setting/Models/SettingModel.php(52): CodeIgniter\BaseModel->delete()
+#8 /Users/ivan/Codeigniter/osce_v2/modules/Setting/Controllers/Setting.php(122): Modules\Setting\Models\SettingModel->deleteData(Array)
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Modules\Setting\Controllers\Setting->delete('5')
+#10 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Setting\Controllers\Setting))
+#11 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#14 {main}
+CRITICAL - 2022-10-03 15:23:25 --> pg_query(): Query failed: ERROR:  column &quot;settingId&quot; does not exist
+LINE 2: WHERE &quot;settingId&quot; = '5'
+              ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  column &quot;settingId&quot; does not exist
+LINE 2: WHERE &quot;settingId&quot; = \'5\'
+              ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140, [...])
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(resource (pgsql link), 'UPDATE "settingtes" SET "setDeletedDate" = \'2022-10-03 15:23:25\', "setModifiedDate" = \'2022-10-03 15:23:25\'
+WHERE "settingId" = \'5\'
+AND "setDeletedDate" IS NULL')
+ 3 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "settingtes" SET "setDeletedDate" = \'2022-10-03 15:23:25\', "setModifiedDate" = \'2022-10-03 15:23:25\'
+WHERE "settingId" = \'5\'
+AND "setDeletedDate" IS NULL')
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "settingtes" SET "setDeletedDate" = \'2022-10-03 15:23:25\', "setModifiedDate" = \'2022-10-03 15:23:25\'
+WHERE "settingId" = \'5\'
+AND "setDeletedDate" IS NULL')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE "settingtes" SET "setDeletedDate" = :setDeletedDate:, "setModifiedDate" = :setModifiedDate:
+WHERE "settingId" = :settingId:
+AND "setDeletedDate" IS NULL', [...], false)
+ 6 SYSTEMPATH/Model.php(398): CodeIgniter\Database\BaseBuilder->update([...])
+ 7 SYSTEMPATH/BaseModel.php(963): CodeIgniter\Model->doDelete(null, false)
+ 8 ROOTPATH/modules/Setting/Models/SettingModel.php(52): CodeIgniter\BaseModel->delete()
+ 9 ROOTPATH/modules/Setting/Controllers/Setting.php(122): Modules\Setting\Models\SettingModel->deleteData([...])
+10 SYSTEMPATH/CodeIgniter.php(907): Modules\Setting\Controllers\Setting->delete('5')
+11 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Setting\Controllers\Setting))
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-10-03 17:01:05 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;setCreatedDate&quot; of relation &quot;settingtes&quot; does not exist
+LINE 1: ... &quot;setLokasi&quot;, &quot;setJumlahStation&quot;, &quot;setStartDate&quot;, &quot;setCreate...
+                                                             ^ in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/ivan/Cod...', 140, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(140): pg_query(Resource id #16, 'INSERT INTO "se...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "se...')
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "se...')
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "se...', Array, false)
+#5 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#6 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#7 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#8 /Users/ivan/Codeigniter/osce_v2/modules/Setting/Controllers/Setting.php(110): CodeIgniter\Model->insert(Array)
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Modules\Setting\Controllers\Setting->add()
+#10 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Setting\Controllers\Setting))
+#11 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#14 {main}
+CRITICAL - 2022-10-03 17:01:05 --> pg_query(): Query failed: ERROR:  column &quot;setCreatedDate&quot; of relation &quot;settingtes&quot; does not exist
+LINE 1: ... &quot;setLokasi&quot;, &quot;setJumlahStation&quot;, &quot;setStartDate&quot;, &quot;setCreate...
+                                                             ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  column &quot;setCreatedDate&quot; of relation &quot;settingtes&quot; does not exist
+LINE 1: ... &quot;setLokasi&quot;, &quot;setJumlahStation&quot;, &quot;setStartDate&quot;, &quot;setCreate...
+                                                             ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140, [...])
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(resource (pgsql link), 'INSERT INTO "settingtes" ("setDeskripsi", "setLokasi", "setJumlahStation", "setStartDate", "setCreatedDate", "setModifiedDate") VALUES (\'Simulasi\', \'{"data":[{"lokasi":"1"},{"lokasi":"2"}]}\', \'3\', \'2022-10-04 05:01:00\', \'2022-10-03 17:01:05\', \'2022-10-03 17:01:05\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "settingtes" ("setDeskripsi", "setLokasi", "setJumlahStation", "setStartDate", "setCreatedDate", "setModifiedDate") VALUES (\'Simulasi\', \'{"data":[{"lokasi":"1"},{"lokasi":"2"}]}\', \'3\', \'2022-10-04 05:01:00\', \'2022-10-03 17:01:05\', \'2022-10-03 17:01:05\')')
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "settingtes" ("setDeskripsi", "setLokasi", "setJumlahStation", "setStartDate", "setCreatedDate", "setModifiedDate") VALUES (\'Simulasi\', \'{"data":[{"lokasi":"1"},{"lokasi":"2"}]}\', \'3\', \'2022-10-04 05:01:00\', \'2022-10-03 17:01:05\', \'2022-10-03 17:01:05\')')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "settingtes" ("setDeskripsi", "setLokasi", "setJumlahStation", "setStartDate", "setCreatedDate", "setModifiedDate") VALUES (:setDeskripsi:, :setLokasi:, :setJumlahStation:, :setStartDate:, :setCreatedDate:, :setModifiedDate:)', [...], false)
+ 6 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH/BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 9 ROOTPATH/modules/Setting/Controllers/Setting.php(110): CodeIgniter\Model->insert([...])
+10 SYSTEMPATH/CodeIgniter.php(907): Modules\Setting\Controllers\Setting->add()
+11 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Setting\Controllers\Setting))
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-10-03 17:15:27 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;settingId&quot; does not exist
+LINE 2: WHERE &quot;settingId&quot; = '1'
+              ^ in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/Users/ivan/Cod...', 140, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(140): pg_query(Resource id #18, 'UPDATE "setting...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "setting...')
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "setting...')
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE "setting...', Array, false)
+#5 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Model.php(398): CodeIgniter\Database\BaseBuilder->update(Array)
+#6 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/BaseModel.php(963): CodeIgniter\Model->doDelete(NULL, false)
+#7 /Users/ivan/Codeigniter/osce_v2/modules/Setting/Models/SettingModel.php(52): CodeIgniter\BaseModel->delete()
+#8 /Users/ivan/Codeigniter/osce_v2/modules/Setting/Controllers/Setting.php(149): Modules\Setting\Models\SettingModel->deleteData(Array)
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Modules\Setting\Controllers\Setting->delete('1')
+#10 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Setting\Controllers\Setting))
+#11 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#14 {main}
+CRITICAL - 2022-10-03 17:15:27 --> pg_query(): Query failed: ERROR:  column &quot;settingId&quot; does not exist
+LINE 2: WHERE &quot;settingId&quot; = '1'
+              ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  column &quot;settingId&quot; does not exist
+LINE 2: WHERE &quot;settingId&quot; = \'1\'
+              ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140, [...])
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(resource (pgsql link), 'UPDATE "settingtes" SET "setDeletedDate" = \'2022-10-03 17:15:27\', "setModifiedDate" = \'2022-10-03 17:15:27\'
+WHERE "settingId" = \'1\'
+AND "setDeletedDate" IS NULL')
+ 3 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "settingtes" SET "setDeletedDate" = \'2022-10-03 17:15:27\', "setModifiedDate" = \'2022-10-03 17:15:27\'
+WHERE "settingId" = \'1\'
+AND "setDeletedDate" IS NULL')
+ 4 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "settingtes" SET "setDeletedDate" = \'2022-10-03 17:15:27\', "setModifiedDate" = \'2022-10-03 17:15:27\'
+WHERE "settingId" = \'1\'
+AND "setDeletedDate" IS NULL')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE "settingtes" SET "setDeletedDate" = :setDeletedDate:, "setModifiedDate" = :setModifiedDate:
+WHERE "settingId" = :settingId:
+AND "setDeletedDate" IS NULL', [...], false)
+ 6 SYSTEMPATH/Model.php(398): CodeIgniter\Database\BaseBuilder->update([...])
+ 7 SYSTEMPATH/BaseModel.php(963): CodeIgniter\Model->doDelete(null, false)
+ 8 ROOTPATH/modules/Setting/Models/SettingModel.php(52): CodeIgniter\BaseModel->delete()
+ 9 ROOTPATH/modules/Setting/Controllers/Setting.php(149): Modules\Setting\Models\SettingModel->deleteData([...])
+10 SYSTEMPATH/CodeIgniter.php(907): Modules\Setting\Controllers\Setting->delete('1')
+11 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Setting\Controllers\Setting))
+12 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')

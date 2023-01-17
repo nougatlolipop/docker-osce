@@ -1,0 +1,259 @@
+CRITICAL - 2022-12-09 07:42:26 --> Trying to get property 'lokasiNama' of non-object
+in ROOTPATH/modules/Penilaian/Views/penilaian.php on line 30.
+ 1 ROOTPATH/modules/Penilaian/Views/penilaian.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'lokasiNama\' of non-object', 'ROOTPATH/modules/Penilaian/Views/penilaian.php', 30, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('ROOTPATH/modules/Penilaian/Views/penilaian.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('Modules\\Penilaian\\Views\\penilaian', [], true)
+ 5 ROOTPATH/modules/Penilaian/Controllers/Penilaian.php(55): view('Modules\\Penilaian\\Views\\penilaian', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-12-09 07:45:56 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;36.88.21.18&quot;, port 5432 failed: Network is unreachable
+	Is the server running on that host and accepting TCP/IP connections? in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', '/Users/ivan/Cod...', 69, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(69): pg_connect('host=36.88.21.1...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(179): CodeIgniter\Database\BaseConnection->initialize()
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Query.php(323): CodeIgniter\Database\Postgre\Connection->escape('2')
+#5 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT "nilai"....', Array)
+#6 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Query.php(159): CodeIgniter\Database\Query->compileBinds()
+#7 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1568): CodeIgniter\Database\Query->getQuery()
+#8 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1552): CodeIgniter\Database\BaseBuilder->compileFinalQuery('SELECT "nilai"....')
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2952): CodeIgniter\Database\BaseBuilder->getCompiledSelect(false)
+#10 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(926): CodeIgniter\Database\BaseBuilder->buildSubquery(Object(CodeIgniter\Database\Postgre\Builder), true)
+#11 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(815): CodeIgniter\Database\BaseBuilder->_whereIn('"peserta"."pese...', Object(Closure), ' NOT', 'AND ', true)
+#12 /Users/ivan/Codeigniter/osce_v2/modules/Penilaian/Models/PenilaianModel.php(36): CodeIgniter\Database\BaseBuilder->whereNotIn('peserta."pesert...', Object(Closure))
+#13 /Users/ivan/Codeigniter/osce_v2/modules/Penilaian/Controllers/Penilaian.php(45): Modules\Penilaian\Models\PenilaianModel->getPeserta(Array, Array)
+#14 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->index()
+#15 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+#16 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#17 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#18 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#19 {main}
+CRITICAL - 2022-12-09 07:45:56 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;36.88.21.18&quot;, port 5432 failed: Network is unreachable
+	Is the server running on that host and accepting TCP/IP connections?
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/Postgre/Connection.php(179): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/Query.php(323): CodeIgniter\Database\Postgre\Connection->escape('2')
+ 3 SYSTEMPATH/Database/Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT "nilai"."peserta"
+FROM function_mahasiswa_nilai() as nilai
+WHERE "nilai"."setId" = :nilai."setId":
+AND "nilai"."stationId" = :nilai."stationId":', [...])
+ 4 SYSTEMPATH/Database/Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1568): CodeIgniter\Database\Query->getQuery()
+ 6 SYSTEMPATH/Database/BaseBuilder.php(1552): CodeIgniter\Database\BaseBuilder->compileFinalQuery('SELECT "nilai"."peserta"
+FROM function_mahasiswa_nilai() as nilai
+WHERE "nilai"."setId" = :nilai."setId":
+AND "nilai"."stationId" = :nilai."stationId":')
+ 7 SYSTEMPATH/Database/BaseBuilder.php(2952): CodeIgniter\Database\BaseBuilder->getCompiledSelect(false)
+ 8 SYSTEMPATH/Database/BaseBuilder.php(926): CodeIgniter\Database\BaseBuilder->buildSubquery(Object(CodeIgniter\Database\Postgre\Builder), true)
+ 9 SYSTEMPATH/Database/BaseBuilder.php(815): CodeIgniter\Database\BaseBuilder->_whereIn('"peserta"."peserta"', Object(Closure), ' NOT', 'AND ', true)
+10 ROOTPATH/modules/Penilaian/Models/PenilaianModel.php(36): CodeIgniter\Database\BaseBuilder->whereNotIn('peserta."peserta"', Object(Closure))
+11 ROOTPATH/modules/Penilaian/Controllers/Penilaian.php(45): Modules\Penilaian\Models\PenilaianModel->getPeserta([...], [...])
+12 SYSTEMPATH/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->index()
+13 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+14 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-09 13:34:34 --> Undefined offset: 0
+in ROOTPATH/modules/Penilaian/Views/penilaian.php on line 41.
+ 1 ROOTPATH/modules/Penilaian/Views/penilaian.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'ROOTPATH/modules/Penilaian/Views/penilaian.php', 41, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('ROOTPATH/modules/Penilaian/Views/penilaian.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('Modules\\Penilaian\\Views\\penilaian', [], true)
+ 5 ROOTPATH/modules/Penilaian/Controllers/Penilaian.php(55): view('Modules\\Penilaian\\Views\\penilaian', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-09 13:36:08 --> Undefined offset: 0
+in ROOTPATH/modules/Penilaian/Views/penilaian.php on line 41.
+ 1 ROOTPATH/modules/Penilaian/Views/penilaian.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'ROOTPATH/modules/Penilaian/Views/penilaian.php', 41, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('ROOTPATH/modules/Penilaian/Views/penilaian.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('Modules\\Penilaian\\Views\\penilaian', [], true)
+ 5 ROOTPATH/modules/Penilaian/Controllers/Penilaian.php(55): view('Modules\\Penilaian\\Views\\penilaian', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-09 14:32:41 --> Undefined property: Modules\Penilaian\Controllers\Penilaian::$gradeModel
+in ROOTPATH/modules/Penilaian/Controllers/Penilaian.php on line 48.
+ 1 ROOTPATH/modules/Penilaian/Controllers/Penilaian.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: Modules\\Penilaian\\Controllers\\Penilaian::$gradeModel', 'ROOTPATH/modules/Penilaian/Controllers/Penilaian.php', 48, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-09 14:34:46 --> Undefined variable: kompetensi
+in ROOTPATH/modules/Penilaian/Views/penilaian.php on line 189.
+ 1 ROOTPATH/modules/Penilaian/Views/penilaian.php(189): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: kompetensi', 'ROOTPATH/modules/Penilaian/Views/penilaian.php', 189, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('ROOTPATH/modules/Penilaian/Views/penilaian.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('Modules\\Penilaian\\Views\\penilaian', [], true)
+ 5 ROOTPATH/modules/Penilaian/Controllers/Penilaian.php(62): view('Modules\\Penilaian\\Views\\penilaian', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-09 14:35:52 --> Undefined variable: testNama
+in ROOTPATH/modules/Penilaian/Views/penilaian.php on line 192.
+ 1 ROOTPATH/modules/Penilaian/Views/penilaian.php(192): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: testNama', 'ROOTPATH/modules/Penilaian/Views/penilaian.php', 192, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('ROOTPATH/modules/Penilaian/Views/penilaian.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('Modules\\Penilaian\\Views\\penilaian', [], true)
+ 5 ROOTPATH/modules/Penilaian/Controllers/Penilaian.php(66): view('Modules\\Penilaian\\Views\\penilaian', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-09 14:36:28 --> Undefined variable: testPertanyaan
+in ROOTPATH/modules/Penilaian/Views/penilaian.php on line 237.
+ 1 ROOTPATH/modules/Penilaian/Views/penilaian.php(237): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: testPertanyaan', 'ROOTPATH/modules/Penilaian/Views/penilaian.php', 237, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('ROOTPATH/modules/Penilaian/Views/penilaian.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('Modules\\Penilaian\\Views\\penilaian', [], true)
+ 5 ROOTPATH/modules/Penilaian/Controllers/Penilaian.php(66): view('Modules\\Penilaian\\Views\\penilaian', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-09 14:36:48 --> Undefined variable: testPertanyaan
+in ROOTPATH/modules/Penilaian/Views/penilaian.php on line 237.
+ 1 ROOTPATH/modules/Penilaian/Views/penilaian.php(237): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: testPertanyaan', 'ROOTPATH/modules/Penilaian/Views/penilaian.php', 237, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('ROOTPATH/modules/Penilaian/Views/penilaian.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('Modules\\Penilaian\\Views\\penilaian', [], true)
+ 5 ROOTPATH/modules/Penilaian/Controllers/Penilaian.php(66): view('Modules\\Penilaian\\Views\\penilaian', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-09 14:36:48 --> Undefined variable: testPertanyaan
+in ROOTPATH/modules/Penilaian/Views/penilaian.php on line 237.
+ 1 ROOTPATH/modules/Penilaian/Views/penilaian.php(237): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: testPertanyaan', 'ROOTPATH/modules/Penilaian/Views/penilaian.php', 237, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('ROOTPATH/modules/Penilaian/Views/penilaian.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('Modules\\Penilaian\\Views\\penilaian', [], true)
+ 5 ROOTPATH/modules/Penilaian/Controllers/Penilaian.php(66): view('Modules\\Penilaian\\Views\\penilaian', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-09 14:39:50 --> Undefined property: Modules\Penilaian\Controllers\Penilaian::$settingModel
+in ROOTPATH/modules/Penilaian/Controllers/Penilaian.php on line 58.
+ 1 ROOTPATH/modules/Penilaian/Controllers/Penilaian.php(58): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: Modules\\Penilaian\\Controllers\\Penilaian::$settingModel', 'ROOTPATH/modules/Penilaian/Controllers/Penilaian.php', 58, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->index()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-12-09 16:02:40 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;36.88.21.18&quot;, port 5432 failed: Network is unreachable
+	Is the server running on that host and accepting TCP/IP connections? in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', '/Users/ivan/Cod...', 69, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(69): pg_connect('host=36.88.21.1...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(179): CodeIgniter\Database\BaseConnection->initialize()
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Query.php(323): CodeIgniter\Database\Postgre\Connection->escape('2')
+#5 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT "nilai"....', Array)
+#6 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Query.php(159): CodeIgniter\Database\Query->compileBinds()
+#7 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1568): CodeIgniter\Database\Query->getQuery()
+#8 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1552): CodeIgniter\Database\BaseBuilder->compileFinalQuery('SELECT "nilai"....')
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2952): CodeIgniter\Database\BaseBuilder->getCompiledSelect(false)
+#10 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(926): CodeIgniter\Database\BaseBuilder->buildSubquery(Object(CodeIgniter\Database\Postgre\Builder), true)
+#11 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(815): CodeIgniter\Database\BaseBuilder->_whereIn('"peserta"."pese...', Object(Closure), ' NOT', 'AND ', true)
+#12 /Users/ivan/Codeigniter/osce_v2/modules/Penilaian/Models/PenilaianModel.php(36): CodeIgniter\Database\BaseBuilder->whereNotIn('peserta."pesert...', Object(Closure))
+#13 /Users/ivan/Codeigniter/osce_v2/modules/Penilaian/Controllers/Penilaian.php(53): Modules\Penilaian\Models\PenilaianModel->getPeserta(Array, Array)
+#14 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->index()
+#15 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+#16 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#17 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#18 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#19 {main}
+CRITICAL - 2022-12-09 16:02:40 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;36.88.21.18&quot;, port 5432 failed: Network is unreachable
+	Is the server running on that host and accepting TCP/IP connections?
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/Postgre/Connection.php(179): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/Query.php(323): CodeIgniter\Database\Postgre\Connection->escape('2')
+ 3 SYSTEMPATH/Database/Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT "nilai"."peserta"
+FROM function_mahasiswa_nilai() as nilai
+WHERE "nilai"."setId" = :nilai."setId":
+AND "nilai"."stationId" = :nilai."stationId":', [...])
+ 4 SYSTEMPATH/Database/Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1568): CodeIgniter\Database\Query->getQuery()
+ 6 SYSTEMPATH/Database/BaseBuilder.php(1552): CodeIgniter\Database\BaseBuilder->compileFinalQuery('SELECT "nilai"."peserta"
+FROM function_mahasiswa_nilai() as nilai
+WHERE "nilai"."setId" = :nilai."setId":
+AND "nilai"."stationId" = :nilai."stationId":')
+ 7 SYSTEMPATH/Database/BaseBuilder.php(2952): CodeIgniter\Database\BaseBuilder->getCompiledSelect(false)
+ 8 SYSTEMPATH/Database/BaseBuilder.php(926): CodeIgniter\Database\BaseBuilder->buildSubquery(Object(CodeIgniter\Database\Postgre\Builder), true)
+ 9 SYSTEMPATH/Database/BaseBuilder.php(815): CodeIgniter\Database\BaseBuilder->_whereIn('"peserta"."peserta"', Object(Closure), ' NOT', 'AND ', true)
+10 ROOTPATH/modules/Penilaian/Models/PenilaianModel.php(36): CodeIgniter\Database\BaseBuilder->whereNotIn('peserta."peserta"', Object(Closure))
+11 ROOTPATH/modules/Penilaian/Controllers/Penilaian.php(53): Modules\Penilaian\Models\PenilaianModel->getPeserta([...], [...])
+12 SYSTEMPATH/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->index()
+13 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+14 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-12-09 16:02:52 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;36.88.21.18&quot;, port 5432 failed: Network is unreachable
+	Is the server running on that host and accepting TCP/IP connections? in /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', '/Users/ivan/Cod...', 69, Array)
+#1 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(69): pg_connect('host=36.88.21.1...')
+#2 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(179): CodeIgniter\Database\BaseConnection->initialize()
+#4 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Query.php(323): CodeIgniter\Database\Postgre\Connection->escape('2')
+#5 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT "nilai"....', Array)
+#6 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/Query.php(159): CodeIgniter\Database\Query->compileBinds()
+#7 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1568): CodeIgniter\Database\Query->getQuery()
+#8 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1552): CodeIgniter\Database\BaseBuilder->compileFinalQuery('SELECT "nilai"....')
+#9 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2952): CodeIgniter\Database\BaseBuilder->getCompiledSelect(false)
+#10 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(926): CodeIgniter\Database\BaseBuilder->buildSubquery(Object(CodeIgniter\Database\Postgre\Builder), true)
+#11 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(815): CodeIgniter\Database\BaseBuilder->_whereIn('"peserta"."pese...', Object(Closure), ' NOT', 'AND ', true)
+#12 /Users/ivan/Codeigniter/osce_v2/modules/Penilaian/Models/PenilaianModel.php(36): CodeIgniter\Database\BaseBuilder->whereNotIn('peserta."pesert...', Object(Closure))
+#13 /Users/ivan/Codeigniter/osce_v2/modules/Penilaian/Controllers/Penilaian.php(53): Modules\Penilaian\Models\PenilaianModel->getPeserta(Array, Array)
+#14 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->index()
+#15 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+#16 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#17 /Users/ivan/Codeigniter/osce_v2/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#18 /Users/ivan/Codeigniter/osce_v2/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/ivan/Cod...')
+#19 {main}
+CRITICAL - 2022-12-09 16:02:52 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;36.88.21.18&quot;, port 5432 failed: Network is unreachable
+	Is the server running on that host and accepting TCP/IP connections?
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/Postgre/Connection.php(179): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/Query.php(323): CodeIgniter\Database\Postgre\Connection->escape('2')
+ 3 SYSTEMPATH/Database/Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT "nilai"."peserta"
+FROM function_mahasiswa_nilai() as nilai
+WHERE "nilai"."setId" = :nilai."setId":
+AND "nilai"."stationId" = :nilai."stationId":', [...])
+ 4 SYSTEMPATH/Database/Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1568): CodeIgniter\Database\Query->getQuery()
+ 6 SYSTEMPATH/Database/BaseBuilder.php(1552): CodeIgniter\Database\BaseBuilder->compileFinalQuery('SELECT "nilai"."peserta"
+FROM function_mahasiswa_nilai() as nilai
+WHERE "nilai"."setId" = :nilai."setId":
+AND "nilai"."stationId" = :nilai."stationId":')
+ 7 SYSTEMPATH/Database/BaseBuilder.php(2952): CodeIgniter\Database\BaseBuilder->getCompiledSelect(false)
+ 8 SYSTEMPATH/Database/BaseBuilder.php(926): CodeIgniter\Database\BaseBuilder->buildSubquery(Object(CodeIgniter\Database\Postgre\Builder), true)
+ 9 SYSTEMPATH/Database/BaseBuilder.php(815): CodeIgniter\Database\BaseBuilder->_whereIn('"peserta"."peserta"', Object(Closure), ' NOT', 'AND ', true)
+10 ROOTPATH/modules/Penilaian/Models/PenilaianModel.php(36): CodeIgniter\Database\BaseBuilder->whereNotIn('peserta."peserta"', Object(Closure))
+11 ROOTPATH/modules/Penilaian/Controllers/Penilaian.php(53): Modules\Penilaian\Models\PenilaianModel->getPeserta([...], [...])
+12 SYSTEMPATH/CodeIgniter.php(907): Modules\Penilaian\Controllers\Penilaian->index()
+13 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Modules\Penilaian\Controllers\Penilaian))
+14 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
